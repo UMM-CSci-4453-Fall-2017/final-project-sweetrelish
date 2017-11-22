@@ -1,0 +1,30 @@
+﻿Tsz Hong Lau
+Rocherno de Jongh
+Csci-4453-Fall-2017
+Summary
+WHAT
+We have decided to implement a project using existing technology, specifically mySQL. The goal of our project is to design and create a database for the Center for Small Towns (CST) to help them manage their community partners as well as all their student workers, faculty, staff, and community supporter information. The database should be able to store all the community partners’ contact information as well as any other information regarding their populations/geographical area served. The user should then be able to find organizations that work with a specific geographical location/populations. In addition, the user should be able to store all contact information of their staff workers as well as any projects that they are currently assigned to. Once a student worker graduated from college, the database will need to update that student information, i.e. from student to alumni without physically updating the data. 
+The user interface should be simple, easy to use and responsive. A navigation bar should be built in to allow easy access and easy navigation. The user interface should display all the information outlined above in a clear and concise way. 
+
+
+WHO
+Tsz Hong Lau 
+Design the database 
+* ER diagram - 10 points
+* Normalization - 5 points 
+Create relevant tables/archive/views, etc. - 10 points
+Create queries for task outlined above - 10 points
+Create a simple user-interface - 10 points
+Customer/user interaction - 5 points
+Testing - 0 points
+
+
+Rocherno de Jongh
+Design the database 
+* ER diagram - 10 points
+* Normalization - 5 points
+Create relevant tables/archive/views, etc. - 10 points
+Create queries for task outlined above - 10 points
+Create a simple user-interface - 10 points
+Customer/user interaction - 0 points
+Testing - 5 points
