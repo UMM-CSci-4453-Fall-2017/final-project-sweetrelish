@@ -1,0 +1,25 @@
+DELMITER //
+
+CREATE PROCEDURE project_procedure()
+BEGIN
+DECLARE @x int, @y int;
+SET @x = 1;
+SET @y = 1;
+
+WHILE @x <= 430
+BEGIN
+
+  WHILE @y <= 368
+    BEGIN
+    IF EXISTS (SELECT studentnames FROM (SELECT * FROM PROJECT LIMIT 1 OFFSET @y) WHERE
+                CONCAT(studentWorkers.`FIRST NAME`, studentWorkers.`LAST NAME`) LIKE CONCAT('%', PROJECT.studentnames, '%')) THEN
+
+    INSERT INTO Roch.INTERMEDIATE VALUES(ELECT studentnames FROM (SELECT * FROM PROJECT LIMIT 1 OFFSET @y) WHERE
+                CONCAT(studentWorkers.`FIRST NAME`, studentWorkers.`LAST NAME`) LIKE CONCAT('%', PROJECT.studentnames, '%'));
+    END IF;
+    SET @y = @y  + 1;
+      END
+
+  SET @y = 1;
+  SET @x = @x + 1;
+END

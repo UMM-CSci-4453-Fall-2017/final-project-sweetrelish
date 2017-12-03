@@ -1,0 +1,7 @@
+create table project(projectID int not null auto_increment, primary key(projectID), `Project Status` text, `Project Title` text, `Start Date` date, `End Date` date, `Project Intensity` enum('High', 'Medium', 'Low'), `CST Staff Lead` text, `Description` text, `All/Former Students` text, `Funding Type` text, Faculty text, `Contract Status` text, `Link to Project` text, `Project Synopsis Link` text, Methodology text , `Keywords` text, `Organization/Communities` text, `Organization Type` text, `Community Contact/Site Superviser` text, `Org. County` text, `Org. City` text, `Impact Area` text, `Physical Outcomes` text, `Notes` text, `Location on shelves` text, `Non-Public Report Link` text);
+
+load data local infile "/home/dejon076/csci4453/final-project-sweetrelish/test.csv" into table project columns terminated by ',' optionally enclosed by '"' escaped by '"' lines terminated by '\n' ignore 1 lines;
+
+SELECT studentWorkers.studentID FROM studentWorkers, PROJECT WHERE PROJECT.projectName LIKE CONCAT('%', studentWorkers.`FIRST NAME`, '%');
+
+SELECT studentWorkers.studentID FROM studentWorkers, PROJECT WHERE studentWorkers.`First Name` LIKE CONCAT('%', PROJECT.projectName, '%');
