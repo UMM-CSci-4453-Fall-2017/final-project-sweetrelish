@@ -1,440 +1,440 @@
 studentID,Last Name,First Name,Email Address,City,State,Country,Graduation Year,Statistics
-1,Schlimgen,Liz,SchlimgenLiz.morris.umn.edu,Fredericksville, New Mexico,China,2012-05-30,Mathematics
-2,Peterson,Michael,PetersonMichael.morris.umn.edu,Willamette, Kansas,China,2010-05-30,Psychology
-3,Lossing,Austin,LossingAustin.morris.umn.edu,Condra, Idaho,China,2014-05-30,Mathematics
-4,Schuldt,Ben,SchuldtBen.morris.umn.edu,Littell, North Dakota,China,2010-05-30,Computer Science
-5,Moyer,Madeline,MoyerMadeline.morris.umn.edu,South Thurston, Pennsylvania,China,2015-05-30,Music
-6,Lindgren,Michael,LindgrenMichael.morris.umn.edu,Cave, Oregon,China,2008-05-30,Statistics
-7,Threadgill,Zachary,ThreadgillZachary.morris.umn.edu,Forfar, Virginia,China,2016-05-30,Psychology
-8,Wente,Jordan,WenteJordan.morris.umn.edu,Mechanicsville, Alaska,China,2020-05-30,Psychology
-9,Capstone,Humphrey,CapstoneHumphrey.morris.umn.edu,Clarking, Virginia,China,2012-05-30,Computer Science
-10,Wang,Zhechen,WangZhechen.morris.umn.edu,Virginia, Wisconsin,China,2017-05-30,Computer Science
-11,Tao,Emma,TaoEmma.morris.umn.edu,Morning Sun, Nevada,China,2008-05-30,Statistics
-12,Ronnander,Reid,RonnanderReid.morris.umn.edu,Gerlane, Illinois,China,2009-05-30,Statistics
-13,Fontenot,Sharice,FontenotSharice.morris.umn.edu,Wismer Po, Indiana,China,2012-05-30,Computer Science
-14,Lee,Sam,LeeSam.morris.umn.edu,Wilburn, California,China,2017-05-30,Psychology
-15,Goemann,Aaron,GoemannAaron.morris.umn.edu,Pine City, Vermont,China,2008-05-30,Mathematics
-16,Hove,Meara,HoveMeara.morris.umn.edu,Lowake, Illinois,China,2011-05-30,Psychology
-17,Bohling,Rachel,BohlingRachel.morris.umn.edu,Twin Oaks, Hawaii,China,2012-05-30,Psychology
-18,Irey,Emily,IreyEmily.morris.umn.edu,Port Lavaca, Maryland,China,2021-05-30,Statistics
-19,Finzel,Mitch,FinzelMitch.morris.umn.edu,Boone, Wisconsin,China,2021-05-30,Computer Science
-20,Mahen,Lily,MahenLily.morris.umn.edu,Dogtail Corners, New Jersey,China,2014-05-30,Computer Science
-21,Fontenont,Sharice,FontenontSharice.morris.umn.edu,Manor Hill, Indiana,China,2018-05-30,Psychology
-22,Gelderman,Elizabeth,GeldermanElizabeth.morris.umn.edu,Irene, Ohio,China,2012-05-30,Statistics
-23,Knott,Hannah,KnottHannah.morris.umn.edu,Spragueville, Alaska,China,2011-05-30,Psychology
-24,Keeler,Maria,KeelerMaria.morris.umn.edu,Springdell, Georgia,China,2016-05-30,Statistics
-25,Winter,Katie,WinterKatie.morris.umn.edu,Twin Peaks Condominium, North Dakota,China,2010-05-30,Computer Science
-26,Fischer,Kelly,FischerKelly.morris.umn.edu,Blue Ridge, Ohio,China,2014-05-30,Psychology
-27,Stermer,Brendan,StermerBrendan.morris.umn.edu,Sheppards, Michigan,China,2012-05-30,Psychology
-28,Odegaard,Ben,OdegaardBen.morris.umn.edu,Clarkston, Washington,China,2016-05-30,Music
-29,Reed,Francis,ReedFrancis.morris.umn.edu,Oaks Corners, Alabama,China,2017-05-30,Psychology
-30,LindgrenZ,Michael,LindgrenZMichael.morris.umn.edu,Palmetal, Tennessee,China,2016-05-30,Computer Science
-31,Thebault-Spieker,Abbie,Thebault-SpiekerAbbie.morris.umn.edu,New Glasgow, Alaska,China,2012-05-30,Computer Science
-32,Perfetti,Nathan,PerfettiNathan.morris.umn.edu,Hunting Hill, Wyoming,China,2015-05-30,Music
-33,Fossen,Daniel,FossenDaniel.morris.umn.edu,Fieldbrook, Delaware,China,2019-05-30,Mathematics
-34,Zuniga-Tepango,Yessica,Zuniga-TepangoYessica.morris.umn.edu,Arbovale, Hawaii,China,2014-05-30,Psychology
-35,Lundborg,Andrew,LundborgAndrew.morris.umn.edu,Willswood, Hawaii,Mexico,2014-05-30,Computer Science
-36,Miller,Natasha,MillerNatasha.morris.umn.edu,Sherwood Hills, Kansas,Mexico,2017-05-30,Statistics
-37,Sherman,Ellis,ShermanEllis.morris.umn.edu,Carmet, Vermont,Mexico,2021-05-30,Computer Science
-38,Silburn,Tashna,SilburnTashna.morris.umn.edu,Guideway, Massachusetts,Mexico,2010-05-30,Statistics
-39,McDougald,Tori,McDougaldTori.morris.umn.edu,Morley, Florida,Mexico,2016-05-30,Computer Science
-40,Hinnenkamp,Nick,HinnenkampNick.morris.umn.edu,Raquette River, Oklahoma,Mexico,2013-05-30,Psychology
-41,Pratt,Anna,PrattAnna.morris.umn.edu,Orpheus, Illinois,Mexico,2021-05-30,Psychology
-42,Holten,Cory,HoltenCory.morris.umn.edu,Shiloh, District of Columbia,Mexico,2010-05-30,Statistics
-43,Bibeau,Jacob,BibeauJacob.morris.umn.edu,Wilsonville, Connecticut,Mexico,2015-05-30,Statistics
-44,Rojas,Ricardo,RojasRicardo.morris.umn.edu,Treadwell, Vermont,Mexico,2015-05-30,Mathematics
-45,Smith,Gabe,SmithGabe.morris.umn.edu,Trenton, Connecticut,Mexico,2012-05-30,Statistics
-46,Xu,Yuemin,XuYuemin.morris.umn.edu,Scotch Point, Tennessee,Mexico,2008-05-30,Statistics
-47,Votaw,Cassandra,VotawCassandra.morris.umn.edu,Crunk, North Dakota,Mexico,2018-05-30,Music
-48,Dial,Ashley,DialAshley.morris.umn.edu,South Church, Pennsylvania,Mexico,2017-05-30,Music
-49,White,William,WhiteWilliam.morris.umn.edu,Russell Park, Nebraska,Mexico,2011-05-30,Statistics
-50,Koester,Jayce,KoesterJayce.morris.umn.edu,The Fields Of Four Corners, Michigan,Mexico,2021-05-30,Computer Science
-51,Hughes,Madison,HughesMadison.morris.umn.edu,Hikapoloa, Wyoming,Mexico,2011-05-30,Statistics
-52,Axelson,Jeff,AxelsonJeff.morris.umn.edu,Point Lay, Wyoming,Mexico,2016-05-30,Computer Science
-53,Diamond,Charlie,DiamondCharlie.morris.umn.edu,Shaktoolik, Wyoming,Mexico,2019-05-30,Statistics
-54,Zinn,Saskia,ZinnSaskia.morris.umn.edu,Enterprise, Wyoming,Mexico,2020-05-30,Mathematics
-55,Joul,Maura,JoulMaura.morris.umn.edu,Surprise Valley, Wyoming,Mexico,2010-05-30,Psychology
-56,Gill,Sam,GillSam.morris.umn.edu,Toy, Wyoming,Mexico,2013-05-30,Psychology
-57,Barker,Calvin,BarkerCalvin.morris.umn.edu,Ne'sqhwaqhwe, Wyoming,Mexico,2020-05-30,Music
-58,Hahn,Christian,HahnChristian.morris.umn.edu,Onalaska, Wyoming,Mexico,2016-05-30,Computer Science
-59,Riffel,Luci,RiffelLuci.morris.umn.edu,Unfried, Wyoming,Mexico,2008-05-30,Computer Science
-60,Nault-Mauer,Elizabeth,Nault-MauerElizabeth.morris.umn.edu,Turkey Flat, Wyoming,Mexico,2014-05-30,Mathematics
-61,Thebault-Spiker,Abigail,Thebault-SpikerAbigail.morris.umn.edu,Wikieup, Wyoming,Mexico,2016-05-30,Psychology
-62,Feely,Joe,FeelyJoe.morris.umn.edu,Noel, Wyoming,Mexico,2011-05-30,Computer Science
-63,Hancock,Mitch,HancockMitch.morris.umn.edu,Crisp, Wyoming,Mexico,2011-05-30,Psychology
-64,Rin,Monica,RinMonica.morris.umn.edu,Dugway, Wyoming,Mexico,2012-05-30,Mathematics
-65,Klausing,Kyle,KlausingKyle.morris.umn.edu,Pickelville, Wyoming,Mexico,2021-05-30,Psychology
-66,Hedberg,Gabriella,HedbergGabriella.morris.umn.edu,Arab, Wyoming,Mexico,2009-05-30,Mathematics
-67,Fisher,Kelly,FisherKelly.morris.umn.edu,Forestasia, Wyoming,Mexico,2011-05-30,Music
-68,Girtz,Lauren,GirtzLauren.morris.umn.edu,Ink, Wyoming,Mexico,2021-05-30,Statistics
-69,Nault-Maurer,Elizabeth,Nault-MaurerElizabeth.morris.umn.edu,Garden of Eden, Wyoming,Mexico,2012-05-30,Psychology
-70,Young,Lauren,YoungLauren.morris.umn.edu,Hustle, Wyoming,Mexico,2015-05-30,Mathematics
-71,Prince,Marcy,PrinceMarcy.morris.umn.edu,Ute, Wyoming,Mexico,2017-05-30,Music
-72,Durham,Katherine,DurhamKatherine.morris.umn.edu,Peoples, Wyoming,Mexico,2017-05-30,Statistics
-73,Nguyen,Janet,NguyenJanet.morris.umn.edu,Rock Lick, Wyoming,Mexico,2011-05-30,Mathematics
-74,Hosch,Katherine,HoschKatherine.morris.umn.edu,Spice Knob, Wyoming,Mexico,2009-05-30,Statistics
-75,Post,Danyel,PostDanyel.morris.umn.edu,Seventysix, Wyoming,Mexico,2018-05-30,Computer Science
-76,Wolf,Heather,WolfHeather.morris.umn.edu,Dodge, Wyoming,Mexico,2011-05-30,Statistics
-77,Rojas,Ricky,RojasRicky.morris.umn.edu,Eden of the Lake, Wyoming,Mexico,2009-05-30,Computer Science
-78,Sano,Ai,SanoAi.morris.umn.edu,Yokohama,Yokohama,Japan,2011-05-30,Mathematics
-79,Zin,Saskia,ZinSaskia.morris.umn.edu,Ding Dong, Wyoming,South Korea,2021-05-30,Computer Science
-80,Hutton,Averi,HuttonAveri.morris.umn.edu,Union, Wyoming,South Korea,2016-05-30,Music
-81,Iverson,Phillip,IversonPhillip.morris.umn.edu,Puerto Rico, Wyoming,South Korea,2014-05-30,Statistics
-82,Adedeji,Joy,AdedejiJoy.morris.umn.edu,Veribest, Wyoming,South Korea,2017-05-30,Psychology
-83,de Jongh,Rocherno,de JonghRocherno.morris.umn.edu,Willemstad,Willemstad,Curacao,2018-05-30,Statistics
-84,Duram,Katherine,DuramKatherine.morris.umn.edu,Black Earth, Wyoming,United States,2013-12-30,Psychology
-85,Sunder,Kristina,SunderKristina.morris.umn.edu,Niceville, Wyoming,United States,2011-12-30,Psychology
-86,Giggisberg,Abbey,GiggisbergAbbey.morris.umn.edu,Ohoopee, Wyoming,United States,2015-12-30,Psychology
-87,Botzet,Rachel,BotzetRachel.morris.umn.edu,Hangman Crossing, Wyoming,United States,2018-12-30,Statistics
-88,Kittleson-Wilker,Maija,Kittleson-WilkerMaija.morris.umn.edu,Mudlavia Springs, Wyoming,United States,2008-12-30,Mathematics
-89,Cook,Brenna,CookBrenna.morris.umn.edu,Owls Head, Wyoming,United States,2016-12-30,Music
-90,Millard,Collete,MillardCollete.morris.umn.edu,Berlin, Wyoming,United States,2017-12-30,Statistics
-91,Griffiths,Nick,GriffithsNick.morris.umn.edu,Hawbottom, Wyoming,United States,2021-12-30,Music
-92,P0st,Danyel,P0stDanyel.morris.umn.edu,Port Tobacco, Wyoming,United States,2014-12-30,Statistics
-93,Foy,Milea,FoyMilea.morris.umn.edu,Pusey Landing, Wyoming,United States,2021-12-30,Psychology
-94,Bishop,Sophie,BishopSophie.morris.umn.edu,Buzzards Bay, Wyoming,United States,2021-12-30,Mathematics
-95,Grieman,Tara,GriemanTara.morris.umn.edu,Chappaquiddick, Wyoming,United States,2011-12-30,Psychology
-96,Amidon,Allison,AmidonAllison.morris.umn.edu,Foul Rift, Wyoming,United States,2019-12-30,Psychology
-97,Hucka,Brett,HuckaBrett.morris.umn.edu,Matchaponix, Wyoming,United States,2021-12-30,Psychology
-98,Holte,Brian,HolteBrian.morris.umn.edu,Nummytown, Wyoming,United States,2020-12-30,Statistics
-99,Carr,James,CarrJames.morris.umn.edu,Place Corners, Wyoming,United States,2013-12-30,Statistics
-100,Zych,Daron,ZychDaron.morris.umn.edu,Bee Log, Wyoming,United States,2010-12-30,Statistics
-101,Thiede,Sarah,ThiedeSarah.morris.umn.edu,Pine City, Minnesota,United States,2019-12-30,Psychology
-102,Threadgill,Zach,ThreadgillZach.morris.umn.edu,Brownton, Minnesota,United States,2016-12-30,Music
-103,Decker,Amanda,DeckerAmanda.morris.umn.edu,Champlin, Minnesota,United States,2018-12-30,Statistics
-104,Gambrell,James,GambrellJames.morris.umn.edu,Browerville, Minnesota,United States,2019-12-30,Psychology
-105,Ukura,Kim,UkuraKim.morris.umn.edu,Linden Grove, Minnesota,United States,2020-12-30,Statistics
-106,Bemis,Brent,BemisBrent.morris.umn.edu,Ada, Minnesota,United States,2017-12-30,Statistics
-107,Bruno,Samantha,BrunoSamantha.morris.umn.edu,Hackett, Minnesota,United States,2014-12-30,Statistics
-108,Holton,Cory,HoltonCory.morris.umn.edu,Fillmore, Minnesota,United States,2011-12-30,Statistics
-109,Flaig,Katrina,FlaigKatrina.morris.umn.edu,Nary, Minnesota,United States,2009-12-30,Statistics
-110,Smith,Brianca,SmithBrianca.morris.umn.edu,Mentor, Minnesota,United States,2014-12-30,Music
-111,Haider,Humza,HaiderHumza.morris.umn.edu,New Sweden, Minnesota,United States,2015-12-30,Mathematics
-112,Olsen,Kjell,OlsenKjell.morris.umn.edu,Shoreview, Minnesota,United States,2016-12-30,Computer Science
-113,Wermerskirchen,Jennifer,WermerskirchenJennifer.morris.umn.edu,Pipestone, Minnesota,United States,2012-12-30,Statistics
-114,Greiman,Tara,GreimanTara.morris.umn.edu,Almelund, Minnesota,United States,2018-12-30,Statistics
-115,Borman,Kate,BormanKate.morris.umn.edu,Pratt, Minnesota,United States,2017-12-30,Music
-116,August-Hau,Megan,August-HauMegan.morris.umn.edu,Bena, Minnesota,United States,2020-12-30,Mathematics
-117,Kippley,Amy,KippleyAmy.morris.umn.edu,Saint Paul Park, Minnesota,United States,2019-12-30,Statistics
-118,Thebault-Spieker,Abigail,Thebault-SpiekerAbigail.morris.umn.edu,Isinours, Minnesota,United States,2014-12-30,Music
-119,Pettit,Chelsea,PettitChelsea.morris.umn.edu,Round Prairie, Minnesota,United States,2019-12-30,Music
-120,Johnson,Zach,JohnsonZach.morris.umn.edu,Holdingford, Minnesota,United States,2021-12-30,Mathematics
-121,Albright,Kathryn,AlbrightKathryn.morris.umn.edu,Clearbrook, Minnesota,United States,2010-12-30,Mathematics
-122,Linscheid,Neil,LinscheidNeil.morris.umn.edu,Forest Grove, Minnesota,United States,2009-12-30,Mathematics
-123,Harstad,Rachel,HarstadRachel.morris.umn.edu,Choice, Minnesota,United States,2019-12-30,Statistics
-124,Granaas,Amanda,GranaasAmanda.morris.umn.edu,Glyndon, Minnesota,United States,2008-12-30,Psychology
-125,Loehr,Emily,LoehrEmily.morris.umn.edu,Osage, Minnesota,United States,2011-12-30,Psychology
-126,White,Adrian,WhiteAdrian.morris.umn.edu,Morton, Minnesota,United States,2021-12-30,Psychology
-127,Bigley,Ann,BigleyAnn.morris.umn.edu,Sparta, Minnesota,United States,2010-12-30,Statistics
-128,Lenox,Caitlin,LenoxCaitlin.morris.umn.edu,Kandiyohi, Minnesota,United States,2014-12-30,Statistics
-129,Swinney,Jaclyn,SwinneyJaclyn.morris.umn.edu,Empire, Minnesota,United States,2011-12-30,Computer Science
-130,Hinnekamp,Nicholas,HinnekampNicholas.morris.umn.edu,Stroms, Minnesota,United States,2008-12-30,Mathematics
-131,Haider,Deon,HaiderDeon.morris.umn.edu,Lynd, Minnesota,United States,2013-12-30,Statistics
-132,Handlin,Michelle,HandlinMichelle.morris.umn.edu,Halma, Minnesota,United States,2019-12-30,Mathematics
-133,Gareis,Angeline,GareisAngeline.morris.umn.edu,Austin, Minnesota,United States,2013-12-30,Psychology
-134,Basel,Joseph,BaselJoseph.morris.umn.edu,Alida, Minnesota,United States,2012-12-30,Computer Science
-135,Hartmann,Joe,HartmannJoe.morris.umn.edu,Wilkinson, Minnesota,United States,2010-12-30,Music
-136,Billo,Bridget,BilloBridget.morris.umn.edu,Minnesota Lake, Minnesota,United States,2008-12-30,Music
-137,Elsner,Emily,ElsnerEmily.morris.umn.edu,Bluffton, Minnesota,United States,2011-12-30,Mathematics
-138,Cronk,Sarah,CronkSarah.morris.umn.edu,Owatonna, Minnesota,United States,2019-12-30,Music
-139,Luetmer,Johanna,LuetmerJohanna.morris.umn.edu,Grand Meadow, Minnesota,United States,2012-12-30,Music
-140,Tauer,Rhea,TauerRhea.morris.umn.edu,Dupont, Minnesota,United States,2014-12-30,Mathematics
-141,Potter,Leland,PotterLeland.morris.umn.edu,Minnesota City, Minnesota,United States,2009-12-30,Psychology
-142,Torkelson,Adam,TorkelsonAdam.morris.umn.edu,Snellman, Minnesota,United States,2017-12-30,Statistics
-143,Grabosky,Kate,GraboskyKate.morris.umn.edu,Diamond Corner, Minnesota,United States,2008-12-30,Mathematics
-144,Braegelman,Jon,BraegelmanJon.morris.umn.edu,Oaks Corner, Minnesota,United States,2020-12-30,Mathematics
-145,Hartman,Joseph,HartmanJoseph.morris.umn.edu,Rossburg, Minnesota,United States,2020-12-30,Statistics
-146,Rainey,Jamie,RaineyJamie.morris.umn.edu,Ross, Minnesota,United States,2020-12-30,Computer Science
-147,Loomis,Tar,LoomisTar.morris.umn.edu,Minnetonka, Minnesota,United States,2017-12-30,Music
-148,Olm,Rachel,OlmRachel.morris.umn.edu,Russell, Minnesota,United States,2017-12-30,Psychology
-149,Zachman,Luke,ZachmanLuke.morris.umn.edu,Heidelberg, Minnesota,United States,2017-12-30,Psychology
-150,Moulton,Mariah,MoultonMariah.morris.umn.edu,Rosen, Minnesota,United States,2018-12-30,Statistics
-151,Wagner,Allison,WagnerAllison.morris.umn.edu,Pine City, Minnesota,United States,2018-12-30,Computer Science
-152,Bowe,Andy,BoweAndy.morris.umn.edu,Brownton, Minnesota,United States,2021-12-30,Computer Science
-153,Valentiner,Ellis,ValentinerEllis.morris.umn.edu,Champlin, Minnesota,United States,2015-12-30,Statistics
-154,Vanasse,Luke,VanasseLuke.morris.umn.edu,Browerville, Minnesota,United States,2011-12-30,Mathematics
-155,Nelson,David,NelsonDavid.morris.umn.edu,Linden Grove, Minnesota,United States,2019-12-30,Computer Science
-156,Fine,Allison,FineAllison.morris.umn.edu,Ada, Minnesota,United States,2018-12-30,Music
-157,Miller,Samantha,MillerSamantha.morris.umn.edu,Hackett, Minnesota,United States,2015-12-30,Statistics
-158,Alsdurf,Kelly,AlsdurfKelly.morris.umn.edu,Fillmore, Minnesota,United States,2013-12-30,Statistics
-159,Martin,Carrie,MartinCarrie.morris.umn.edu,Nary, Minnesota,United States,2017-12-30,Computer Science
-160,Eger,Heidi,EgerHeidi.morris.umn.edu,Mentor, Minnesota,United States,2010-12-30,Music
-161,Hamrin,Chris,HamrinChris.morris.umn.edu,New Sweden, Minnesota,United States,2010-12-30,Mathematics
-162,Laughlin,Katherine,LaughlinKatherine.morris.umn.edu,Shoreview, Minnesota,United States,2011-12-30,Mathematics
-163,Mensen,Sarah,MensenSarah.morris.umn.edu,Pipestone, Minnesota,United States,2020-12-30,Computer Science
-164,Zachmann,Luke,ZachmannLuke.morris.umn.edu,Almelund, Minnesota,United States,2011-12-30,Music
-165,Murphy,Amanda,MurphyAmanda.morris.umn.edu,Pratt, Minnesota,United States,2021-12-30,Mathematics
-166,Albright,Katie,AlbrightKatie.morris.umn.edu,Bena, Minnesota,United States,2011-12-30,Mathematics
-167,Butler,Eugene,ButlerEugene.morris.umn.edu,Saint Paul Park, Minnesota,United States,2018-12-30,Statistics
-168,Schmidt,Tara,SchmidtTara.morris.umn.edu,Isinours, Minnesota,United States,2011-12-30,Computer Science
-169,Young,Ryan,YoungRyan.morris.umn.edu,Round Prairie, Minnesota,United States,2012-12-30,Computer Science
-170,Lawrence,Whitney,LawrenceWhitney.morris.umn.edu,Holdingford, Minnesota,United States,2015-12-30,Computer Science
-171,Wencl,Jeff,WenclJeff.morris.umn.edu,Clearbrook, Minnesota,United States,2009-12-30,Psychology
-172,Nezhad,Sheila,NezhadSheila.morris.umn.edu,Forest Grove, Minnesota,United States,2019-12-30,Mathematics
-173,Malone,Patrick,MalonePatrick.morris.umn.edu,Choice, Minnesota,United States,2012-12-30,Music
-174,Johnson,Holly,JohnsonHolly.morris.umn.edu,Glyndon, Minnesota,United States,2012-12-30,Computer Science
-175,Laughlin,Katie,LaughlinKatie.morris.umn.edu,Osage, Minnesota,United States,2008-12-30,Computer Science
-176,Little,Matthew,LittleMatthew.morris.umn.edu,Morton, Minnesota,United States,2014-12-30,Statistics
-177,Brun,Maria,BrunMaria.morris.umn.edu,Sparta, Minnesota,United States,2008-12-30,Psychology
-178,Benson,Troy,BensonTroy.morris.umn.edu,Kandiyohi, Minnesota,United States,2008-12-30,Psychology
-179,Dux,Clara,DuxClara.morris.umn.edu,Empire, Minnesota,United States,2011-12-30,Psychology
-180,Bloomquist,Ian,BloomquistIan.morris.umn.edu,Stroms, Minnesota,United States,2018-12-30,Mathematics
-181,Earl,Attina,EarlAttina.morris.umn.edu,Lynd, Minnesota,United States,2010-12-30,Statistics
-182,Gaffney,Kyle,GaffneyKyle.morris.umn.edu,Halma, Minnesota,United States,2017-12-30,Music
-183,Kildegaard,Anika,KildegaardAnika.morris.umn.edu,Austin, Minnesota,United States,2009-12-30,Statistics
-184,La Qua,Mariah,La QuaMariah.morris.umn.edu,Alida, Minnesota,United States,2008-12-30,Computer Science
-185,Primus,Mitch,PrimusMitch.morris.umn.edu,Wilkinson, Minnesota,United States,2015-12-30,Music
-186,Roloff,Thomas,RoloffThomas.morris.umn.edu,Minnesota Lake, Minnesota,United States,2009-12-30,Computer Science
-187,Schwieger,Emily,SchwiegerEmily.morris.umn.edu,Bluffton, Minnesota,United States,2021-12-30,Statistics
-188,Roy,Jodie,RoyJodie.morris.umn.edu,Owatonna, Minnesota,United States,2015-12-30,Psychology
-189,Williams,Katie,WilliamsKatie.morris.umn.edu,Grand Meadow, Minnesota,United States,2020-12-30,Psychology
-190,Williams-Droske,Anne,Williams-DroskeAnne.morris.umn.edu,Dupont, Minnesota,United States,2014-12-30,Computer Science
-191,Madden,Dana,MaddenDana.morris.umn.edu,Minnesota City, Minnesota,United States,2017-12-30,Psychology
-192,Feely,Joseph,FeelyJoseph.morris.umn.edu,Snellman, Minnesota,United States,2017-12-30,Statistics
-193,Fairbanks,Hazen,FairbanksHazen.morris.umn.edu,Diamond Corner, Minnesota,United States,2016-12-30,Statistics
-194,Raverty,Alexis,RavertyAlexis.morris.umn.edu,Oaks Corner, Minnesota,United States,2017-12-30,Mathematics
-195,Her,Meng,HerMeng.morris.umn.edu,Rossburg, Minnesota,United States,2014-12-30,Mathematics
-196,Vue,Kao,VueKao.morris.umn.edu,Ross, Minnesota,United States,2016-12-30,Statistics
-197,Schiappacasse,Angela,SchiappacasseAngela.morris.umn.edu,Minnetonka, Minnesota,United States,2010-12-30,Psychology
-198,Kamm,Kaitlin,KammKaitlin.morris.umn.edu,Russell, Minnesota,United States,2010-12-30,Statistics
-199,Bennett,Kristin,BennettKristin.morris.umn.edu,Heidelberg, Minnesota,United States,2015-12-30,Mathematics
-200,Griepentrog,Beth,GriepentrogBeth.morris.umn.edu,Rosen, Minnesota,United States,2011-12-30,Statistics
-201,Walker-Authur,Mofuah,Walker-AuthurMofuah.morris.umn.edu,Pine City, Minnesota,United States,2019-12-30,Statistics
-202,Carr,Karen,CarrKaren.morris.umn.edu,Brownton, Minnesota,United States,2009-12-30,Statistics
-203,Von Arx,Abby,Von ArxAbby.morris.umn.edu,Champlin, Minnesota,United States,2009-12-30,Mathematics
-204,Mattson,Josh,MattsonJosh.morris.umn.edu,Browerville, Minnesota,United States,2008-12-30,Mathematics
-205,Dunlavy,Joseph,DunlavyJoseph.morris.umn.edu,Linden Grove, Minnesota,United States,2016-12-30,Computer Science
-206,Borgendale,Colleen,BorgendaleColleen.morris.umn.edu,Ada, Minnesota,United States,2009-12-30,Music
-207,Janca,Jeff,JancaJeff.morris.umn.edu,Hackett, Minnesota,United States,2019-12-30,Psychology
-208,Albrecht,Chelsey,AlbrechtChelsey.morris.umn.edu,Fillmore, Minnesota,United States,2021-12-30,Psychology
-209,Jacobson,Amanda,JacobsonAmanda.morris.umn.edu,Nary, Minnesota,United States,2020-12-30,Psychology
-210,Hong,Sungmin,HongSungmin.morris.umn.edu,Mentor, Minnesota,United States,2011-12-30,Psychology
-211,Olson,Michele,OlsonMichele.morris.umn.edu,New Sweden, Minnesota,United States,2011-12-30,Statistics
-212,Latterner,Andrew,LatternerAndrew.morris.umn.edu,Shoreview, Minnesota,United States,2009-12-30,Music
-213,Kopet,Sonia,KopetSonia.morris.umn.edu,Pipestone, Minnesota,United States,2008-12-30,Mathematics
-214,Awoudi,Olivia,AwoudiOlivia.morris.umn.edu,Almelund, Minnesota,United States,2018-12-30,Mathematics
-215,Olson,Kaelyn,OlsonKaelyn.morris.umn.edu,Pratt, Minnesota,United States,2014-12-30,Computer Science
-216,Jensen,Elizabeth,JensenElizabeth.morris.umn.edu,Bena, Minnesota,United States,2019-12-30,Psychology
-217,Lynch,Colin,LynchColin.morris.umn.edu,Saint Paul Park, Minnesota,United States,2012-12-30,Computer Science
-218,Eveslage,Paul,EveslagePaul.morris.umn.edu,Isinours, Minnesota,United States,2019-12-30,Computer Science
-219,Siefkes,Caitlin,SiefkesCaitlin.morris.umn.edu,Round Prairie, Minnesota,United States,2008-12-30,Psychology
-220,Anderson,Alex,AndersonAlex.morris.umn.edu,Holdingford, Minnesota,United States,2013-12-30,Computer Science
-221,Miller,Jennifer,MillerJennifer.morris.umn.edu,Clearbrook, Minnesota,United States,2010-12-30,Statistics
-222,Wente,Naomi,WenteNaomi.morris.umn.edu,Forest Grove, Minnesota,United States,2010-12-30,Statistics
-223,Steward,Kaitlyn,StewardKaitlyn.morris.umn.edu,Choice, Minnesota,United States,2010-12-30,Statistics
-224,Hodson,Jason,HodsonJason.morris.umn.edu,Glyndon, Minnesota,United States,2009-12-30,Music
-225,Anderson,Jessica,AndersonJessica.morris.umn.edu,Osage, Minnesota,United States,2011-12-30,Music
-226,Van Cleve,Zachary,Van CleveZachary.morris.umn.edu,Morton, Minnesota,United States,2013-12-30,Mathematics
-227,Aurentz,Lydea,AurentzLydea.morris.umn.edu,Sparta, Minnesota,United States,2010-12-30,Statistics
-228,Chea,Gwendorlene,CheaGwendorlene.morris.umn.edu,Kandiyohi, Minnesota,United States,2012-12-30,Psychology
-229,Elsen,Seth,ElsenSeth.morris.umn.edu,Empire, Minnesota,United States,2017-12-30,Psychology
-230,Davidson,Larissa,DavidsonLarissa.morris.umn.edu,Stroms, Minnesota,United States,2017-12-30,Music
-231,Zachman,Matt,ZachmanMatt.morris.umn.edu,Lynd, Minnesota,United States,2020-12-30,Statistics
-232,Bjorklund,Calla,BjorklundCalla.morris.umn.edu,Halma, Minnesota,United States,2019-12-30,Psychology
-233,Myers-Kuykindall,Josephine,Myers-KuykindallJosephine.morris.umn.edu,Austin, Minnesota,United States,2009-12-30,Statistics
-234,Bisek,Ashley,BisekAshley.morris.umn.edu,Alida, Minnesota,United States,2019-12-30,Psychology
-235,Schaeppi,Rebecca,SchaeppiRebecca.morris.umn.edu,Wilkinson, Minnesota,United States,2021-12-30,Psychology
-236,Murphy,Alex,MurphyAlex.morris.umn.edu,Minnesota Lake, Minnesota,United States,2013-12-30,Statistics
-237,Lesmeister,Audrey,LesmeisterAudrey.morris.umn.edu,Bluffton, Minnesota,United States,2018-12-30,Music
-238,Peterson,Nick,PetersonNick.morris.umn.edu,Owatonna, Minnesota,United States,2014-12-30,Computer Science
-239,Jasper,Blair,JasperBlair.morris.umn.edu,Grand Meadow, Minnesota,United States,2015-12-30,Computer Science
-240,Fox,Amy,FoxAmy.morris.umn.edu,Dupont, Minnesota,United States,2009-12-30,Statistics
-241,Ingram,Brittany,IngramBrittany.morris.umn.edu,Minnesota City, Minnesota,United States,2021-12-30,Mathematics
-242,Jiru,Ayano,JiruAyano.morris.umn.edu,Snellman, Minnesota,United States,2020-12-30,Psychology
-243,Chan,Amanda,ChanAmanda.morris.umn.edu,Diamond Corner, Minnesota,United States,2013-12-30,Statistics
-244,Minion,Amanda,MinionAmanda.morris.umn.edu,Oaks Corner, Minnesota,United States,2016-05-30,Music
-245,Hartke,Alison,HartkeAlison.morris.umn.edu,Rossburg, Minnesota,United States,2011-05-30,Statistics
-246,Pederson,Jessica,PedersonJessica.morris.umn.edu,Ross, Minnesota,United States,2009-05-30,Computer Science
-247,Orth,Jessica,OrthJessica.morris.umn.edu,Minnetonka, Minnesota,United States,2020-05-30,Computer Science
-248,Williams,Douglas,WilliamsDouglas.morris.umn.edu,Russell, Minnesota,United States,2015-05-30,Computer Science
-249,Hicks,Gordon,HicksGordon.morris.umn.edu,Heidelberg, Minnesota,United States,2014-05-30,Psychology
-250,Holst,Jordan,HolstJordan.morris.umn.edu,Rosen, Minnesota,United States,2013-05-30,Music
-251,Baratta,Vanessa,BarattaVanessa.morris.umn.edu,Pine City, Minnesota,United States,2011-05-30,Music
-252,Galbraith,Katie,GalbraithKatie.morris.umn.edu,Brownton, Minnesota,United States,2011-05-30,Statistics
-253,Ivers,Jamin,IversJamin.morris.umn.edu,Champlin, Minnesota,United States,2014-05-30,Computer Science
-254,Johnson,Nic,JohnsonNic.morris.umn.edu,Browerville, Minnesota,United States,2014-05-30,Psychology
-255,Grieme,Nick,GriemeNick.morris.umn.edu,Linden Grove, Minnesota,United States,2015-05-30,Psychology
-256,Menden,John,MendenJohn.morris.umn.edu,Ada, Minnesota,United States,2018-05-30,Music
-257,Bloedel,Matt,BloedelMatt.morris.umn.edu,Hackett, Minnesota,United States,2011-05-30,Psychology
-258,Paulson,Ericka,PaulsonEricka.morris.umn.edu,Fillmore, Minnesota,United States,2020-05-30,Psychology
-259,Petersen,Nick,PetersenNick.morris.umn.edu,Nary, Minnesota,United States,2018-05-30,Mathematics
-260,Strissel,Kristen,StrisselKristen.morris.umn.edu,Mentor, Minnesota,United States,2009-05-30,Psychology
-261,Haggerty,Shelly,HaggertyShelly.morris.umn.edu,New Sweden, Minnesota,United States,2008-05-30,Psychology
-262,Danielson,Alexis,DanielsonAlexis.morris.umn.edu,Shoreview, Minnesota,United States,2018-05-30,Psychology
-263,Schacherer,Travis,SchachererTravis.morris.umn.edu,Pipestone, Minnesota,United States,2008-05-30,Statistics
-264,Morrill,Kayla,MorrillKayla.morris.umn.edu,Almelund, Minnesota,United States,2010-05-30,Statistics
-265,Diekman,Sarah,DiekmanSarah.morris.umn.edu,Pratt, Minnesota,United States,2020-05-30,Computer Science
-266,Schliep,Katherine,SchliepKatherine.morris.umn.edu,Bena, Minnesota,United States,2016-05-30,Statistics
-267,Bormann,Brittany,BormannBrittany.morris.umn.edu,Saint Paul Park, Minnesota,United States,2011-05-30,Statistics
-268,Potter,Sam,PotterSam.morris.umn.edu,Isinours, Minnesota,United States,2019-05-30,Psychology
-269,Arnold,Seth,ArnoldSeth.morris.umn.edu,Round Prairie, Minnesota,United States,2017-05-30,Music
-270,Loomis,Tara,LoomisTara.morris.umn.edu,Holdingford, Minnesota,United States,2020-05-30,Psychology
-271,Fischer,Clayton,FischerClayton.morris.umn.edu,Clearbrook, Minnesota,United States,2020-05-30,Psychology
-272,Kloos,Kayla,KloosKayla.morris.umn.edu,Forest Grove, Minnesota,United States,2011-05-30,Statistics
-273,Hanson,Bonita,HansonBonita.morris.umn.edu,Choice, Minnesota,United States,2019-05-30,Mathematics
-274,Anderson,Laura,AndersonLaura.morris.umn.edu,Glyndon, Minnesota,United States,2020-05-30,Computer Science
-275,Kuismi,Danielle,KuismiDanielle.morris.umn.edu,Osage, Minnesota,United States,2009-05-30,Statistics
-276,Lund,Alicia,LundAlicia.morris.umn.edu,Morton, Minnesota,United States,2012-05-30,Mathematics
-277,Klimek,Katie,KlimekKatie.morris.umn.edu,Sparta, Minnesota,United States,2016-05-30,Psychology
-278,Noyes,Lauren,NoyesLauren.morris.umn.edu,Kandiyohi, Minnesota,United States,2010-05-30,Statistics
-279,Sorensen,Mike,SorensenMike.morris.umn.edu,Empire, Minnesota,United States,2011-05-30,Psychology
-280,Montanez,Christina,MontanezChristina.morris.umn.edu,Stroms, Minnesota,United States,2020-05-30,Statistics
-281,Naidu,Prash,NaiduPrash.morris.umn.edu,Lynd, Minnesota,United States,2015-05-30,Major
-282,Raymond,Kate,RaymondKate.morris.umn.edu,Halma, Minnesota,United States,2011-05-30,Psychology
-283,Marks,Alynea,MarksAlynea.morris.umn.edu,Austin, Minnesota,United States,2021-05-30,Statistics
-284,Moerke,Margaret,MoerkeMargaret.morris.umn.edu,Alida, Minnesota,United States,2017-05-30,Music
-285,Hollermann,Grant,HollermannGrant.morris.umn.edu,Wilkinson, Minnesota,United States,2009-05-30,Psychology
-286,Gruenes,Amanda,GruenesAmanda.morris.umn.edu,Minnesota Lake, Minnesota,United States,2009-05-30,Psychology
-287,Thomas,Katelynn,ThomasKatelynn.morris.umn.edu,Bluffton, Minnesota,United States,2021-05-30,Psychology
-288,Conroy,Dan,ConroyDan.morris.umn.edu,Owatonna, Minnesota,United States,2015-05-30,Computer Science
-289,Abdi,Mahad,AbdiMahad.morris.umn.edu,Grand Meadow, Minnesota,United States,2009-05-30,Music
-290,Chang,Seokkun,ChangSeokkun.morris.umn.edu,Dupont, Minnesota,United States,2012-05-30,Psychology
-291,Choi,Joel,ChoiJoel.morris.umn.edu,Minnesota City, Minnesota,United States,2020-05-30,Psychology
-292,Gaffaney,Kyle,GaffaneyKyle.morris.umn.edu,Snellman, Minnesota,United States,2014-05-30,Psychology
-293,Jindrich,Kayla,JindrichKayla.morris.umn.edu,Diamond Corner, Minnesota,United States,2011-05-30,Psychology
-294,Larkin,Nicole,LarkinNicole.morris.umn.edu,Oaks Corner, Minnesota,United States,2013-05-30,Statistics
-295,LaQua,Mariah,LaQuaMariah.morris.umn.edu,Rossburg, Minnesota,United States,2011-05-30,Music
-296,MacMillan,Abbie,MacMillanAbbie.morris.umn.edu,Ross, Minnesota,United States,2021-05-30,Statistics
-297,Murdock,David,MurdockDavid.morris.umn.edu,Minnetonka, Minnesota,United States,2013-05-30,Mathematics
-298,Olerud,Jordan,OlerudJordan.morris.umn.edu,Russell, Minnesota,United States,2008-05-30,Computer Science
-299,Pearce,Alaina,PearceAlaina.morris.umn.edu,Heidelberg, Minnesota,United States,2013-05-30,Music
-300,Sadecki,Brianna,SadeckiBrianna.morris.umn.edu,Rosen, Minnesota,United States,2017-05-30,Statistics
-301,Riley,Amanda,RileyAmanda.morris.umn.edu,Pine City, Minnesota,United States,2013-05-30,Music
-302,Scribner,Michelle,ScribnerMichelle.morris.umn.edu,Brownton, Minnesota,United States,2018-05-30,Mathematics
-303,Kahlenbeck,Josie,KahlenbeckJosie.morris.umn.edu,Champlin, Minnesota,United States,2020-05-30,Psychology
-304,Marcus,Elizabeth,MarcusElizabeth.morris.umn.edu,Browerville, Minnesota,United States,2020-05-30,Mathematics
-305,Schuldt,Benjamin,SchuldtBenjamin.morris.umn.edu,Linden Grove, Minnesota,United States,2014-05-30,Music
-306,Short,Alexander,ShortAlexander.morris.umn.edu,Ada, Minnesota,United States,2019-05-30,Psychology
-307,Blank,Patty,BlankPatty.morris.umn.edu,Hackett, Minnesota,United States,2010-05-30,Statistics
-308,Flanders,Dugan,FlandersDugan.morris.umn.edu,Fillmore, Minnesota,United States,2013-05-30,Statistics
-309,Schmidt,Andrew,SchmidtAndrew.morris.umn.edu,Nary, Minnesota,United States,2010-05-30,Statistics
-310,Rudeen,Charles,RudeenCharles.morris.umn.edu,Mentor, Minnesota,United States,2010-05-30,Computer Science
-311,Fisher,Ellery,FisherEllery.morris.umn.edu,New Sweden, Minnesota,United States,2016-05-30,Statistics
-312,Hildreth,Laura,HildrethLaura.morris.umn.edu,Shoreview, Minnesota,United States,2015-05-30,Music
-313,Whipple,Kelly,WhippleKelly.morris.umn.edu,Pipestone, Minnesota,United States,2016-05-30,Computer Science
-314,Young-Stephens,Meghan,Young-StephensMeghan.morris.umn.edu,Almelund, Minnesota,United States,2019-05-30,Music
-315,Kim,June,KimJune.morris.umn.edu,Pratt, Minnesota,United States,2019-05-30,Mathematics
-316,Kim,Pulum,KimPulum.morris.umn.edu,Bena, Minnesota,United States,2010-05-30,Computer Science
-317,Logan,Kevin,LoganKevin.morris.umn.edu,Saint Paul Park, Minnesota,United States,2021-05-30,Psychology
-318,Wessel,Ehren,WesselEhren.morris.umn.edu,Isinours, Minnesota,United States,2010-05-30,Music
-319,Ottinger,Matt,OttingerMatt.morris.umn.edu,Round Prairie, Minnesota,United States,2018-05-30,Mathematics
-320,Rousseau,Matt,RousseauMatt.morris.umn.edu,Holdingford, Minnesota,United States,2010-05-30,Computer Science
-321,O'Leary,Tully,O'LearyTully.morris.umn.edu,Clearbrook, Minnesota,United States,2010-05-30,Psychology
-322,Olson,Amanda,OlsonAmanda.morris.umn.edu,Forest Grove, Minnesota,United States,2011-05-30,Music
-323,Deuth,Joel,DeuthJoel.morris.umn.edu,Choice, Minnesota,United States,2010-05-30,Statistics
-324,Anderson,Jacob,AndersonJacob.morris.umn.edu,Glyndon, Minnesota,United States,2012-05-30,Psychology
-325,Clark,Katherine,ClarkKatherine.morris.umn.edu,Osage, Minnesota,United States,2019-05-30,Statistics
-326,Coulombe,Brad,CoulombeBrad.morris.umn.edu,Morton, Minnesota,United States,2017-05-30,Computer Science
-327,Moore,Dan,MooreDan.morris.umn.edu,Sparta, Minnesota,United States,2021-05-30,Psychology
-328,Mowry,Evan,MowryEvan.morris.umn.edu,Kandiyohi, Minnesota,United States,2021-05-30,Computer Science
-329,Opatz,Hilary,OpatzHilary.morris.umn.edu,Empire, Minnesota,United States,2018-05-30,Computer Science
-330,Yard,Christopher,YardChristopher.morris.umn.edu,Stroms, Minnesota,United States,2015-05-30,Psychology
-331,Rousseau,Matthew,RousseauMatthew.morris.umn.edu,Lynd, Minnesota,United States,2012-05-30,Psychology
-332,Yang,Paajnyag,YangPaajnyag.morris.umn.edu,Halma, Minnesota,United States,2009-05-30,Statistics
-333,Chen,Yuechen,ChenYuechen.morris.umn.edu,Austin, Minnesota,United States,2012-05-30,Computer Science
-334,Chen,Chen,ChenChen.morris.umn.edu,Alida, Minnesota,United States,2010-05-30,Statistics
-335,Jiao,Yifei,JiaoYifei.morris.umn.edu,Wilkinson, Minnesota,United States,2013-05-30,Psychology
-336,Machayo,Anita,MachayoAnita.morris.umn.edu,Minnesota Lake, Minnesota,United States,2011-05-30,Mathematics
-337,Piwko,Jake,PiwkoJake.morris.umn.edu,Bluffton, Minnesota,United States,2015-05-30,Statistics
-338,Schmidt,Jennifer,SchmidtJennifer.morris.umn.edu,Owatonna, Minnesota,United States,2015-05-30,Psychology
-339,Sperr,Marilyn,SperrMarilyn.morris.umn.edu,Grand Meadow, Minnesota,United States,2014-05-30,Music
-340,Xu,Duoduo,XuDuoduo.morris.umn.edu,Dupont, Minnesota,United States,2013-05-30,Statistics
-341,Leuty,Elizabeth,LeutyElizabeth.morris.umn.edu,Minnesota City, Minnesota,United States,2015-05-30,Statistics
-342,Patterson,Ian,PattersonIan.morris.umn.edu,Snellman, Minnesota,United States,2017-05-30,Psychology
-343,Hartmann,Joseph,HartmannJoseph.morris.umn.edu,Diamond Corner, Minnesota,United States,2020-05-30,Mathematics
-344,Lowe,Lucy,LoweLucy.morris.umn.edu,Oaks Corner, Minnesota,United States,2019-05-30,Mathematics
-345,Morris,Jenny,MorrisJenny.morris.umn.edu,Rossburg, Minnesota,United States,2013-05-30,Music
-346,Peters,Sara,PetersSara.morris.umn.edu,Ross, Minnesota,United States,2012-05-30,Computer Science
-347,Woods,Ashley,WoodsAshley.morris.umn.edu,Minnetonka, Minnesota,United States,2009-05-30,Music
-348,Koch,Kendra,KochKendra.morris.umn.edu,Russell, Minnesota,United States,2013-05-30,Computer Science
-349,Maas,Sara,MaasSara.morris.umn.edu,Heidelberg, Minnesota,United States,2019-05-30,Psychology
-350,Jenson,Amanda,JensonAmanda.morris.umn.edu,Rosen, Minnesota,United States,2017-05-30,Music
-351,Maatz,Kali,MaatzKali.morris.umn.edu,Pine City, Minnesota,United States,2015-05-30,Statistics
-352,Dempcy,Brian,DempcyBrian.morris.umn.edu,Brownton, Minnesota,United States,2008-05-30,Statistics
-353,Rostberg,Heidi,RostbergHeidi.morris.umn.edu,Champlin, Minnesota,United States,2021-05-30,Statistics
-354,Martin,Brianna,MartinBrianna.morris.umn.edu,Browerville, Minnesota,United States,2014-05-30,Mathematics
-355,Wolf,Justine,WolfJustine.morris.umn.edu,Linden Grove, Minnesota,United States,2016-05-30,Computer Science
-356,Faber,Alex,FaberAlex.morris.umn.edu,Ada, Minnesota,United States,2008-05-30,Computer Science
-357,Engh,Rachel,EnghRachel.morris.umn.edu,Hackett, Minnesota,United States,2018-05-30,Psychology
-358,Primus,Mitchell,PrimusMitchell.morris.umn.edu,Fillmore, Minnesota,United States,2020-05-30,Computer Science
-359,Walker,Mofuah,WalkerMofuah.morris.umn.edu,Nary, Minnesota,United States,2010-05-30,Psychology
-360,Brett,Arthur,BrettArthur.morris.umn.edu,Mentor, Minnesota,United States,2010-05-30,Statistics
-361,Liz Schlimgen,Hucka,Liz SchlimgenHucka.morris.umn.edu,New Sweden, Minnesota,United States,2010-05-30,Statistics
-362,Olson,Adam,OlsonAdam.morris.umn.edu,Shoreview, Minnesota,United States,2009-05-30,Psychology
-363,Droog,Dana,DroogDana.morris.umn.edu,Pipestone, Minnesota,United States,2011-05-30,Statistics
-364,Elson,Seth,ElsonSeth.morris.umn.edu,Almelund, Minnesota,United States,2013-05-30,Statistics
-365,Kawaleck,Melinda,KawaleckMelinda.morris.umn.edu,Pratt, Minnesota,United States,2008-05-30,Mathematics
-366,Evenson,Jennifer,EvensonJennifer.morris.umn.edu,Bena, Minnesota,United States,2014-05-30,Psychology
-367,McMahon,Cassandra,McMahonCassandra.morris.umn.edu,Saint Paul Park, Minnesota,United States,2013-05-30,Computer Science
-368,Becker,Mackenzie,BeckerMackenzie.morris.umn.edu,Isinours, Minnesota,United States,2010-05-30,Music
-369,Kuseske,Andrea,KuseskeAndrea.morris.umn.edu,Round Prairie, Minnesota,United States,2020-05-30,Statistics
-370,Thompson,Kaitlin,ThompsonKaitlin.morris.umn.edu,Holdingford, Minnesota,United States,2011-05-30,Psychology
-371,Coyer,Brianne,CoyerBrianne.morris.umn.edu,Clearbrook, Minnesota,United States,2009-05-30,Mathematics
-372,Rosana,Stacey,RosanaStacey.morris.umn.edu,Forest Grove, Minnesota,United States,2017-05-30,Psychology
-373,Johnson,Zachary,JohnsonZachary.morris.umn.edu,Choice, Minnesota,United States,2018-05-30,Psychology
-374,Prieve,Ashley,PrieveAshley.morris.umn.edu,Glyndon, Minnesota,United States,2013-05-30,Computer Science
-375,Thompson,Alex,ThompsonAlex.morris.umn.edu,Osage, Minnesota,United States,2016-05-30,Statistics
-376,Privratsky,Matt,PrivratskyMatt.morris.umn.edu,Morton, Minnesota,United States,2011-05-30,Mathematics
-377,Bergeland,Eric,BergelandEric.morris.umn.edu,Sparta, Minnesota,United States,2013-05-30,Computer Science
-378,Swanson,Sonja,SwansonSonja.morris.umn.edu,Kandiyohi, Minnesota,United States,2008-05-30,Music
-379,Jacques,Joanna,JacquesJoanna.morris.umn.edu,Empire, Minnesota,United States,2011-05-30,Computer Science
-380,Gronfeld,Melissa,GronfeldMelissa.morris.umn.edu,Stroms, Minnesota,United States,2018-05-30,Statistics
-381,Gulbrandson,Sarah,GulbrandsonSarah.morris.umn.edu,Lynd, Minnesota,United States,2011-05-30,Computer Science
-382,Lenzmeier,Lisa,LenzmeierLisa.morris.umn.edu,Halma, Minnesota,United States,2018-05-30,Music
-383,Stevens,Darla,StevensDarla.morris.umn.edu,Austin, Minnesota,United States,2010-05-30,Statistics
-384,Sperr,Brandi,SperrBrandi.morris.umn.edu,Alida, Minnesota,United States,2018-05-30,Computer Science
-385,Boyle,Rachel,BoyleRachel.morris.umn.edu,Wilkinson, Minnesota,United States,2018-05-30,Music
-386,Anderson,Maren,AndersonMaren.morris.umn.edu,Minnesota Lake, Minnesota,United States,2011-05-30,Mathematics
-387,Nayar,Daan,NayarDaan.morris.umn.edu,Bluffton, Minnesota,United States,2010-05-30,Psychology
-388,Saddison,Katie,SaddisonKatie.morris.umn.edu,Owatonna, Minnesota,United States,2016-05-30,Statistics
-389,McCann,Ellie,McCannEllie.morris.umn.edu,Grand Meadow, Minnesota,United States,2013-05-30,Computer Science
-390,Duth,Joel,DuthJoel.morris.umn.edu,Dupont, Minnesota,United States,2008-05-30,Music
-391,Bragelman,John,BragelmanJohn.morris.umn.edu,Minnesota City, Minnesota,United States,2008-05-30,Mathematics
-392,Kelsey,Austin,KelseyAustin.morris.umn.edu,Snellman, Minnesota,United States,2019-05-30,Psychology
-393,Turkson-Robinson,Masera,Turkson-RobinsonMasera.morris.umn.edu,Diamond Corner, Minnesota,United States,2015-05-30,Psychology
-394,Kloek,Melissa,KloekMelissa.morris.umn.edu,Oaks Corner, Minnesota,United States,2015-05-30,Psychology
-395,Pridmore,Kayla,PridmoreKayla.morris.umn.edu,Rossburg, Minnesota,United States,2020-05-30,Psychology
-396,Henkel,Jolee,HenkelJolee.morris.umn.edu,Ross, Minnesota,United States,2020-05-30,Mathematics
-397,Black,Sarah,BlackSarah.morris.umn.edu,Minnetonka, Minnesota,United States,2021-05-30,Psychology
-398,Buchen,Karin,BuchenKarin.morris.umn.edu,Russell, Minnesota,United States,2016-05-30,Music
-399,Baker,Leo,BakerLeo.morris.umn.edu,Heidelberg, Minnesota,United States,2019-05-30,Statistics
-400,Brueske,Ashley,BrueskeAshley.morris.umn.edu,Rosen, Minnesota,United States,2016-05-30,Music
-401,Ptacek,Kevin,PtacekKevin.morris.umn.edu,Pine City, Minnesota,United States,2017-05-30,Computer Science
-402,Grabosky,Kathryn,GraboskyKathryn.morris.umn.edu,Brownton, Minnesota,United States,2019-05-30,Psychology
-403,Ertle,Kristine,ErtleKristine.morris.umn.edu,Champlin, Minnesota,United States,2017-05-30,Psychology
-404,Lucht,Ashley,LuchtAshley.morris.umn.edu,Browerville, Minnesota,United States,2017-05-30,Psychology
-405,Meiser,Rachel,MeiserRachel.morris.umn.edu,Linden Grove, Minnesota,United States,2018-05-30,Computer Science
-406,Hanson,Brent,HansonBrent.morris.umn.edu,Ada, Minnesota,United States,2014-05-30,Computer Science
-407,Goodfellow,Bobby,GoodfellowBobby.morris.umn.edu,Hackett, Minnesota,United States,2010-05-30,Computer Science
-408,Toso,Luke,TosoLuke.morris.umn.edu,Fillmore, Minnesota,United States,2021-05-30,Psychology
-409,Armstrong,Jessica,ArmstrongJessica.morris.umn.edu,Nary, Minnesota,United States,2011-05-30,Music
-410,Jones,John,JonesJohn.morris.umn.edu,Mentor, Minnesota,United States,2016-05-30,Statistics
-411,Droske,Christopher,DroskeChristopher.morris.umn.edu,New Sweden, Minnesota,United States,2019-05-30,Computer Science
-412,Sweep,Sydney,SweepSydney.morris.umn.edu,Shoreview, Minnesota,United States,2013-05-30,Psychology
-413,Fischer,Clay,FischerClay.morris.umn.edu,Pipestone, Minnesota,United States,2016-05-30,Music
-414,Beattie,Alicia,BeattieAlicia.morris.umn.edu,Almelund, Minnesota,United States,2009-05-30,Statistics
-415,Kopet,Sonya,KopetSonya.morris.umn.edu,Pratt, Minnesota,United States,2010-05-30,Psychology
-416,Holland,Laura,HollandLaura.morris.umn.edu,Bena, Minnesota,United States,2017-05-30,Music
-417,White,Erick,WhiteErick.morris.umn.edu,Saint Paul Park, Minnesota,United States,2011-05-30,Mathematics
-418,Moulton,Rilee,MoultonRilee.morris.umn.edu,Isinours, Minnesota,United States,2019-05-30,Statistics
-419,Wohlwend,Rachel,WohlwendRachel.morris.umn.edu,Round Prairie, Minnesota,United States,2020-05-30,Psychology
-420,Halls,Kimberly,HallsKimberly.morris.umn.edu,Holdingford, Minnesota,United States,2020-05-30,Psychology
-421,Gerde,John,GerdeJohn.morris.umn.edu,Clearbrook, Minnesota,United States,2017-05-30,Music
-422,Carruth,Emily,CarruthEmily.morris.umn.edu,Forest Grove, Minnesota,United States,2014-05-30,Mathematics
-423,Thole,Josie,TholeJosie.morris.umn.edu,Choice, Minnesota,United States,2020-05-30,Mathematics
-424,Cornell,Amanda,CornellAmanda.morris.umn.edu,Glyndon, Minnesota,United States,2014-05-30,Music
-425,McClernon,Nicole,McClernonNicole.morris.umn.edu,Osage, Minnesota,United States,2014-05-30,Music
-426,Borgheiinck,Holly,BorgheiinckHolly.morris.umn.edu,Morton, Minnesota,United States,2009-05-30,Psychology
-427,Weick,Savannah,WeickSavannah.morris.umn.edu,Sparta, Minnesota,United States,2009-05-30,Psychology
-428,McClernon,Eilzabeth,McClernonEilzabeth.morris.umn.edu,Kandiyohi, Minnesota,United States,2019-05-30,Psychology
-429,Souza,Haley,SouzaHaley.morris.umn.edu,Empire, Minnesota,United States,2015-05-30,Mathematics
-430,Hyde,Kahsha,HydeKahsha.morris.umn.edu,Stroms, Minnesota,United States,2021-05-30,Statistics
-431,Einertson,Joseph,EinertsonJoseph.morris.umn.edu,Lynd, Minnesota,United States,2015-05-30,Music
-432,Russell,Sara,RussellSara.morris.umn.edu,Halma, Minnesota,United States,2017-05-30,Mathematics
-433,Kaye,Alice,KayeAlice.morris.umn.edu,Austin, Minnesota,United States,2014-05-30,Statistics
-434,Sims,Laura,SimsLaura.morris.umn.edu,Alida, Minnesota,United States,2013-05-30,Music
-435,Einertson,Joe,EinertsonJoe.morris.umn.edu,Wilkinson, Minnesota,United States,2015-05-30,Music
-436,Johnson,Amy,JohnsonAmy.morris.umn.edu,Minnesota Lake, Minnesota,United States,2011-05-30,Computer Science
-437,August Hau,Megan,August HauMegan.morris.umn.edu,Bluffton, Minnesota,United States,2008-05-30,Psychology
-438,Kocer,Tynell,KocerTynell.morris.umn.edu,Owatonna, Minnesota,United States,2011-05-30,Statistics
-439,Ahmed,Anwar,AhmedAnwar.morris.umn.edu,Grand Meadow, Minnesota,United States,2012-05-30,Statistics
+1,Schlimgen,Liz,SchlimgenLiz@morris.umn.edu,Kandiyohi, Michigan,United States,2021-05-30,Mathematics
+2,Peterson,Michael,PetersonMichael@morris.umn.edu,Hackett, Minnesota,United States,2021-05-30,Psychology
+3,Lossing,Austin,LossingAustin@morris.umn.edu,Pipestone, Minnesota,China,2021-05-30,Mathematics
+4,Schuldt,Ben,SchuldtBen@morris.umn.edu,Mentor, Wyoming,China,2010-05-30,Computer Science
+5,Moyer,Madeline,MoyerMadeline@morris.umn.edu,Port Tobacco, Minnesota,United States,2020-05-30,Music
+6,Lindgren,Michael,LindgrenMichael@morris.umn.edu,Hangman Crossing, Vermont,United States,2016-05-30,Statistics
+7,Threadgill,Zachary,ThreadgillZachary@morris.umn.edu,Willswood, Minnesota,United States,2018-05-30,Psychology
+8,Wente,Jordan,WenteJordan@morris.umn.edu,Holdingford, Minnesota,United States,2015-05-30,Psychology
+9,Capstone,Humphrey,CapstoneHumphrey@morris.umn.edu,Gerlane, Minnesota,United States,2015-05-30,Computer Science
+10,Wang,Zhechen,WangZhechen@morris.umn.edu,Sheppards, Minnesota,United States,2021-05-30,Computer Science
+11,Tao,Emma,TaoEmma@morris.umn.edu,Brownton, Minnesota,United States,2012-05-30,Statistics
+12,Ronnander,Reid,RonnanderReid@morris.umn.edu,Glyndon, Wyoming,Mexico,2014-05-30,Statistics
+13,Fontenot,Sharice,FontenotSharice@morris.umn.edu,Grand Meadow, New Jersey,United States,2011-05-30,Computer Science
+14,Lee,Sam,LeeSam@morris.umn.edu,Point Lay, Wyoming,United States,2020-05-30,Psychology
+15,Goemann,Aaron,GoemannAaron@morris.umn.edu,Wilkinson, Minnesota,United States,2013-05-30,Mathematics
+16,Hove,Meara,HoveMeara@morris.umn.edu,Pipestone, Illinois,United States,2009-05-30,Psychology
+17,Bohling,Rachel,BohlingRachel@morris.umn.edu,Arbovale, Minnesota,United States,2017-05-30,Psychology
+18,Irey,Emily,IreyEmily@morris.umn.edu,Choice, Kansas,United States,2012-05-30,Statistics
+19,Finzel,Mitch,FinzelMitch@morris.umn.edu,Isinours, Maryland,United States,2015-05-30,Computer Science
+20,Mahen,Lily,MahenLily@morris.umn.edu,Diamond Corner, Minnesota,United States,2017-05-30,Computer Science
+21,Fontenont,Sharice,FontenontSharice@morris.umn.edu,Oaks Corner, Minnesota,United States,2020-05-30,Psychology
+22,Gelderman,Elizabeth,GeldermanElizabeth@morris.umn.edu,New Sweden, Minnesota,United States,2011-05-30,Statistics
+23,Knott,Hannah,KnottHannah@morris.umn.edu,Osage, Minnesota,United States,2012-05-30,Psychology
+24,Keeler,Maria,KeelerMaria@morris.umn.edu,Scotch Point, Minnesota,United States,2011-05-30,Statistics
+25,Winter,Katie,WinterKatie@morris.umn.edu,Halma, Minnesota,China,2011-05-30,Computer Science
+26,Fischer,Kelly,FischerKelly@morris.umn.edu,New Sweden, Minnesota,United States,2019-05-30,Psychology
+27,Stermer,Brendan,StermerBrendan@morris.umn.edu,Halma, Minnesota,United States,2009-05-30,Psychology
+28,Odegaard,Ben,OdegaardBen@morris.umn.edu,Champlin, Minnesota,United States,2021-05-30,Music
+29,Reed,Francis,ReedFrancis@morris.umn.edu,Isinours, Minnesota,United States,2017-05-30,Psychology
+30,LindgrenZ,Michael,LindgrenZMichael@morris.umn.edu,Alida, Minnesota,China,2008-05-30,Computer Science
+31,Thebault-Spieker,Abbie,Thebault-SpiekerAbbie@morris.umn.edu,Diamond Corner, Minnesota,China,2015-05-30,Computer Science
+32,Perfetti,Nathan,PerfettiNathan@morris.umn.edu,Wilkinson, Minnesota,United States,2017-05-30,Music
+33,Fossen,Daniel,FossenDaniel@morris.umn.edu,Stroms, Minnesota,China,2018-05-30,Mathematics
+34,Zuniga-Tepango,Yessica,Zuniga-TepangoYessica@morris.umn.edu,Clearbrook, Minnesota,United States,2019-05-30,Psychology
+35,Lundborg,Andrew,LundborgAndrew@morris.umn.edu,Morton, Minnesota,Mexico,2020-05-30,Computer Science
+36,Miller,Natasha,MillerNatasha@morris.umn.edu,Empire, Minnesota,Mexico,2014-05-30,Statistics
+37,Sherman,Ellis,ShermanEllis@morris.umn.edu,Forest Grove, Minnesota,United States,2011-05-30,Computer Science
+38,Silburn,Tashna,SilburnTashna@morris.umn.edu,Ada, Minnesota,United States,2012-05-30,Statistics
+39,McDougald,Tori,McDougaldTori@morris.umn.edu,Round Prairie, North Dakota,United States,2019-05-30,Computer Science
+40,Hinnenkamp,Nick,HinnenkampNick@morris.umn.edu,Alida, Minnesota,United States,2016-05-30,Psychology
+41,Pratt,Anna,PrattAnna@morris.umn.edu,Bena, Minnesota,United States,2018-05-30,Psychology
+42,Holten,Cory,HoltenCory@morris.umn.edu,Clearbrook, Wyoming,United States,2011-05-30,Statistics
+43,Bibeau,Jacob,BibeauJacob@morris.umn.edu,Eden of the Lake, Minnesota,United States,2010-05-30,Statistics
+44,Rojas,Ricardo,RojasRicardo@morris.umn.edu,Linden Grove, Tennessee,United States,2017-05-30,Mathematics
+45,Smith,Gabe,SmithGabe@morris.umn.edu,Rossburg, Wyoming,United States,2013-05-30,Statistics
+46,Xu,Yuemin,XuYuemin@morris.umn.edu,New Sweden, Minnesota,United States,2009-05-30,Statistics
+47,Votaw,Cassandra,VotawCassandra@morris.umn.edu,Rock Lick, Wyoming,United States,2008-05-30,Music
+48,Dial,Ashley,DialAshley@morris.umn.edu,Twin Peaks Condominium, Minnesota,Mexico,2010-05-30,Music
+49,White,William,WhiteWilliam@morris.umn.edu,Irene, Minnesota,United States,2012-05-30,Statistics
+50,Koester,Jayce,KoesterJayce@morris.umn.edu,Russell, Minnesota,United States,2014-05-30,Computer Science
+51,Hughes,Madison,HughesMadison@morris.umn.edu,Grand Meadow, Minnesota,Mexico,2008-05-30,Statistics
+52,Axelson,Jeff,AxelsonJeff@morris.umn.edu,Osage, Minnesota,United States,2015-05-30,Computer Science
+53,Diamond,Charlie,DiamondCharlie@morris.umn.edu,Minnetonka, Minnesota,United States,2021-05-30,Statistics
+54,Zinn,Saskia,ZinnSaskia@morris.umn.edu,Mechanicsville, Wyoming,United States,2016-05-30,Mathematics
+55,Joul,Maura,JoulMaura@morris.umn.edu,Browerville, Minnesota,United States,2011-05-30,Psychology
+56,Gill,Sam,GillSam@morris.umn.edu,Shoreview, Minnesota,United States,2016-05-30,Psychology
+57,Barker,Calvin,BarkerCalvin@morris.umn.edu,Alida, Minnesota,United States,2009-05-30,Music
+58,Hahn,Christian,HahnChristian@morris.umn.edu,Brownton, Alaska,United States,2013-05-30,Computer Science
+59,Riffel,Luci,RiffelLuci@morris.umn.edu,Forest Grove, Minnesota,United States,2018-05-30,Computer Science
+60,Nault-Mauer,Elizabeth,Nault-MauerElizabeth@morris.umn.edu,Minnetonka, Wyoming,United States,2021-05-30,Mathematics
+61,Thebault-Spiker,Abigail,Thebault-SpikerAbigail@morris.umn.edu,Twin Oaks, Minnesota,Mexico,2021-05-30,Psychology
+62,Feely,Joe,FeelyJoe@morris.umn.edu,Osage, Minnesota,Mexico,2010-05-30,Computer Science
+63,Hancock,Mitch,HancockMitch@morris.umn.edu,Littell, Alaska,United States,2010-05-30,Psychology
+64,Rin,Monica,RinMonica@morris.umn.edu,Clarking, Minnesota,United States,2015-05-30,Mathematics
+65,Klausing,Kyle,KlausingKyle@morris.umn.edu,Forest Grove, Ohio,United States,2008-05-30,Psychology
+66,Hedberg,Gabriella,HedbergGabriella@morris.umn.edu,Clearbrook, Minnesota,United States,2013-05-30,Mathematics
+67,Fisher,Kelly,FisherKelly@morris.umn.edu,Morley, Minnesota,United States,2011-05-30,Music
+68,Girtz,Lauren,GirtzLauren@morris.umn.edu,Bluffton, Minnesota,United States,2021-05-30,Statistics
+69,Nault-Maurer,Elizabeth,Nault-MaurerElizabeth@morris.umn.edu,Osage, Minnesota,United States,2013-05-30,Psychology
+70,Young,Lauren,YoungLauren@morris.umn.edu,Nummytown, Florida,United States,2014-05-30,Mathematics
+71,Prince,Marcy,PrinceMarcy@morris.umn.edu,Linden Grove, Minnesota,China,2015-05-30,Music
+72,Durham,Katherine,DurhamKatherine@morris.umn.edu,Berlin, Minnesota,China,2019-05-30,Statistics
+73,Nguyen,Janet,NguyenJanet@morris.umn.edu,Snellman, Minnesota,United States,2012-05-30,Mathematics
+74,Hosch,Katherine,HoschKatherine@morris.umn.edu,Trenton, Minnesota,United States,2008-05-30,Statistics
+75,Post,Danyel,PostDanyel@morris.umn.edu,Wilburn, Minnesota,United States,2011-05-30,Computer Science
+76,Wolf,Heather,WolfHeather@morris.umn.edu,Rosen, Nevada,United States,2012-05-30,Statistics
+77,Rojas,Ricky,RojasRicky@morris.umn.edu,Hackett, Minnesota,United States,2009-05-30,Computer Science
+78,Sano,Ai,SanoAi@morris.umn.edu,Yokohama,Yokohama,Japan,2017-05-30,Mathematics
+79,Zin,Saskia,ZinSaskia@morris.umn.edu,Pine City, Minnesota,United States,2011-05-30,Computer Science
+80,Hutton,Averi,HuttonAveri@morris.umn.edu,Wilkinson, Nebraska,United States,2011-05-30,Music
+81,Iverson,Phillip,IversonPhillip@morris.umn.edu,Pipestone, Minnesota,United States,2019-05-30,Statistics
+82,Adedeji,Joy,AdedejiJoy@morris.umn.edu,Heidelberg, Minnesota,United States,2018-05-30,Psychology
+83,de Jongh,Rocherno,de JonghRocherno@morris.umn.edu,Willemstad,Willemstad,United States,2018-05-30,Statistics
+84,Duram,Katherine,DuramKatherine@morris.umn.edu,Dupont, Minnesota,United States,2012-12-30,Psychology
+85,Sunder,Kristina,SunderKristina@morris.umn.edu,Fillmore, Minnesota,United States,2016-12-30,Psychology
+86,Giggisberg,Abbey,GiggisbergAbbey@morris.umn.edu,Noel, Minnesota,United States,2008-12-30,Psychology
+87,Botzet,Rachel,BotzetRachel@morris.umn.edu,Lynd, Minnesota,United States,2008-12-30,Statistics
+88,Kittleson-Wilker,Maija,Kittleson-WilkerMaija@morris.umn.edu,Spragueville, Minnesota,United States,2010-12-30,Mathematics
+89,Cook,Brenna,CookBrenna@morris.umn.edu,Palmetal, Minnesota,United States,2017-12-30,Music
+90,Millard,Collete,MillardCollete@morris.umn.edu,Linden Grove, Minnesota,United States,2011-12-30,Statistics
+91,Griffiths,Nick,GriffithsNick@morris.umn.edu,Kandiyohi, Georgia,United States,2012-12-30,Music
+92,P0st,Danyel,P0stDanyel@morris.umn.edu,Pine City, Minnesota,Mexico,2008-12-30,Statistics
+93,Foy,Milea,FoyMilea@morris.umn.edu,Almelund, Minnesota,United States,2009-12-30,Psychology
+94,Bishop,Sophie,BishopSophie@morris.umn.edu,Mentor, Alabama,United States,2021-12-30,Mathematics
+95,Grieman,Tara,GriemanTara@morris.umn.edu,Dogtail Corners, Minnesota,Mexico,2017-12-30,Psychology
+96,Amidon,Allison,AmidonAllison@morris.umn.edu,Sparta, Minnesota,United States,2015-12-30,Psychology
+97,Hucka,Brett,HuckaBrett@morris.umn.edu,Browerville, Minnesota,United States,2011-12-30,Psychology
+98,Holte,Brian,HolteBrian@morris.umn.edu,Halma, Minnesota,United States,2010-12-30,Statistics
+99,Carr,James,CarrJames@morris.umn.edu,Heidelberg, Minnesota,United States,2021-12-30,Statistics
+100,Zych,Daron,ZychDaron@morris.umn.edu,Oaks Corner, Minnesota,Mexico,2021-12-30,Statistics
+101,Thiede,Sarah,ThiedeSarah@morris.umn.edu,Holdingford, Minnesota,United States,2018-12-30,Psychology
+102,Threadgill,Zach,ThreadgillZach@morris.umn.edu,Round Prairie, Minnesota,United States,2021-12-30,Music
+103,Decker,Amanda,DeckerAmanda@morris.umn.edu,Glyndon, Minnesota,Mexico,2008-12-30,Statistics
+104,Gambrell,James,GambrellJames@morris.umn.edu,Clarkston, Minnesota,United States,2010-12-30,Psychology
+105,Ukura,Kim,UkuraKim@morris.umn.edu,Guideway, Minnesota,United States,2018-12-30,Statistics
+106,Bemis,Brent,BemisBrent@morris.umn.edu,Surprise Valley, Minnesota,United States,2020-12-30,Statistics
+107,Bruno,Samantha,BrunoSamantha@morris.umn.edu,Heidelberg, Minnesota,United States,2015-12-30,Statistics
+108,Holton,Cory,HoltonCory@morris.umn.edu,Turkey Flat, Minnesota,United States,2021-12-30,Statistics
+109,Flaig,Katrina,FlaigKatrina@morris.umn.edu,Wismer Po, Minnesota,United States,2014-12-30,Statistics
+110,Smith,Brianca,SmithBrianca@morris.umn.edu,Hackett, Wyoming,United States,2012-12-30,Music
+111,Haider,Humza,HaiderHumza@morris.umn.edu,Mentor, Minnesota,United States,2011-12-30,Mathematics
+112,Olsen,Kjell,OlsenKjell@morris.umn.edu,South Thurston, Ohio,United States,2015-12-30,Computer Science
+113,Wermerskirchen,Jennifer,WermerskirchenJennifer@morris.umn.edu,Hawbottom, Minnesota,United States,2017-12-30,Statistics
+114,Greiman,Tara,GreimanTara@morris.umn.edu,Isinours, Minnesota,United States,2012-12-30,Statistics
+115,Borman,Kate,BormanKate@morris.umn.edu,Union, Minnesota,United States,2018-12-30,Music
+116,August-Hau,Megan,August-HauMegan@morris.umn.edu,Puerto Rico, Minnesota,United States,2017-12-30,Mathematics
+117,Kippley,Amy,KippleyAmy@morris.umn.edu,Owatonna, Oregon,China,2016-12-30,Statistics
+118,Thebault-Spieker,Abigail,Thebault-SpiekerAbigail@morris.umn.edu,Russell Park, Wisconsin,China,2010-12-30,Music
+119,Pettit,Chelsea,PettitChelsea@morris.umn.edu,Austin, Minnesota,United States,2008-12-30,Music
+120,Johnson,Zach,JohnsonZach@morris.umn.edu,Mentor, Minnesota,United States,2010-12-30,Mathematics
+121,Albright,Kathryn,AlbrightKathryn@morris.umn.edu,Minnesota Lake, Wyoming,United States,2021-12-30,Mathematics
+122,Linscheid,Neil,LinscheidNeil@morris.umn.edu,Glyndon, Minnesota,United States,2010-12-30,Mathematics
+123,Harstad,Rachel,HarstadRachel@morris.umn.edu,Dodge, Minnesota,United States,2008-12-30,Statistics
+124,Granaas,Amanda,GranaasAmanda@morris.umn.edu,Rosen, Minnesota,United States,2008-12-30,Psychology
+125,Loehr,Emily,LoehrEmily@morris.umn.edu,Snellman, Minnesota,Mexico,2016-12-30,Psychology
+126,White,Adrian,WhiteAdrian@morris.umn.edu,Minnesota City, Minnesota,United States,2018-12-30,Psychology
+127,Bigley,Ann,BigleyAnn@morris.umn.edu,Isinours,Oregon,United States,2012-12-30,Statistics
+128,Lenox,Caitlin,LenoxCaitlin@morris.umn.edu,Oaks Corners, Wyoming,United States,2014-12-30,Statistics
+129,Swinney,Jaclyn,SwinneyJaclyn@morris.umn.edu,Springdell, Wyoming,United States,2015-12-30,Computer Science
+130,Hinnekamp,Nicholas,HinnekampNicholas@morris.umn.edu,Forestasia, Wyoming,United States,2009-12-30,Mathematics
+131,Haider,Deon,HaiderDeon@morris.umn.edu,Kandiyohi, Minnesota,United States,2013-12-30,Statistics
+132,Handlin,Michelle,HandlinMichelle@morris.umn.edu,Fillmore, Indiana,United States,2019-12-30,Mathematics
+133,Gareis,Angeline,GareisAngeline@morris.umn.edu,Nary, Minnesota,United States,2011-12-30,Psychology
+134,Basel,Joseph,BaselJoseph@morris.umn.edu,Almelund, Minnesota,United States,2015-12-30,Computer Science
+135,Hartmann,Joe,HartmannJoe@morris.umn.edu,Lynd, Wyoming,Mexico,2011-12-30,Music
+136,Billo,Bridget,BilloBridget@morris.umn.edu,Choice, Minnesota,United States,2015-12-30,Music
+137,Elsner,Emily,ElsnerEmily@morris.umn.edu,Pratt, Minnesota,United States,2016-12-30,Mathematics
+138,Cronk,Sarah,CronkSarah@morris.umn.edu,Pratt, Minnesota,United States,2009-12-30,Music
+139,Luetmer,Johanna,LuetmerJohanna@morris.umn.edu,Almelund, Minnesota,United States,2012-12-30,Music
+140,Tauer,Rhea,TauerRhea@morris.umn.edu,Ne'sqhwaqhwe, Hawaii,United States,2011-12-30,Mathematics
+141,Potter,Leland,PotterLeland@morris.umn.edu,Isinours, Minnesota,United States,2008-12-30,Psychology
+142,Torkelson,Adam,TorkelsonAdam@morris.umn.edu,Owatonna, Minnesota,United States,2021-12-30,Statistics
+143,Grabosky,Kate,GraboskyKate@morris.umn.edu,Stroms, Minnesota,Mexico,2008-12-30,Mathematics
+144,Braegelman,Jon,BraegelmanJon@morris.umn.edu,Pratt, Minnesota,United States,2017-12-30,Mathematics
+145,Hartman,Joseph,HartmanJoseph@morris.umn.edu,Pipestone, Minnesota,United States,2010-12-30,Statistics
+146,Rainey,Jamie,RaineyJamie@morris.umn.edu,Osage, Minnesota,United States,2012-12-30,Computer Science
+147,Loomis,Tar,LoomisTar@morris.umn.edu,Stroms, Minnesota,United States,2012-12-30,Music
+148,Olm,Rachel,OlmRachel@morris.umn.edu,Almelund, Minnesota,United States,2019-12-30,Psychology
+149,Zachman,Luke,ZachmanLuke@morris.umn.edu,Heidelberg, Minnesota,United States,2020-12-30,Psychology
+150,Moulton,Mariah,MoultonMariah@morris.umn.edu,Veribest, Minnesota,United States,2010-12-30,Statistics
+151,Wagner,Allison,WagnerAllison@morris.umn.edu,Crunk, Minnesota,United States,2019-12-30,Computer Science
+152,Bowe,Andy,BoweAndy@morris.umn.edu,Mentor, Minnesota,South Korea,2010-12-30,Computer Science
+153,Valentiner,Ellis,ValentinerEllis@morris.umn.edu,Rosen, Minnesota,United States,2014-12-30,Statistics
+154,Vanasse,Luke,VanasseLuke@morris.umn.edu,Alida, Minnesota,Mexico,2017-12-30,Mathematics
+155,Nelson,David,NelsonDavid@morris.umn.edu,Stroms, Wyoming,United States,2010-12-30,Computer Science
+156,Fine,Allison,FineAllison@morris.umn.edu,Clearbrook, Minnesota,United States,2014-12-30,Music
+157,Miller,Samantha,MillerSamantha@morris.umn.edu,Arab, Minnesota,United States,2010-12-30,Statistics
+158,Alsdurf,Kelly,AlsdurfKelly@morris.umn.edu,Linden Grove, Minnesota,United States,2014-12-30,Statistics
+159,Martin,Carrie,MartinCarrie@morris.umn.edu,Forest Grove, Minnesota,United States,2012-12-30,Computer Science
+160,Eger,Heidi,EgerHeidi@morris.umn.edu,Snellman, Minnesota,United States,2009-12-30,Music
+161,Hamrin,Chris,HamrinChris@morris.umn.edu,Port Lavaca, Minnesota,United States,2011-12-30,Mathematics
+162,Laughlin,Katherine,LaughlinKatherine@morris.umn.edu,Wikieup, Minnesota,South Korea,2010-12-30,Mathematics
+163,Mensen,Sarah,MensenSarah@morris.umn.edu,Stroms, Minnesota,China,2019-12-30,Computer Science
+164,Zachmann,Luke,ZachmannLuke@morris.umn.edu,Fillmore, Minnesota,Mexico,2019-12-30,Music
+165,Murphy,Amanda,MurphyAmanda@morris.umn.edu,Minnetonka, Minnesota,United States,2011-12-30,Mathematics
+166,Albright,Katie,AlbrightKatie@morris.umn.edu,Choice, Minnesota,United States,2018-12-30,Mathematics
+167,Butler,Eugene,ButlerEugene@morris.umn.edu,Browerville, Minnesota,United States,2017-12-30,Statistics
+168,Schmidt,Tara,SchmidtTara@morris.umn.edu,Ross, Minnesota,United States,2010-12-30,Computer Science
+169,Young,Ryan,YoungRyan@morris.umn.edu,New Sweden, Wyoming,Mexico,2012-12-30,Computer Science
+170,Lawrence,Whitney,LawrenceWhitney@morris.umn.edu,Pine City, Minnesota,United States,2019-12-30,Computer Science
+171,Wencl,Jeff,WenclJeff@morris.umn.edu,Morton, Minnesota,United States,2010-12-30,Psychology
+172,Nezhad,Sheila,NezhadSheila@morris.umn.edu,Grand Meadow, Minnesota,United States,2008-12-30,Mathematics
+173,Malone,Patrick,MalonePatrick@morris.umn.edu,Pine City, Minnesota,United States,2011-12-30,Music
+174,Johnson,Holly,JohnsonHolly@morris.umn.edu,Enterprise, Minnesota,United States,2008-12-30,Computer Science
+175,Laughlin,Katie,LaughlinKatie@morris.umn.edu,Ute, Minnesota,United States,2020-12-30,Computer Science
+176,Little,Matthew,LittleMatthew@morris.umn.edu,Diamond Corner, Minnesota,United States,2015-12-30,Statistics
+177,Brun,Maria,BrunMaria@morris.umn.edu,Dugway, Minnesota,China,2011-12-30,Psychology
+178,Benson,Troy,BensonTroy@morris.umn.edu,Browerville, Minnesota,United States,2011-12-30,Psychology
+179,Dux,Clara,DuxClara@morris.umn.edu,Holdingford, Indiana,United States,2008-12-30,Psychology
+180,Bloomquist,Ian,BloomquistIan@morris.umn.edu,Hackett, Minnesota,United States,2013-12-30,Mathematics
+181,Earl,Attina,EarlAttina@morris.umn.edu,Black Earth, Minnesota,United States,2012-12-30,Statistics
+182,Gaffney,Kyle,GaffneyKyle@morris.umn.edu,Snellman, Minnesota,United States,2018-12-30,Music
+183,Kildegaard,Anika,KildegaardAnika@morris.umn.edu,Bluffton, Wyoming,Mexico,2018-12-30,Statistics
+184,La Qua,Mariah,La QuaMariah@morris.umn.edu,Ada, Minnesota,China,2009-12-30,Computer Science
+185,Primus,Mitch,PrimusMitch@morris.umn.edu,Spice Knob,Florida,United States,2013-12-30,Music
+186,Roloff,Thomas,RoloffThomas@morris.umn.edu,Empire, Minnesota,United States,2012-12-30,Computer Science
+187,Schwieger,Emily,SchwiegerEmily@morris.umn.edu,Mentor, Wyoming,United States,2018-12-30,Statistics
+188,Roy,Jodie,RoyJodie@morris.umn.edu,Snellman, Minnesota,United States,2016-12-30,Psychology
+189,Williams,Katie,WilliamsKatie@morris.umn.edu,Pusey Landing, Minnesota,United States,2021-12-30,Psychology
+190,Williams-Droske,Anne,Williams-DroskeAnne@morris.umn.edu,Oaks Corner, Minnesota,United States,2011-12-30,Computer Science
+191,Madden,Dana,MaddenDana@morris.umn.edu,Browerville, Minnesota,China,2011-12-30,Psychology
+192,Feely,Joseph,FeelyJoseph@morris.umn.edu,Orpheus, Minnesota,United States,2011-12-30,Statistics
+193,Fairbanks,Hazen,FairbanksHazen@morris.umn.edu,Minnesota Lake, Minnesota,United States,2021-12-30,Statistics
+194,Raverty,Alexis,RavertyAlexis@morris.umn.edu,Alida, Minnesota,China,2009-12-30,Mathematics
+195,Her,Meng,HerMeng@morris.umn.edu,Stroms, Minnesota,United States,2008-12-30,Mathematics
+196,Vue,Kao,VueKao@morris.umn.edu,Austin, Minnesota,China,2012-12-30,Statistics
+197,Schiappacasse,Angela,SchiappacasseAngela@morris.umn.edu,Ada, Minnesota,United States,2013-12-30,Psychology
+198,Kamm,Kaitlin,KammKaitlin@morris.umn.edu,Minnesota Lake, Minnesota,United States,2013-12-30,Statistics
+199,Bennett,Kristin,BennettKristin@morris.umn.edu,Ada, Minnesota,United States,2021-12-30,Mathematics
+200,Griepentrog,Beth,GriepentrogBeth@morris.umn.edu,Bluffton, Minnesota,United States,2021-12-30,Statistics
+201,Walker-Authur,Mofuah,Walker-AuthurMofuah@morris.umn.edu,Round Prairie, Minnesota,United States,2013-12-30,Statistics
+202,Carr,Karen,CarrKaren@morris.umn.edu,Almelund, Minnesota,United States,2016-12-30,Statistics
+203,Von Arx,Abby,Von ArxAbby@morris.umn.edu,Owatonna, Minnesota,United States,2010-12-30,Mathematics
+204,Mattson,Josh,MattsonJosh@morris.umn.edu,Diamond Corner, Minnesota,United States,2012-12-30,Mathematics
+205,Dunlavy,Joseph,DunlavyJoseph@morris.umn.edu,Almelund, Wyoming,Mexico,2019-12-30,Computer Science
+206,Borgendale,Colleen,BorgendaleColleen@morris.umn.edu,Saint Paul Park, Minnesota,United States,2014-12-30,Music
+207,Janca,Jeff,JancaJeff@morris.umn.edu,Morton, Minnesota,China,2011-12-30,Psychology
+208,Albrecht,Chelsey,AlbrechtChelsey@morris.umn.edu,Saint Paul Park, Minnesota,Mexico,2015-12-30,Psychology
+209,Jacobson,Amanda,JacobsonAmanda@morris.umn.edu,Shoreview, Minnesota,United States,2013-12-30,Psychology
+210,Hong,Sungmin,HongSungmin@morris.umn.edu,Saint Paul Park, Wyoming,United States,2017-12-30,Psychology
+211,Olson,Michele,OlsonMichele@morris.umn.edu,Unfried, Wyoming,United States,2009-12-30,Statistics
+212,Latterner,Andrew,LatternerAndrew@morris.umn.edu,Rosen, Minnesota,United States,2009-12-30,Music
+213,Kopet,Sonia,KopetSonia@morris.umn.edu,Choice, Minnesota,United States,2012-12-30,Mathematics
+214,Awoudi,Olivia,AwoudiOlivia@morris.umn.edu,Linden Grove, Minnesota,United States,2016-12-30,Mathematics
+215,Olson,Kaelyn,OlsonKaelyn@morris.umn.edu,Morton, Minnesota,United States,2011-12-30,Computer Science
+216,Jensen,Elizabeth,JensenElizabeth@morris.umn.edu,Brownton, Minnesota,United States,2010-12-30,Psychology
+217,Lynch,Colin,LynchColin@morris.umn.edu,Nary, Minnesota,United States,2012-12-30,Computer Science
+218,Eveslage,Paul,EveslagePaul@morris.umn.edu,Shoreview, Minnesota,United States,2019-12-30,Computer Science
+219,Siefkes,Caitlin,SiefkesCaitlin@morris.umn.edu,Sparta, Minnesota,United States,2008-12-30,Psychology
+220,Anderson,Alex,AndersonAlex@morris.umn.edu,Halma, Minnesota,United States,2012-12-30,Computer Science
+221,Miller,Jennifer,MillerJennifer@morris.umn.edu,Kandiyohi, Minnesota,United States,2011-12-30,Statistics
+222,Wente,Naomi,WenteNaomi@morris.umn.edu,Pipestone, Minnesota,United States,2016-12-30,Statistics
+223,Steward,Kaitlyn,StewardKaitlyn@morris.umn.edu,Shoreview, Minnesota,Mexico,2013-12-30,Statistics
+224,Hodson,Jason,HodsonJason@morris.umn.edu,Halma, Minnesota,United States,2014-12-30,Music
+225,Anderson,Jessica,AndersonJessica@morris.umn.edu,Ross, Minnesota,United States,2008-12-30,Music
+226,Van Cleve,Zachary,Van CleveZachary@morris.umn.edu,Isinours, Virginia,United States,2017-12-30,Mathematics
+227,Aurentz,Lydea,AurentzLydea@morris.umn.edu,Sparta, Minnesota,United States,2017-12-30,Statistics
+228,Chea,Gwendorlene,CheaGwendorlene@morris.umn.edu,Empire, Minnesota,China,2017-12-30,Psychology
+229,Elsen,Seth,ElsenSeth@morris.umn.edu,Bena, Minnesota,United States,2009-12-30,Psychology
+230,Davidson,Larissa,DavidsonLarissa@morris.umn.edu,Alida, North Dakota,United States,2018-12-30,Music
+231,Zachman,Matt,ZachmanMatt@morris.umn.edu,Browerville, Minnesota,United States,2018-12-30,Statistics
+232,Bjorklund,Calla,BjorklundCalla@morris.umn.edu,Pine City, Minnesota,United States,2008-12-30,Psychology
+233,Myers-Kuykindall,Josephine,Myers-KuykindallJosephine@morris.umn.edu,Russell, Minnesota,United States,2009-12-30,Statistics
+234,Bisek,Ashley,BisekAshley@morris.umn.edu,Snellman, Minnesota,United States,2012-12-30,Psychology
+235,Schaeppi,Rebecca,SchaeppiRebecca@morris.umn.edu,Pratt, Minnesota,United States,2010-12-30,Psychology
+236,Murphy,Alex,MurphyAlex@morris.umn.edu,Kandiyohi, Minnesota,Mexico,2011-12-30,Statistics
+237,Lesmeister,Audrey,LesmeisterAudrey@morris.umn.edu,Treadwell, Minnesota,United States,2014-12-30,Music
+238,Peterson,Nick,PetersonNick@morris.umn.edu,Wilkinson, Minnesota,United States,2009-12-30,Computer Science
+239,Jasper,Blair,JasperBlair@morris.umn.edu,South Church, Minnesota,United States,2009-12-30,Computer Science
+240,Fox,Amy,FoxAmy@morris.umn.edu,Pine City, Wyoming,Mexico,2021-12-30,Statistics
+241,Ingram,Brittany,IngramBrittany@morris.umn.edu,Clearbrook, Wyoming,United States,2018-12-30,Mathematics
+242,Jiru,Ayano,JiruAyano@morris.umn.edu,Willamette, California,United States,2011-12-30,Psychology
+243,Chan,Amanda,ChanAmanda@morris.umn.edu,Linden Grove, Minnesota,United States,2018-12-30,Statistics
+244,Minion,Amanda,MinionAmanda@morris.umn.edu,Fieldbrook, Minnesota,United States,2019-05-30,Music
+245,Hartke,Alison,HartkeAlison@morris.umn.edu,Round Prairie, Minnesota,United States,2016-05-30,Statistics
+246,Pederson,Jessica,PedersonJessica@morris.umn.edu,New Sweden, Wyoming,China,2009-05-30,Computer Science
+247,Orth,Jessica,OrthJessica@morris.umn.edu,Bena, Wyoming,United States,2019-05-30,Computer Science
+248,Williams,Douglas,WilliamsDouglas@morris.umn.edu,Almelund, Minnesota,South Korea,2020-05-30,Computer Science
+249,Hicks,Gordon,HicksGordon@morris.umn.edu,Garden of Eden, Minnesota,United States,2019-05-30,Psychology
+250,Holst,Jordan,HolstJordan@morris.umn.edu,Forfar, Minnesota,China,2020-05-30,Music
+251,Baratta,Vanessa,BarattaVanessa@morris.umn.edu,Russell, Minnesota,South Korea,2017-05-30,Music
+252,Galbraith,Katie,GalbraithKatie@morris.umn.edu,Morton, Minnesota,United States,2015-05-30,Statistics
+253,Ivers,Jamin,IversJamin@morris.umn.edu,Diamond Corner, Minnesota,United States,2019-05-30,Computer Science
+254,Johnson,Nic,JohnsonNic@morris.umn.edu,Empire, Minnesota,United States,2020-05-30,Psychology
+255,Grieme,Nick,GriemeNick@morris.umn.edu,Rosen, Minnesota,United States,2015-05-30,Psychology
+256,Menden,John,MendenJohn@morris.umn.edu,Forest Grove, Minnesota,United States,2008-05-30,Music
+257,Bloedel,Matt,BloedelMatt@morris.umn.edu,Chappaquiddick, Minnesota,China,2008-05-30,Psychology
+258,Paulson,Ericka,PaulsonEricka@morris.umn.edu,Hunting Hill, Pennsylvania,United States,2016-05-30,Psychology
+259,Petersen,Nick,PetersenNick@morris.umn.edu,Shoreview, Minnesota,United States,2009-05-30,Mathematics
+260,Strissel,Kristen,StrisselKristen@morris.umn.edu,Osage, Minnesota,United States,2017-05-30,Psychology
+261,Haggerty,Shelly,HaggertyShelly@morris.umn.edu,Mudlavia Springs, Minnesota,Mexico,2008-05-30,Psychology
+262,Danielson,Alexis,DanielsonAlexis@morris.umn.edu,Bluffton, Wyoming,United States,2013-05-30,Psychology
+263,Schacherer,Travis,SchachererTravis@morris.umn.edu,Owatonna, Minnesota,United States,2021-05-30,Statistics
+264,Morrill,Kayla,MorrillKayla@morris.umn.edu,Austin, Wyoming,United States,2013-05-30,Statistics
+265,Diekman,Sarah,DiekmanSarah@morris.umn.edu,Austin, Minnesota,United States,2019-05-30,Computer Science
+266,Schliep,Katherine,SchliepKatherine@morris.umn.edu,Seventysix, Minnesota,United States,2011-05-30,Statistics
+267,Bormann,Brittany,BormannBrittany@morris.umn.edu,Wilkinson, Tennessee,United States,2018-05-30,Statistics
+268,Potter,Sam,PotterSam@morris.umn.edu,Nary, Minnesota,United States,2008-05-30,Psychology
+269,Arnold,Seth,ArnoldSeth@morris.umn.edu,Champlin, Minnesota,United States,2019-05-30,Music
+270,Loomis,Tara,LoomisTara@morris.umn.edu,Empire, Minnesota,United States,2020-05-30,Psychology
+271,Fischer,Clayton,FischerClayton@morris.umn.edu,Stroms, Connecticut,United States,2009-05-30,Psychology
+272,Kloos,Kayla,KloosKayla@morris.umn.edu,Onalaska, Minnesota,United States,2019-05-30,Statistics
+273,Hanson,Bonita,HansonBonita@morris.umn.edu,Sherwood Hills, Minnesota,Mexico,2019-05-30,Mathematics
+274,Anderson,Laura,AndersonLaura@morris.umn.edu,Osage, Minnesota,United States,2015-05-30,Computer Science
+275,Kuismi,Danielle,KuismiDanielle@morris.umn.edu,Peoples, Minnesota,United States,2014-05-30,Statistics
+276,Lund,Alicia,LundAlicia@morris.umn.edu,Cave, Minnesota,China,2013-05-30,Mathematics
+277,Klimek,Katie,KlimekKatie@morris.umn.edu,Pipestone, Pennsylvania,China,2018-05-30,Psychology
+278,Noyes,Lauren,NoyesLauren@morris.umn.edu,Toy, Minnesota,United States,2021-05-30,Statistics
+279,Sorensen,Mike,SorensenMike@morris.umn.edu,Rossburg, Minnesota,United States,2009-05-30,Psychology
+280,Montanez,Christina,MontanezChristina@morris.umn.edu,Ross, New Mexico,United States,2021-05-30,Statistics
+281,Naidu,Prash,NaiduPrash@morris.umn.edu,Isinours, Minnesota,United States,2014-05-30,Major
+282,Raymond,Kate,RaymondKate@morris.umn.edu,Lynd, Washington,United States,2018-05-30,Psychology
+283,Marks,Alynea,MarksAlynea@morris.umn.edu,Halma, Wyoming,United States,2009-05-30,Statistics
+284,Moerke,Margaret,MoerkeMargaret@morris.umn.edu,Holdingford, Minnesota,Mexico,2017-05-30,Music
+285,Hollermann,Grant,HollermannGrant@morris.umn.edu,Champlin, Minnesota,United States,2012-05-30,Psychology
+286,Gruenes,Amanda,GruenesAmanda@morris.umn.edu,Heidelberg, Minnesota,United States,2017-05-30,Psychology
+287,Thomas,Katelynn,ThomasKatelynn@morris.umn.edu,Grand Meadow, Wyoming,United States,2010-05-30,Psychology
+288,Conroy,Dan,ConroyDan@morris.umn.edu,Wilsonville, Minnesota,China,2013-05-30,Computer Science
+289,Abdi,Mahad,AbdiMahad@morris.umn.edu,Lynd, Minnesota,United States,2018-05-30,Music
+290,Chang,Seokkun,ChangSeokkun@morris.umn.edu,Pratt, Wyoming,United States,2009-05-30,Psychology
+291,Choi,Joel,ChoiJoel@morris.umn.edu,Austin, Virginia,Mexico,2019-05-30,Psychology
+292,Gaffaney,Kyle,GaffaneyKyle@morris.umn.edu,Manor Hill, Minnesota,United States,2020-05-30,Psychology
+293,Jindrich,Kayla,JindrichKayla@morris.umn.edu,Hustle, Wyoming,United States,2015-05-30,Psychology
+294,Larkin,Nicole,LarkinNicole@morris.umn.edu,Morning Sun, Minnesota,United States,2009-05-30,Statistics
+295,LaQua,Mariah,LaQuaMariah@morris.umn.edu,Glyndon, Minnesota,United States,2018-05-30,Music
+296,MacMillan,Abbie,MacMillanAbbie@morris.umn.edu,Clearbrook, Minnesota,United States,2017-05-30,Statistics
+297,Murdock,David,MurdockDavid@morris.umn.edu,Oaks Corner, Minnesota,United States,2012-05-30,Mathematics
+298,Olerud,Jordan,OlerudJordan@morris.umn.edu,Empire, Minnesota,United States,2010-05-30,Computer Science
+299,Pearce,Alaina,PearceAlaina@morris.umn.edu,Pratt, Minnesota,United States,2015-05-30,Music
+300,Sadecki,Brianna,SadeckiBrianna@morris.umn.edu,Ohoopee, Connecticut,United States,2020-05-30,Statistics
+301,Riley,Amanda,RileyAmanda@morris.umn.edu,Foul Rift, Minnesota,United States,2016-05-30,Music
+302,Scribner,Michelle,ScribnerMichelle@morris.umn.edu,Sparta, Minnesota,United States,2013-05-30,Mathematics
+303,Kahlenbeck,Josie,KahlenbeckJosie@morris.umn.edu,Bena, Minnesota,United States,2008-05-30,Psychology
+304,Marcus,Elizabeth,MarcusElizabeth@morris.umn.edu,Owatonna, Wyoming,United States,2021-05-30,Mathematics
+305,Schuldt,Benjamin,SchuldtBenjamin@morris.umn.edu,Ink, Minnesota,China,2008-05-30,Music
+306,Short,Alexander,ShortAlexander@morris.umn.edu,Saint Paul Park, Wyoming,United States,2018-05-30,Psychology
+307,Blank,Patty,BlankPatty@morris.umn.edu,Austin, Minnesota,United States,2013-05-30,Statistics
+308,Flanders,Dugan,FlandersDugan@morris.umn.edu,Grand Meadow, Minnesota,United States,2009-05-30,Statistics
+309,Schmidt,Andrew,SchmidtAndrew@morris.umn.edu,Glyndon, Minnesota,United States,2009-05-30,Statistics
+310,Rudeen,Charles,RudeenCharles@morris.umn.edu,Lynd, Minnesota,United States,2016-05-30,Computer Science
+311,Fisher,Ellery,FisherEllery@morris.umn.edu,Choice, Wyoming,United States,2018-05-30,Statistics
+312,Hildreth,Laura,HildrethLaura@morris.umn.edu,Minnesota Lake, Minnesota,United States,2013-05-30,Music
+313,Whipple,Kelly,WhippleKelly@morris.umn.edu,Holdingford, Minnesota,United States,2008-05-30,Computer Science
+314,Young-Stephens,Meghan,Young-StephensMeghan@morris.umn.edu,Choice, Idaho,China,2016-05-30,Music
+315,Kim,June,KimJune@morris.umn.edu,Sparta, Minnesota,China,2020-05-30,Mathematics
+316,Kim,Pulum,KimPulum@morris.umn.edu,Oaks Corner, Kansas,United States,2014-05-30,Computer Science
+317,Logan,Kevin,LoganKevin@morris.umn.edu,Grand Meadow, Vermont,United States,2008-05-30,Psychology
+318,Wessel,Ehren,WesselEhren@morris.umn.edu,Minnesota City, Minnesota,United States,2008-05-30,Music
+319,Ottinger,Matt,OttingerMatt@morris.umn.edu,Fillmore, Minnesota,United States,2018-05-30,Mathematics
+320,Rousseau,Matt,RousseauMatt@morris.umn.edu,Russell, Minnesota,United States,2021-05-30,Computer Science
+321,O'Leary,Tully,O'LearyTully@morris.umn.edu,Dupont, Minnesota,United States,2014-05-30,Psychology
+322,Olson,Amanda,OlsonAmanda@morris.umn.edu,Glyndon, Minnesota,United States,2015-05-30,Music
+323,Deuth,Joel,DeuthJoel@morris.umn.edu,Alida, Minnesota,United States,2009-05-30,Statistics
+324,Anderson,Jacob,AndersonJacob@morris.umn.edu,Russell, Minnesota,United States,2016-05-30,Psychology
+325,Clark,Katherine,ClarkKatherine@morris.umn.edu,Pickelville, Minnesota,United States,2013-05-30,Statistics
+326,Coulombe,Brad,CoulombeBrad@morris.umn.edu,Morton, Minnesota,United States,2008-05-30,Computer Science
+327,Moore,Dan,MooreDan@morris.umn.edu,Nary, Wyoming,Mexico,2018-05-30,Psychology
+328,Mowry,Evan,MowryEvan@morris.umn.edu,Brownton, Wyoming,China,2014-05-30,Computer Science
+329,Opatz,Hilary,OpatzHilary@morris.umn.edu,Brownton, Minnesota,United States,2018-05-30,Computer Science
+330,Yard,Christopher,YardChristopher@morris.umn.edu,Rossburg, Minnesota,United States,2019-05-30,Psychology
+331,Rousseau,Matthew,RousseauMatthew@morris.umn.edu,Hikapoloa, Wyoming,United States,2009-05-30,Psychology
+332,Yang,Paajnyag,YangPaajnyag@morris.umn.edu,Kandiyohi, Minnesota,United States,2020-05-30,Statistics
+333,Chen,Yuechen,ChenYuechen@morris.umn.edu,Ross, Minnesota,United States,2015-05-30,Computer Science
+334,Chen,Chen,ChenChen@morris.umn.edu,Wilkinson, Minnesota,United States,2018-05-30,Statistics
+335,Jiao,Yifei,JiaoYifei@morris.umn.edu,Round Prairie, Minnesota,United States,2018-05-30,Psychology
+336,Machayo,Anita,MachayoAnita@morris.umn.edu,Forest Grove, Minnesota,United States,2020-05-30,Mathematics
+337,Piwko,Jake,PiwkoJake@morris.umn.edu,Rossburg, District of Columbia,United States,2011-05-30,Statistics
+338,Schmidt,Jennifer,SchmidtJennifer@morris.umn.edu,Russell, Minnesota,United States,2015-05-30,Psychology
+339,Sperr,Marilyn,SperrMarilyn@morris.umn.edu,Choice, Minnesota,United States,2021-05-30,Music
+340,Xu,Duoduo,XuDuoduo@morris.umn.edu,Champlin, Minnesota,United States,2009-05-30,Statistics
+341,Leuty,Elizabeth,LeutyElizabeth@morris.umn.edu,Austin, Minnesota,United States,2009-05-30,Statistics
+342,Patterson,Ian,PattersonIan@morris.umn.edu,Holdingford, Minnesota,China,2021-05-30,Psychology
+343,Hartmann,Joseph,HartmannJoseph@morris.umn.edu,Bena, Wyoming,United States,2021-05-30,Mathematics
+344,Lowe,Lucy,LoweLucy@morris.umn.edu,Ross, Minnesota,United States,2021-05-30,Mathematics
+345,Morris,Jenny,MorrisJenny@morris.umn.edu,Miami, Minnesota,United States,2019-05-30,Music
+346,Peters,Sara,PetersSara@morris.umn.edu,Rossburg, Wyoming,United States,2010-05-30,Computer Science
+347,Woods,Ashley,WoodsAshley@morris.umn.edu,Sparta, Minnesota,United States,2017-05-30,Music
+348,Koch,Kendra,KochKendra@morris.umn.edu,Nary, Minnesota,Mexico,2013-05-30,Computer Science
+349,Maas,Sara,MaasSara@morris.umn.edu,Glyndon, Wyoming,United States,2017-05-30,Psychology
+350,Jenson,Amanda,JensonAmanda@morris.umn.edu,Owls Head, Minnesota,United States,2018-05-30,Music
+351,Maatz,Kali,MaatzKali@morris.umn.edu,New Sweden, Wyoming,United States,2015-05-30,Statistics
+352,Dempcy,Brian,DempcyBrian@morris.umn.edu,Pratt, Minnesota,United States,2015-05-30,Statistics
+353,Rostberg,Heidi,RostbergHeidi@morris.umn.edu,Brownton, Wisconsin,United States,2013-05-30,Statistics
+354,Martin,Brianna,MartinBrianna@morris.umn.edu,Ross, Minnesota,United States,2017-05-30,Mathematics
+355,Wolf,Justine,WolfJustine@morris.umn.edu,Bluffton, Minnesota,United States,2008-05-30,Computer Science
+356,Faber,Alex,FaberAlex@morris.umn.edu,Sparta, Minnesota,United States,2014-05-30,Computer Science
+357,Engh,Rachel,EnghRachel@morris.umn.edu,Round Prairie, Wyoming,United States,2018-05-30,Psychology
+358,Primus,Mitchell,PrimusMitchell@morris.umn.edu,Dupont, Minnesota,United States,2020-05-30,Computer Science
+359,Walker,Mofuah,WalkerMofuah@morris.umn.edu,Owatonna, Minnesota,United States,2015-05-30,Psychology
+360,Brett,Arthur,BrettArthur@morris.umn.edu,Nary, Minnesota,India,2020-05-30,Statistics
+361,Liz Schlimgen,Hucka,Liz SchlimgenHucka@morris.umn.edu,Rossburg, Minnesota,China,2016-05-30,Statistics
+362,Olson,Adam,OlsonAdam@morris.umn.edu,Nary, Minnesota,United States,2019-05-30,Psychology
+363,Droog,Dana,DroogDana@morris.umn.edu,Minnesota Lake, North Dakota,United States,2019-05-30,Statistics
+364,Elson,Seth,ElsonSeth@morris.umn.edu,New Sweden, Minnesota,United States,2013-05-30,Statistics
+365,Kawaleck,Melinda,KawaleckMelinda@morris.umn.edu,Grand Meadow, Minnesota,United States,2014-05-30,Mathematics
+366,Evenson,Jennifer,EvensonJennifer@morris.umn.edu,Fillmore, Minnesota,United States,2009-05-30,Psychology
+367,McMahon,Cassandra,McMahonCassandra@morris.umn.edu,Fredericksville, Minnesota,Mexico,2017-05-30,Computer Science
+368,Becker,Mackenzie,BeckerMackenzie@morris.umn.edu,Raquette River, Minnesota,China,2021-05-30,Music
+369,Kuseske,Andrea,KuseskeAndrea@morris.umn.edu,Kandiyohi, Minnesota,United States,2011-05-30,Statistics
+370,Thompson,Kaitlin,ThompsonKaitlin@morris.umn.edu,Buzzards Bay, Minnesota,Mexico,2014-05-30,Psychology
+371,Coyer,Brianne,CoyerBrianne@morris.umn.edu,Ada, Minnesota,United States,2012-05-30,Mathematics
+372,Rosana,Stacey,RosanaStacey@morris.umn.edu,Browerville, Alaska,United States,2011-05-30,Psychology
+373,Johnson,Zachary,JohnsonZachary@morris.umn.edu,Holdingford, Minnesota,United States,2021-05-30,Psychology
+374,Prieve,Ashley,PrieveAshley@morris.umn.edu,Place Corners, Minnesota,Mexico,2013-05-30,Computer Science
+375,Thompson,Alex,ThompsonAlex@morris.umn.edu,Linden Grove, Minnesota,United States,2014-05-30,Statistics
+376,Privratsky,Matt,PrivratskyMatt@morris.umn.edu,Dupont, Minnesota,United States,2012-05-30,Mathematics
+377,Bergeland,Eric,BergelandEric@morris.umn.edu,Heidelberg, Minnesota,United States,2012-05-30,Computer Science
+378,Swanson,Sonja,SwansonSonja@morris.umn.edu,Ada, Minnesota,Mexico,2018-05-30,Music
+379,Jacques,Joanna,JacquesJoanna@morris.umn.edu,Rosen, Minnesota,United States,2008-05-30,Computer Science
+380,Gronfeld,Melissa,GronfeldMelissa@morris.umn.edu,Blue Ridge, Minnesota,United States,2014-05-30,Statistics
+381,Gulbrandson,Sarah,GulbrandsonSarah@morris.umn.edu,Carmet, Minnesota,Mexico,2018-05-30,Computer Science
+382,Lenzmeier,Lisa,LenzmeierLisa@morris.umn.edu,Pine City, Vermont,United States,2012-05-30,Music
+383,Stevens,Darla,StevensDarla@morris.umn.edu,Minnesota City, Delaware,United States,2016-05-30,Statistics
+384,Sperr,Brandi,SperrBrandi@morris.umn.edu,Saint Paul Park, Minnesota,United States,2008-05-30,Computer Science
+385,Boyle,Rachel,BoyleRachel@morris.umn.edu,Boone, Minnesota,United States,2013-05-30,Music
+386,Anderson,Maren,AndersonMaren@morris.umn.edu,Bluffton, Wyoming,United States,2011-05-30,Mathematics
+387,Nayar,Daan,NayarDaan@morris.umn.edu,Bluffton, Minnesota,Mexico,2009-05-30,Psychology
+388,Saddison,Katie,SaddisonKatie@morris.umn.edu,Brownton, Massachusetts,Mexico,2010-05-30,Statistics
+389,McCann,Ellie,McCannEllie@morris.umn.edu,New Glasgow, Minnesota,United States,2014-05-30,Computer Science
+390,Duth,Joel,DuthJoel@morris.umn.edu,Champlin, Illinois,United States,2010-05-30,Music
+391,Bragelman,John,BragelmanJohn@morris.umn.edu,Wilkinson, Minnesota,United States,2020-05-30,Mathematics
+392,Kelsey,Austin,KelseyAustin@morris.umn.edu,Clearbrook, Minnesota,United States,2018-05-30,Psychology
+393,Turkson-Robinson,Masera,Turkson-RobinsonMasera@morris.umn.edu,The Fields Of Four Corners, Minnesota,Peru,2021-05-30,Psychology
+394,Kloek,Melissa,KloekMelissa@morris.umn.edu,Round Prairie, Minnesota,Mexico,2009-05-30,Psychology
+395,Pridmore,Kayla,PridmoreKayla@morris.umn.edu,Pine City, Minnesota,United States,2019-05-30,Psychology
+396,Henkel,Jolee,HenkelJolee@morris.umn.edu,Virginia, Minnesota,Mexico,2009-05-30,Mathematics
+397,Black,Sarah,BlackSarah@morris.umn.edu,Saint Paul Park, Minnesota,United States,2017-05-30,Psychology
+398,Buchen,Karin,BuchenKarin@morris.umn.edu,Fillmore, Minnesota,United States,2014-05-30,Music
+399,Baker,Leo,BakerLeo@morris.umn.edu,Forest Grove, Minnesota,United States,2015-05-30,Statistics
+400,Brueske,Ashley,BrueskeAshley@morris.umn.edu,Lynd, Minnesota,United States,2012-05-30,Music
+401,Ptacek,Kevin,PtacekKevin@morris.umn.edu,Shoreview, Minnesota,United States,2021-05-30,Computer Science
+402,Grabosky,Kathryn,GraboskyKathryn@morris.umn.edu,Lynd, Minnesota,United States,2013-05-30,Psychology
+403,Ertle,Kristine,ErtleKristine@morris.umn.edu,Ding Dong, Minnesota,United States,2008-05-30,Psychology
+404,Lucht,Ashley,LuchtAshley@morris.umn.edu,Minnetonka, Minnesota,China,2008-05-30,Psychology
+405,Meiser,Rachel,MeiserRachel@morris.umn.edu,Empire, Wyoming,Mexico,2016-05-30,Computer Science
+406,Hanson,Brent,HansonBrent@morris.umn.edu,Morton, Minnesota,United States,2013-05-30,Computer Science
+407,Goodfellow,Bobby,GoodfellowBobby@morris.umn.edu,Niceville, Wyoming,United States,2008-05-30,Computer Science
+408,Toso,Luke,TosoLuke@morris.umn.edu,Champlin, Minnesota,China,2015-05-30,Psychology
+409,Armstrong,Jessica,ArmstrongJessica@morris.umn.edu,Dupont, Wyoming,United States,2009-05-30,Music
+410,Jones,John,JonesJohn@morris.umn.edu,Hackett, Minnesota,United States,2019-05-30,Statistics
+411,Droske,Christopher,DroskeChristopher@morris.umn.edu,Dupont, Oklahoma,United States,2011-05-30,Computer Science
+412,Sweep,Sydney,SweepSydney@morris.umn.edu,Minnesota City, Hawaii,United States,2014-05-30,Psychology
+413,Fischer,Clay,FischerClay@morris.umn.edu,Owatonna, Minnesota,China,2008-05-30,Music
+414,Beattie,Alicia,BeattieAlicia@morris.umn.edu,Crisp, Minnesota,United States,2010-05-30,Statistics
+415,Kopet,Sonya,KopetSonya@morris.umn.edu,Diamond Corner, Minnesota,United States,2017-05-30,Psychology
+416,Holland,Laura,HollandLaura@morris.umn.edu,Oaks Corner, Minnesota,United States,2011-05-30,Music
+417,White,Erick,WhiteErick@morris.umn.edu,Ada, Minnesota,United States,2010-05-30,Mathematics
+418,Moulton,Rilee,MoultonRilee@morris.umn.edu,Saint Paul Park, Minnesota,United States,2012-05-30,Statistics
+419,Wohlwend,Rachel,WohlwendRachel@morris.umn.edu,Fillmore, Minnesota,United States,2013-05-30,Psychology
+420,Halls,Kimberly,HallsKimberly@morris.umn.edu,Minnetonka, Minnesota,United States,2018-05-30,Psychology
+421,Gerde,John,GerdeJohn@morris.umn.edu,Bena, Minnesota,United States,2017-05-30,Music
+422,Carruth,Emily,CarruthEmily@morris.umn.edu,Minnesota Lake, Minnesota,United States,2013-05-30,Mathematics
+423,Thole,Josie,TholeJosie@morris.umn.edu,Shiloh, Minnesota,United States,2013-05-30,Mathematics
+424,Cornell,Amanda,CornellAmanda@morris.umn.edu,Hackett, Minnesota,United States,2011-05-30,Music
+425,McClernon,Nicole,McClernonNicole@morris.umn.edu,Bee Log, Minnesota,Mexico,2010-05-30,Music
+426,Borgheiinck,Holly,BorgheiinckHolly@morris.umn.edu,Minnesota City, Wyoming,United States,2019-05-30,Psychology
+427,Weick,Savannah,WeickSavannah@morris.umn.edu,Champlin, Hawaii,United States,2020-05-30,Psychology
+428,McClernon,Eilzabeth,McClernonEilzabeth@morris.umn.edu,Matchaponix, Minnesota,United States,2013-05-30,Psychology
+429,Souza,Haley,SouzaHaley@morris.umn.edu,Pipestone, Minnesota,United States,2014-05-30,Mathematics
+430,Hyde,Kahsha,HydeKahsha@morris.umn.edu,Halma, Minnesota,United States,2019-05-30,Statistics
+431,Einertson,Joseph,EinertsonJoseph@morris.umn.edu,Condra, Minnesota,Mexico,2014-05-30,Music
+432,Russell,Sara,RussellSara@morris.umn.edu,Shaktoolik, Illinois,Mexico,2015-05-30,Mathematics
+433,Kaye,Alice,KayeAlice@morris.umn.edu,Minnesota City, Minnesota,United States,2009-05-30,Statistics
+434,Sims,Laura,SimsLaura@morris.umn.edu,Mentor, Michigan,United States,2015-05-30,Music
+435,Einertson,Joe,EinertsonJoe@morris.umn.edu,Bena, Minnesota,United States,2021-05-30,Music
+436,Johnson,Amy,JohnsonAmy@morris.umn.edu,Minnesota Lake, Minnesota,United States,2008-05-30,Computer Science
+437,August Hau,Megan,August HauMegan@morris.umn.edu,Hackett, Wyoming,United States,2017-05-30,Psychology
+438,Kocer,Tynell,KocerTynell@morris.umn.edu,Portland, Minnesota,United States,2015-05-30,Statistics
+439,Ahmed,Anwar,AhmedAnwar@morris.umn.edu,Minnetonka, Wyoming,Mexico,2019-05-30,Statistics

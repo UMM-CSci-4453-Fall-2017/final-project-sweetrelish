@@ -1,25 +1,28 @@
-DELMITER //
+DELIMITER //
 
 CREATE PROCEDURE project_procedure()
 BEGIN
-DECLARE @x int, @y int;
-SET @x = 1;
-SET @y = 1;
+DECLARE x INT DEFAULT 0;
+DECLARE y INT DEFAULT 0;
 
-WHILE @x <= 430
-BEGIN
+while_loop1: WHILE x <= 440 DO
 
-  WHILE @y <= 368
-    BEGIN
-    IF EXISTS (SELECT studentnames FROM (SELECT * FROM PROJECT LIMIT 1 OFFSET @y) WHERE
-                CONCAT(studentWorkers.`FIRST NAME`, studentWorkers.`LAST NAME`) LIKE CONCAT('%', PROJECT.studentnames, '%')) THEN
+    while_loop2: WHILE y <= 368 DO
 
-    INSERT INTO Roch.INTERMEDIATE VALUES(ELECT studentnames FROM (SELECT * FROM PROJECT LIMIT 1 OFFSET @y) WHERE
-                CONCAT(studentWorkers.`FIRST NAME`, studentWorkers.`LAST NAME`) LIKE CONCAT('%', PROJECT.studentnames, '%'));
+    IF EXISTS (SELECT `All/Former Students` FROM (SELECT * FROM Roch.maintable LIMIT 1 OFFSET y) t1 WHERE
+      `All/Former Students` LIKE CONCAT('%', (SELECT CONCAT(`First Name`, " ", `Last Name`) FROM Roch.studentWorkers LIMIT 1 OFFSET x), '%')) THEN
+
+    INSERT INTO Roch.studentsprojects VALUES((SELECT studentID FROM studentWorkers LIMIT 1 OFFSET x), (SELECT projectID FROM Projects LIMIT 1 OFFSET y));
     END IF;
-    SET @y = @y  + 1;
-      END
+    SET y = y  + 1;
+    END WHILE while_loop2;
 
-  SET @y = 1;
-  SET @x = @x + 1;
-END
+  SET y = 0;
+  SET x = x + 1;
+
+END WHILE while_loop1;
+
+END;
+//
+
+DELIMITER ;
