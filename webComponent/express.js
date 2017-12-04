@@ -10,8 +10,7 @@ var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
 var db = require('./db');
 var app = express();
-
-//app.use(express.static(__dirname + '/public')); //Serves the web pages
+var array = [];
 
 passport.use(new Strategy(
   function(username, password, cb) {
@@ -21,16 +20,18 @@ passport.use(new Strategy(
       if (user.password != password) { return cb(null, false); }
       return cb(null, user);
     });
-  }));
+}));
 
+var queryDatabase = function(dbf, sql){
+  queryResults = dbf.query(mysql.format(sql));
+  return(queryResults);
+}
 
-// Configure Passport authenticated session persistence.
-//
-// In order to restore authentication state across HTTP requests, Passport needs
-// to serialize users into and deserialize users out of the session.  The
-// typical implementation of this is as simple as supplying the user ID when
-// serializing, and querying the user record by ID from the database when
-// deserializing.
+var fillInArray = function(result, array){
+  array = result;
+  return(array);
+}
+
 passport.serializeUser(function(user, cb) {
   cb(null, user.id);
 });
@@ -42,23 +43,16 @@ passport.deserializeUser(function(id, cb) {
   });
 });
 
-// Create a new Express application.
 var app = express();
 
-// Configure view engine to render EJS templates.
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
-// Use application-level middleware for common functionality, including
-// logging, parsing, and session handling.
 app.use(require('morgan')('combined'));
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({ extended: true }));
 app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
-
-// Initialize Passport and restore authentication state, if any, from the
-// session.
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -95,13 +89,57 @@ app.get("/send",
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
     res.send("hello");
-    console.log("Hello");
-  });
+});
 
 app.get("/studentWorkers",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
       res.render('studentWorkers');
-  });
+});
+
+app.get("/currentProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      res.render('currentProject');
+});
+
+app.get("/organization",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      res.render('organization');
+});
+
+app.get("/archive",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      res.render('archive');
+});
+
+app.get("/getstudentWorkers",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major FROM Roch.studentWorkers LIMIT 18;";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/query",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var selectedSearchTerm = req.param('selectedSearchTerm');
+      var searchTerm = req.param('searchTerm');
+      var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major FROM Roch.studentWorkers WHERE "
+      + selectedSearchTerm + " Like " + "'%" + searchTerm + "%'" + " LIMIT 18;";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
 
 app.listen(port);

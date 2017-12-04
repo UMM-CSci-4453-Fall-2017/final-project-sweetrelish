@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="utf-8">
-    <title>Student Workers</title>
+    <title>Cash Register</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,54 +17,18 @@
       Database System</h1>
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a class="active" href="/studentWorkers">Student Workers</a></li>
+    <li><a href="/studentWorkers">Student Workers</a></li>
     <li><a href="/currentProject">Current Projects</a></li>
     <li><a href="/organization">Organization</a></li>
-    <li><a href="/archive">Archive</a></li>
+    <li><a class="active" href="/archive">Archive</a></li>
     <li><a href="/logout">Log-Out</a></li>
   </ul>
   <br>
-  <select ng-model="selectedSearchTerm" style="margin-left:20px">
-      <option ng-repeat="term in searchTerms" value="{{term.term}}">{{term.term}}</option>
-  </select>
-  <input type="text" placeholder="Search Term" ng-model="searchTerm">
-  <button ng-click="queryStudentWorkers($event, selectedSearchTerm, searchTerm);">
-    Search
-  </button>
-  <table style="align:center;margin-left:20px;height:450px;margin-top:10px">
-    <tr>
-      <th>studentID</th>
-      <th>Last Name</th>
-      <th>First Name</th>
-      <th>Email Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Graduation Year</th>
-      <th>Major</th>
-    </tr>
-    <tr ng-repeat="studentWorker in studentWorkers">
-        <td> {{studentWorker.studentID}} </td>
-        <td> {{studentWorker["Last Name"]}} </td>
-        <td> {{studentWorker["First Name"]}} </td>
-        <td> {{studentWorker["Email Address"]}} </td>
-        <td> {{studentWorker.City}} </td>
-        <td> {{studentWorker.State}} </td>
-        <td> {{studentWorker.Country}} </td>
-        <td> {{studentWorker["Graduation Year"]}} </td>
-        <td> {{studentWorker.Major}} </td>
-    </tr>
-  </table>
+  <br>
+  <br>
+  <center><h2>This page should show all the student workers</h2></center>
 </body>
 <style>
-
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-    text-align: center;
-    width: 1500px;
-  }
   h1.heading {
     font-family: Courier;
     font-size: 50px;
