@@ -1,0 +1,18 @@
+DELIMITER //
+
+CREATE PROCEDURE insertion()
+BEGIN
+
+//Before inserting, we need to check whether the student's that is doing this project name is already in the table studentWorkers
+//If it is already in, we should not add anything to the studentWorkers table, otherwise we do need to create a new record
+//Also, it shouldn't matter if the student's name is capitilized or not, it still need to figure out if the student is already in studentWorkers
+//Thus, if student's name is already in studentWorkers, data needs to be inserted only in Projects and studentsprojects. 
+
+//If student name is not in it, this students needs to get a new unique studentID
+//Also, every new projects needs to get a new unique projectID
+
+INSERT INTO studentWorkers VALUES(firstName, lastname)
+INSERT INTO Projects VALUES(projectTitle, Description)
+INSERT INTO studentsprojects VALUES(studentID, projectID)
+
+
