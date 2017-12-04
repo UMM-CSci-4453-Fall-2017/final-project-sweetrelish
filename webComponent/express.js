@@ -13,10 +13,6 @@ var app = express();
 
 //app.use(express.static(__dirname + '/public')); //Serves the web pages
 
-app.get("/test", function(req, res){
-  res.send("hello");
-});
-
 passport.use(new Strategy(
   function(username, password, cb) {
     db.users.findByUsername(username, function(err, user) {
@@ -46,15 +42,13 @@ passport.deserializeUser(function(id, cb) {
   });
 });
 
-
-
-
 // Create a new Express application.
 var app = express();
 
 // Configure view engine to render EJS templates.
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
 
 // Use application-level middleware for common functionality, including
 // logging, parsing, and session handling.
@@ -97,6 +91,17 @@ app.get('/profile',
     res.render('profile', { user: req.user });
   });
 
+app.get("/send",
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.send("hello");
+    console.log("Hello");
+  });
 
+app.get("/studentWorkers",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      res.render('studentWorkers');
+  });
 
 app.listen(port);

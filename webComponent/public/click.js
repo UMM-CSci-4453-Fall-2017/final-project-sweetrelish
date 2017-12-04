@@ -7,7 +7,7 @@
          $scope.logOutClick=logOutClick;
 
          function logOutClick($event) {
-           console.log("Hello");
+           console.log("Hello2");
            buttonApi.logOutClick()
             .success(function(data){
             })
