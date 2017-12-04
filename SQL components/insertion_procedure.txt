@@ -1,18 +1,33 @@
 DELIMITER //
 
-CREATE PROCEDURE insertion()
-BEGIN
+CREATE PROCEDURE insertion(lastName text, firstName text, email text, city text, state text, country text, graduation date, major text,
+                          projectstatus text, title text, start date, end date, intensity enum('High', 'Medium', 'Low'), description text, funding text, status text, link text, synopsis text, methodology text)
+proc_label: BEGIN
 
-//Before inserting, we need to check whether the student's that is doing this project name is already in the table studentWorkers
-//If it is already in, we should not add anything to the studentWorkers table, otherwise we do need to create a new record
-//Also, it shouldn't matter if the student's name is capitilized or not, it still need to figure out if the student is already in studentWorkers
-//Thus, if student's name is already in studentWorkers, data needs to be inserted only in Projects and studentsprojects. 
+#Before inserting, we need to check whether the student's that is doing this project name is already in the table studentWorkers
+#If it is already in, we should not add anything to the studentWorkers table, otherwise we do need to create a new record
+#Also, it shouldn't matter if the student's name is capitalized or not, it still need to figure out if the student is already in studentWorkers
+#Thus, if student's name is already in studentWorkers, data needs to be inserted only in Projects and studentsprojects.
 
-//If student name is not in it, this students needs to get a new unique studentID
-//Also, every new projects needs to get a new unique projectID
+#If student name is not in it, this students needs to get a new unique studentID
+#Also, every new projects needs to get a new unique projectID
 
-INSERT INTO studentWorkers VALUES(firstName, lastname)
-INSERT INTO Projects VALUES(projectTitle, Description)
-INSERT INTO studentsprojects VALUES(studentID, projectID)
+IF NOT EXISTS(SELECT * FROM Roch.Projects WHERE `Project Title` LIKE title) THEN
+INSERT INTO Projects VALUES((select max(projectID) from Roch.Projects) + 1, projectstatus, title, start, end, intensity, description, funding, status, link, synopsis, methodology);
+ELSE
+  LEAVE proc_label;
+END IF;
 
+IF NOT EXISTS(SELECT * FROM Roch.studentWorkers WHERE CONCAT(firstName, " ", lastName) LIKE CONCAT(studentWorkers.`First Name`, " ", studentWorkers.`Last Name`)) THEN
+INSERT INTO studentWorkers VALUES((select max(studentID) from Roch.studentWorkers) + 1, lastName, firstName, email, city, state, country, graduation, major);
+END IF;
 
+#We should return a note that says there is already a project with the same name
+
+INSERT INTO studentsprojects((SELECT * FROM studentWorkers where CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT(firstName, " ", lastName)),
+                             (SELECT * FROM Projects where `Project Title` LIKE title));
+
+END;
+//
+
+DELIMITER ;
