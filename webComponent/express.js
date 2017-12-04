@@ -2,110 +2,101 @@ Promise=require('bluebird')
 mysql=require('mysql');
 dbf=require('./dbf-setup.js');
 var credentials = require('./credentials.json');
-
-var express=require('express'),
+var express = require('express');
 app = express(),
 port = process.env.PORT || 1337;
+var passport = require('passport');
+var Strategy = require('passport-local').Strategy;
+var db = require('./db');
 
-//Declare all the necessary arrays
-var buttons = [];
-var list = [];
-var totalAmt = [];
-var loginInfo = [];
-
-//Method to query the database and returns the rows
-var queryDatabase = function(dbf, sql){
-  queryResults = dbf.query(mysql.format(sql));
-  return(queryResults);
-}
-
-//Take in the query rows and the necessary array and insert into the array
-var fillInArray = function(result, array){
-  array = result;
-  return(array);
-}
-
-//Send the sql statement into the database, not expecting any returns
-var sendToDatabase = function(dbf, sql){
-  dbf.query(mysql.format(sql));
-}
-
-//Querying database, insert rows data into buttons and send the buttons array back to the client side
 app.use(express.static(__dirname + '/public')); //Serves the web pages
-app.get("/buttons",function(req,res){
-  var sql = "SELECT * FROM " + credentials.user + ".till_buttons";
-  var query = queryDatabase(dbf, sql)
-  .then(fillInArray(buttons))
-  .then(function (buttons) {
-    res.send(buttons);})
-  .catch(function(err){console.log("DANGER:",err)});
+
+app.get("/test", function(req, res){
+  res.send("hello");
 });
 
-//When .post /vold in invoked, this method will truncate the transaction table, res.send() at the end to ensure
-//client receives the response and end the socket.
-app.post("/void",function(req,res){
-  var sql = "TRUNCATE TABLE " + credentials.user + ".transaction";
-  var query = sendToDatabase(dbf, sql);
-  res.send();
+
+// Configure the local strategy for use by Passport.
+//
+// The local strategy require a `verify` function which receives the credentials
+// (`username` and `password`) submitted by the user.  The function must verify
+// that the password is correct and then invoke `cb` with a user object, which
+// will be set at `req.user` in route handlers after authentication.
+passport.use(new Strategy(
+  function(username, password, cb) {
+    db.users.findByUsername(username, function(err, user) {
+      if (err) { return cb(err); }
+      if (!user) { return cb(null, false); }
+      if (user.password != password) { return cb(null, false); }
+      return cb(null, user);
+    });
+  }));
+
+
+// Configure Passport authenticated session persistence.
+//
+// In order to restore authentication state across HTTP requests, Passport needs
+// to serialize users into and deserialize users out of the session.  The
+// typical implementation of this is as simple as supplying the user ID when
+// serializing, and querying the user record by ID from the database when
+// deserializing.
+passport.serializeUser(function(user, cb) {
+  cb(null, user.id);
 });
 
-//When .get /list is invoked, this method will query the database and compile all the transaction
-//data and send it back to the client side.
-app.get("/list",function(req,res){
-  var sql = "SELECT * FROM " + credentials.user + ".transaction";
-  var query = queryDatabase(dbf, sql)
-  .then(fillInArray(list))
-  .then(function (list) {
-    res.send(list);})
-  .catch(function(err){console.log("DANGER:",err)});
+passport.deserializeUser(function(id, cb) {
+  db.users.findById(id, function (err, user) {
+    if (err) { return cb(err); }
+    cb(null, user);
+  });
 });
 
-//this method is responsible for adding the transaction info every time one of the buttons is pressed.
-//Again res.send() is added to free up the socket.
-app.post("/click",function(req,res){
-  var id = req.param('id');
-  var sql = 'INSERT INTO ' + credentials.user + '.transaction values (' + id + ',(SELECT item FROM ' +
-  credentials.user + '.inventory WHERE id = ' + id + '), 1 ,(SELECT prices FROM '+
-  credentials.user + '.prices WHERE id = ' + id + '), NOW(), 1) on duplicate key update amount = amount + 1, ' +
-  'cost = cost + (SELECT prices FROM '+ credentials.user + '.prices WHERE id = ' + id + ');'
-  var query = sendToDatabase(dbf, sql);
-  res.send();
-});
+// Create a new Express application.
+var app = express();
 
-//this method is responsible for deleting the record when the user press on one of the item in the
-//transaction table, res.send() is added as well.
-app.post("/delete", function(req,res){
-  var id = req.param('id');
-  var sql = 'DELETE FROM ' + credentials.user + '.transaction where id = ' + id;
-  var query = sendToDatabase(dbf, sql);
-  res.send();
-});
+// Configure view engine to render EJS templates.
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-//this method is responsible for getting the total amount of transaction.
-//Similar to above.
-app.get("/total", function(req, res){
-  var sql = 'SELECT SUM(cost) AS TOTAL FROM ' + credentials.user + '.transaction';
-  var query = queryDatabase(dbf, sql)
-  .then(fillInArray(totalAmt))
-  .then(function (totalAmt) {
-    res.send(totalAmt);})
-  .catch(function(err){console.log("DANGER:",err)});
-});
+// Use application-level middleware for common functionality, including
+// logging, parsing, and session handling.
+app.use(require('morgan')('combined'));
+app.use(require('cookie-parser')());
+app.use(require('body-parser').urlencoded({ extended: true }));
+app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 
-app.get("/login", function(req, res){
-  var usern = req.param('usern');
-  var passw = req.param('pw');
-  var sql = 'SELECT password = "' + passw + '" AS CORRECT FROM ' + credentials.user + '.User WHERE username = "' + usern + '";'
-  var query = queryDatabase(dbf, sql)
-  .then(fillInArray(loginInfo))
-  .then(function (loginInfo){
-    res.send(loginInfo);})
-  .catch(function(err){console.log("DANGER:",err)});
-});
+// Initialize Passport and restore authentication state, if any, from the
+// session.
+app.use(passport.initialize());
+app.use(passport.session());
 
-app.post("/sale", function(req, res){
-  var usern = req.param('usern');
-  res.send();
-});
+// Define routes.
+app.get('/',
+  function(req, res) {
+    res.render('home', { user: req.user });
+  });
+
+app.get('/login',
+  function(req, res){
+    res.render('login');
+  });
+
+app.post('/login',
+  passport.authenticate('local', { failureRedirect: '/login' }),
+  function(req, res) {
+    res.redirect('/');
+  });
+
+app.get('/logout',
+  function(req, res){
+    req.logout();
+    res.redirect('/');
+  });
+
+app.get('/profile',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.render('profile', { user: req.user });
+  });
 
 app.listen(port);
