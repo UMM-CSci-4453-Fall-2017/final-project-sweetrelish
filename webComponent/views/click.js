@@ -7,6 +7,7 @@
          $scope.logOutClick=logOutClick;
 
          function logOutClick($event) {
+           console.log("Hello");
            buttonApi.logOutClick()
             .success(function(data){
             })
@@ -18,7 +19,7 @@
         return{
           //getting the buttons coordinates from till_buttons
           logOutClick: function(){
-            var url = apiUrl + '/test';
+            var url = apiUrl + '/send';
             console.log("Attempting with "+url);
             return $http.get(url);
           }

@@ -3,25 +3,20 @@ mysql=require('mysql');
 dbf=require('./dbf-setup.js');
 var credentials = require('./credentials.json');
 var express = require('express');
+var path = require('path');
 app = express(),
 port = process.env.PORT || 1337;
 var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
 var db = require('./db');
+var app = express();
 
-app.use(express.static(__dirname + '/public')); //Serves the web pages
+//app.use(express.static(__dirname + '/public')); //Serves the web pages
 
 app.get("/test", function(req, res){
   res.send("hello");
 });
 
-
-// Configure the local strategy for use by Passport.
-//
-// The local strategy require a `verify` function which receives the credentials
-// (`username` and `password`) submitted by the user.  The function must verify
-// that the password is correct and then invoke `cb` with a user object, which
-// will be set at `req.user` in route handlers after authentication.
 passport.use(new Strategy(
   function(username, password, cb) {
     db.users.findByUsername(username, function(err, user) {
@@ -50,6 +45,9 @@ passport.deserializeUser(function(id, cb) {
     cb(null, user);
   });
 });
+
+
+
 
 // Create a new Express application.
 var app = express();
@@ -98,5 +96,7 @@ app.get('/profile',
   function(req, res){
     res.render('profile', { user: req.user });
   });
+
+
 
 app.listen(port);
