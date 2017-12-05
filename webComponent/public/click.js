@@ -8,25 +8,26 @@ angular.module('buttons',[])
     $scope.bool = true;
     $scope.individualStudentInfo=[];
     $scope.searchTerms=[{term: "studentID"},{term: "Last Name"},{term: "First Name"},{term: "Email Address"},{term: "City"},{term: "State"},{term: "Country"},{term: "Graduation Year"},{term: "Major"}]
-    $scope.searchTerm;
+    $scope.searchTerm="";
     $scope.studentID = 3;
-    $scope.studentLastName;
-    $scope.studentFirstName;
-    $scope.studentEmailAddress;
-    $scope.studentCity;
-    $scope.studentState;
-    $scope.studentCountry;
-    $scope.studentGraduationYear;
-    $scope.studentMajor;
-    $scope.tempStudentID;
-    $scope.tempstudentLast_Name;
-    $scope.tempstudentFirst_Name;
-    $scope.tempstudentEmailAddress;
-    $scope.tempstudentCity;
-    $scope.tempstudentState;
-    $scope.tempstudentCountry;
-    $scope.tempstudentGraduationYear;
-    $scope.selectedSearchTerm;
+    $scope.studentLastName="";
+    $scope.studentFirstName="";
+    $scope.studentEmailAddress="";
+    $scope.studentCity="";
+    $scope.studentState="";
+    $scope.studentCountry="";
+    $scope.studentGraduationYear="";
+    $scope.studentMajor="";
+    $scope.tempstudentLast_Name="";
+    $scope.tempstudentFirst_Name="";
+    $scope.tempstudentEmailAddress="";
+    $scope.tempstudentCity="";
+    $scope.tempstudentState="";
+    $scope.tempstudentCountry="";
+    $scope.tempstudentGraduationYear="";
+    $scope.tempstudentMajor="";
+    $scope.selectedSearchTerm="";
+    $scope.searchTermsforUpdate=[];
     $scope.updateStudentWorkers=updateStudentWorkers;
     $scope.queryStudentWorkers=queryStudentWorkers;
     $scope.scrollDownStudentWorkers=scrollDownStudentWorkers;
@@ -43,12 +44,30 @@ angular.module('buttons',[])
     }
 
     function saveChangestoStudentWorkers($event){
+      buttonApi.updateStudentWorkers($scope.studentID, $scope.tempstudentLast_Name, $scope.tempstudentFirst_Name, $scope.tempstudentEmailAddress, $scope.tempstudentCity,
+      $scope.tempstudentState, $scope.tempstudentCountry, $scope.tempstudentGraduationYear, $scope.tempstudentMajor)
+        .success(function(data){
+        $scope.individualStudentInfo=data;
+        loading=false;
+      })
+      .error(function () {
+        $scope.errorMessage="Unable click";
+        loading=false;
+      });
+      $scope.bool=true;
     }
 
-    function openQuery($event, id, last_name){
+    function openQuery($event, id, last_name, first_name, email_address, city, state, country, graduation_year, major){
       $scope.studentID = id;
       $scope.studentLastName = last_name;
-      console.log($scope.studentLastName);
+      $scope.studentFirstName = first_name;
+      $scope.studentEmailAddress = email_address;
+      $scope.studentCity = city;
+      $scope.studentState = state;
+      $scope.studentCountry = country;
+      $scope.studentGraduationYear = graduation_year;
+      $scope.studentMajor = major;
+
       $scope.bool=false;
       buttonApi.selectStudentWorkersProject(event.target.id)
       .success(function(data){
@@ -154,6 +173,12 @@ angular.module('buttons',[])
       },
       selectStudentWorkersProject: function(studentID){
         var url = apiUrl + '/selectStudentWorkersProject?studentID=' + studentID;
+        return $http.get(url);
+      },
+      updateStudentWorkers: function(id, last_name, first_name, email_address, city, state, country, graduation_year, major){
+        var url = apiUrl + '/updateStudentWorkers?studentID=' + id + '&last_name=' + last_name + '&first_name=' + first_name + '&email_address=' + email_address +
+        '&city=' + city + '&state=' + state + '&country=' + country + '&graduation_year=' + graduation_year + '&major=' + major;
+        console.log(url);
         return $http.get(url);
       },
     };
