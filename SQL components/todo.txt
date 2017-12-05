@@ -1,0 +1,14 @@
+Create trigger that when a new project/student is added, it adds rows with the students with the new project.
+
+Create a procedure for when a new project is added. It should:
+  1. Takes an argument similar to what the maintable structure looks like.
+  2. It should add to studentWorkers.
+  3. It should add to Projects.
+  4. Add to the maintable to??
+  5. Add to studentsprojects here or use trigger?
+
+Fix faculty table.
+
+Figure out what to do with keywords.
+
+Figure out a way that the database should be maintained.
