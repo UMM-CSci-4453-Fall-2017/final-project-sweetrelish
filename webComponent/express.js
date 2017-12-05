@@ -128,6 +128,30 @@ app.get("/getstudentWorkers",
         })
 });
 
+app.get("/getProjectInfo",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT count(*) AS COUNT FROM Roch.Projects WHERE `End Date` > NOW();";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/getStudentWorkersInfo",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT count(*) AS COUNT FROM Roch.studentWorkers WHERE `Graduation Year` > NOW();";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
 app.get("/query",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
@@ -162,6 +186,31 @@ app.get("/selectStudentWorkersProject",
     function(req, res){
       var studentID = req.param('studentID');
       var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major, " +
+      "(SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.studentsprojects where studentID = " + studentID + ")) AS " +
+      "`Project Title` FROM Roch.studentWorkers WHERE studentID = " + studentID + ";"
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+      })
+});
+
+app.get("/updateStudentWorkers",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var studentID = req.param('studentID');
+      var last_name = req.param('last_name');
+      var first_name = req.param('first_name');
+      var email_address = req.param('email_address');
+      var city = req.param('city');
+      var state = req.param('state');
+      var country = req.param('country');
+      var graduation_year = req.param('graduation_year');
+      var major = req.param('major');
+      var sql = "UPDATE TABLE studentWorkers SET `Last Name` = CASE WHEN ""
+
+      IF`Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major, " +
       "(SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.studentsprojects where studentID = " + studentID + ")) AS " +
       "`Project Title` FROM Roch.studentWorkers WHERE studentID = " + studentID + ";"
       console.log(sql);
