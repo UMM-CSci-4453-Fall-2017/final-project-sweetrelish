@@ -24,46 +24,84 @@
     <li><a href="/logout">Log-Out</a></li>
   </ul>
   <br>
-  <select ng-model="selectedSearchTerm" style="margin-left:20px">
-      <option ng-repeat="term in searchTerms" value="{{term.term}}">{{term.term}}</option>
-  </select>
-  <input type="text" placeholder="Search Term" ng-model="searchTerm">
-  <button ng-click="queryStudentWorkers($event, selectedSearchTerm, searchTerm);">
-    Search
-  </button>
-  <table style="align:center;margin-left:20px;height:450px;margin-top:10px">
-    <tr>
-      <th>studentID</th>
-      <th>Last Name</th>
-      <th>First Name</th>
-      <th>Email Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Graduation Year</th>
-      <th>Major</th>
-    </tr>
-    <tr ng-repeat="studentWorker in studentWorkers">
-        <td> {{studentWorker.studentID}} </td>
-        <td> {{studentWorker["Last Name"]}} </td>
-        <td> {{studentWorker["First Name"]}} </td>
-        <td> {{studentWorker["Email Address"]}} </td>
-        <td> {{studentWorker.City}} </td>
-        <td> {{studentWorker.State}} </td>
-        <td> {{studentWorker.Country}} </td>
-        <td> {{studentWorker["Graduation Year"]}} </td>
-        <td> {{studentWorker.Major}} </td>
-    </tr>
-  </table>
+  <div ng-show="bool">
+    <select ng-model="selectedSearchTerm" style="margin-left:20px">
+        <option ng-repeat="term in searchTerms" value="{{term.term}}">{{term.term}}</option>
+    </select>
+    <input type="text" placeholder="Search Term" ng-model="searchTerm">
+    <button ng-click="queryStudentWorkers($event, selectedSearchTerm, searchTerm);">
+      Search
+    </button>
+
+    <table style="align:center;margin-left:20px;height:450px;margin-top:10px">
+      <tr>
+        <th>studentID</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Email Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Graduation Year</th>
+        <th>Major</th>
+      </tr>
+      <tr ng-repeat="studentWorker in studentWorkers">
+          <td> {{studentWorker.studentID}} </td>
+          <td> {{studentWorker["Last Name"]}} </td>
+          <td ng-model="studentFirstName"> {{studentWorker["First Name"]}} </td>
+          <td ng-model="studentEmailAddress"> {{studentWorker["Email Address"]}} </td>
+          <td ng-model="studentCity"> {{studentWorker.City}} </td>
+          <td ng-model="studentState"> {{studentWorker.State}} </td>
+          <td ng-model="studentCountry"> {{studentWorker.Country}} </td>
+          <td ng-model="studentGraduationYear"> {{studentWorker["Graduation Year"]}} </td>
+          <td ng-model="studentMajor"> {{studentWorker.Major}} </td>
+          <td class ="buttonToMakeChanges">
+            <button style="width:100px;height:28px" class="btn btn-success" id="{{studentWorker.studentID}}" ng-click="openQuery($event, studentWorker.studentID, studentWorker['Last Name']);">
+                View
+            </button>
+          </td>
+      </tr>
+    </table>
+    <br>
+    <button type="button" class="btn btn-default btn-sm" style="margin-left:20px" ng-click="scrollUpStudentWorkers($event)">
+        <span class="glyphicon glyphicon-upload"></span> Scroll-up
+    </button>
+    <button type="button" class="btn btn-default btn-sm"  ng-click="scrollDownStudentWorkers($event)">
+        <span class="glyphicon glyphicon-download"></span> Scroll-down
+    </button>
+  </div>
+  <div ng-hide="bool" style="margin-left:30px">
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempStudentID" placeholder={{studentID}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentLast_Name" placeholder={{studentLastName}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentFirst_Name" placeholder={{studentFirstName}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentEmailAddress" placeholder={{studentEmailAddress}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentCity" placeholder={{studentCity}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentState" placeholder={{studentState}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentCountry" placeholder={{studentCountry}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-model="tempstudentGraduationYear" placeholder={{studentGraduationYear}}></input><br>
+    <br>
+    <input ng-repeat="student in individualStudentInfo" ng-value="student['Project Title']"></input><br>
+    <br>
+    <button style="width:100px;height:28px" class="btn btn-success" ng-click="saveChangestoStudentWorkers($event);">
+        Save
+    </button>
+  </div>
 </body>
 <style>
 
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
-    width: 1500px;
+    width: 1650px;
   }
   h1.heading {
     font-family: Courier;

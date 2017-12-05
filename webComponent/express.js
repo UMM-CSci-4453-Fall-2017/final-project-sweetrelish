@@ -85,12 +85,6 @@ app.get('/profile',
     res.render('profile', { user: req.user });
   });
 
-app.get("/send",
-  require('connect-ensure-login').ensureLoggedIn(),
-  function(req, res){
-    res.send("hello");
-});
-
 app.get("/studentWorkers",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
@@ -103,6 +97,7 @@ app.get("/currentProject",
       res.render('currentProject');
 });
 
+
 app.get("/organization",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
@@ -113,6 +108,12 @@ app.get("/archive",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
       res.render('archive');
+});
+
+app.get("/queryresult",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      res.render('queryresult');
 });
 
 app.get("/getstudentWorkers",
@@ -133,13 +134,42 @@ app.get("/query",
       var selectedSearchTerm = req.param('selectedSearchTerm');
       var searchTerm = req.param('searchTerm');
       var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major FROM Roch.studentWorkers WHERE "
-      + selectedSearchTerm + " Like " + "'%" + searchTerm + "%'" + " LIMIT 18;";
+      + "`" + selectedSearchTerm + "`" + " Like " + "'%" + searchTerm + "%'" + " LIMIT 18;";
       console.log(sql);
       var query = queryDatabase(dbf, sql)
         .then(fillInArray(array))
         .then(function (array){
           return res.send(array);
         })
+});
+
+app.get("/scrollDownStudentWorkers",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var skipTerm = req.param('skipTerm');
+      var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major FROM Roch.studentWorkers " +
+      "LIMIT " + skipTerm + ", 18;";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/selectStudentWorkersProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var studentID = req.param('studentID');
+      var sql = "SELECT studentID, `Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major, " +
+      "(SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.studentsprojects where studentID = " + studentID + ")) AS " +
+      "`Project Title` FROM Roch.studentWorkers WHERE studentID = " + studentID + ";"
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+      })
 });
 
 app.listen(port);
