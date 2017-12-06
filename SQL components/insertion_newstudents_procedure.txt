@@ -8,7 +8,7 @@ SET x = (SELECT MAX(studentID) FROM studentWorkers);
 SET x = x + 1;
 
 IF EXISTS(SELECT * FROM studenWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT('%', firstName, " ", lastName, '%')) THEN
-    SELECT "student already exists" as `ERROR`;
+    SELECT "This student already exists" as `ERROR`;
     LEAVE proc_label;
 ELSE
     INSERT INTO studentWorkers VALUES(x, lastName, firstName, email, city, state, country, graduation, major);
