@@ -4,7 +4,7 @@ CREATE PROCEDURE insertion_newproject(lastName TEXT, firstName TEXT, email TEXT,
                            projectstatus TEXT, title TEXT, start DATE, end DATE, intensity ENUM('High', 'Medium', 'Low'), description TEXT, funding TEXT, status TEXT, link TEXT, synopsis TEXT, methodology TEXT)
 
 proc_label: BEGIN
-DECLARE x INT DEFAULT 0;(SELECT MAX(projectId) FROM Roch.Projects);
+DECLARE x INT DEFAULT 0;
 DECLARE y INT DEFAULT 0;
 DECLARE z INT DEFAULT 0;
 SET y = (SELECT MAX(studentID) FROM Roch.studentWorkers);
