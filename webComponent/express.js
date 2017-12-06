@@ -3,6 +3,7 @@ mysql=require('mysql');
 dbf=require('./dbf-setup.js');
 var credentials = require('./credentials.json');
 var express = require('express');
+var HashMap = require('hashmap');
 var path = require('path');
 app = express(),
 port = process.env.PORT || 1337;
@@ -196,28 +197,72 @@ app.get("/selectStudentWorkersProject",
       })
 });
 
+app.get("/deleteStudentWorker",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+        var studentID = req.param('studentID');
+        var sql = "DELETE FROM Roch.studentWorkers WHERE studentID = " + studentID + ";"
+        console.log(sql);
+        var query = queryDatabase(dbf, sql)
+          .then(function (){
+            return res.send();
+        })
+});
+
 app.get("/updateStudentWorkers",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
+      var map = new Array();
+      var sqlInsert = "";
       var studentID = req.param('studentID');
-      var last_name = req.param('last_name');
-      var first_name = req.param('first_name');
-      var email_address = req.param('email_address');
-      var city = req.param('city');
-      var state = req.param('state');
-      var country = req.param('country');
-      var graduation_year = req.param('graduation_year');
-      var major = req.param('major');
-      var sql = "UPDATE TABLE studentWorkers SET `Last Name` = CASE WHEN ""
-
-      IF`Last Name`, `First Name`, `Email Address`, City, State, Country, date_format(`Graduation Year`, '%Y-%M') AS `Graduation Year` , Major, " +
-      "(SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.studentsprojects where studentID = " + studentID + ")) AS " +
-      "`Project Title` FROM Roch.studentWorkers WHERE studentID = " + studentID + ";"
-      console.log(sql);
+      if (req.param('last_name') != "") {
+        map.push("`Last Name`");
+        map.push(req.param('last_name'));
+      }
+      if (req.param('first_name') != "") {
+        map.push("`First Name`");
+        map.push(req.param('first_name'));
+      }
+      if (req.param('email_address') != "") {
+        map.push("`Email Address`");
+        map.push(req.param('email_address'));
+      }
+      if (req.param('city') != "") {
+        map.push("`City`");
+        map.push(req.param('city'));
+      }
+      if (req.param('state') != "") {
+        map.push("`State`");
+        map.push(req.param('state'));
+      }
+      if (req.param('country') != "") {
+        map.push("`Country`");
+        map.push(req.param('country'));
+      }
+      if (req.param('graduation_year') != "") {
+        map.push("`Graduation Year`");
+        map.push(req.param('graduation_year'));
+      }
+      if (req.param('major') != "") {
+        map.push("`Major`");
+        map.push(req.param('major'));
+      }
+      if (map.length == 2){
+        console.log("Shouldn't be here")
+        sqlInsert = sqlInsert + map[0] + '="' + map[1] + '"';
+      } else {
+        for(var i = 0; i < map.length; (i+=2)){
+          sqlInsert = sqlInsert + map[i] + ' = "'+ map[i+1] + '", ';
+        }
+        sqlInsert = sqlInsert.substring(0, sqlInsert.length - 2);
+      }
+      if (map.length == 0){
+        res.send();
+      }
+      var sql = "UPDATE Roch.studentWorkers SET " + sqlInsert + " WHERE studentID = " + studentID + ";"
       var query = queryDatabase(dbf, sql)
-        .then(fillInArray(array))
-        .then(function (array){
-          return res.send(array);
+        .then(function (){
+          return res.send();
       })
 });
 
