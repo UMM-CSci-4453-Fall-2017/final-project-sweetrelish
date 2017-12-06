@@ -11,20 +11,15 @@ WHO
 Tsz Hong Lau 
 Design the database 
 * ER diagram - 5 points
-* Normalization - 5 points 
-Create relevant tables/archive/views, etc. - 10 points
-Create queries for task outlined above - 10 points
-Create a simple user-interface - 15 points
-Customer/user interaction - 5 points
-Testing - 0 points
-
+* Cleaning data - 10 points
+Create a simple user-interface - 25 points
+Authentication - 10 points
 
 Rocherno de Jongh
 Design the database 
 * ER diagram - 5 points
 * Normalization - 5 points
+* Cleaning data - 5 points
 Create relevant tables/archive/views, etc. - 10 points
-Create queries for task outlined above - 10 points
-Create a simple user-interface - 15 points
-Customer/user interaction - 0 points
-Testing - 5 points
+Create queries, procedures etc for task outlined above - 20 points
+Create a simple user-interface - 5 points

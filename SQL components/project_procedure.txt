@@ -3,11 +3,16 @@ DELIMITER //
 CREATE PROCEDURE project_procedure()
 BEGIN
 DECLARE x INT DEFAULT 0;
+DECLARE x_2 INT DEFAULT 0;
 DECLARE y INT DEFAULT 0;
+DECLARE y_2 DEFAULT0;
 
-while_loop1: WHILE x <= 440 DO
+SET x_2 = (SELECT MAX(studentID) FROM  studentWorkers);
+SET y_2 = (SELECT MAX(projectID) FROM maintable);
 
-    while_loop2: WHILE y <= 368 DO
+while_loop1: WHILE x <= x_2 DO
+
+    while_loop2: WHILE y <= y_2 DO
 
     IF EXISTS (SELECT `All/Former Students` FROM (SELECT * FROM Roch.maintable LIMIT 1 OFFSET y) t1 WHERE
       `All/Former Students` LIKE CONCAT('%', (SELECT CONCAT(`First Name`, " ", `Last Name`) FROM Roch.studentWorkers LIMIT 1 OFFSET x), '%')) THEN

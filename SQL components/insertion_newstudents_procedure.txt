@@ -1,0 +1,20 @@
+DELIMITER //
+
+CREATE PROCEDURE insertion_newstudent(firstName TEXT, lastName TEXT, email TEXT, city TEXT, state TEXT,  country TEXT, graduation DATE, major TEXT)
+
+proc_label: BEGIN
+DECLARE x INT DEFAULT 0;
+SET x = (SELECT MAX(studentID) FROM studentWorkers);
+SET x = x + 1;
+
+IF EXISTS(SELECT * FROM studenWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT('%', firstName, " ", lastName, '%')) THEN
+    SELECT "This student already exists" as `ERROR`;
+    LEAVE proc_label;
+ELSE
+    INSERT INTO studentWorkers VALUES(x, lastName, firstName, email, city, state, country, graduation, major);
+END IF;
+
+END;
+//
+
+DELIMITER ;
