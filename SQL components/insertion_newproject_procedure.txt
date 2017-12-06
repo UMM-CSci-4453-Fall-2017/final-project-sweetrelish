@@ -1,0 +1,34 @@
+DELIMITER //
+
+CREATE PROCEDURE insertion_newproject(lastName TEXT, firstName TEXT, email TEXT, city TEXT, state TEXT, country TEXT, graduation DATE, major TEXT,
+                           projectstatus TEXT, title TEXT, start DATE, end DATE, intensity ENUM('High', 'Medium', 'Low'), description TEXT, funding TEXT, status TEXT, link TEXT, synopsis TEXT, methodology TEXT)
+
+proc_label: BEGIN
+DECLARE x INT DEFAULT 0;(SELECT MAX(projectId) FROM Roch.Projects);
+DECLARE y INT DEFAULT 0;
+DECLARE z INT DEFAULT 0;
+SET y = (SELECT MAX(studentID) FROM Roch.studentWorkers);
+SET x = (SELECT MAX(projectID) FROM Roch.Projects);
+SET z = 1;
+SET x = x + 1;
+
+IF NOT EXISTS(SELECT * FROM Roch.Projects WHERE `Project Title` LIKE title) THEN
+INSERT INTO Projects VALUES(x, projectstatus, title, start, end, intensity, description, funding, status, link, synopsis, methodology);
+ELSE
+    SELECT "title already exists" as `ERROR`;
+    LEAVE proc_label;
+END IF;
+
+IF EXISTS(SELECT * FROM studentWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT('%', firstName, " ", lastName, '%')) THEN
+    while_loop: WHILE z <= y DO
+        IF EXISTS(SELECT * FROM studentWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT('%', firstName, " ", lastName, '%')) THEN
+        INSERT INTO studentsprojects VALUES (z, x);
+        END IF;
+        SET z = z + 1;
+    END WHILE while_loop;
+END IF;
+
+END;
+//
+
+DELIMITER ;
