@@ -1,31 +1,53 @@
 DELIMITER //
 
-CREATE PROCEDURE insertion(lastName text, firstName text, email text, city text, state text, country text, graduation date, major text,
-                          projectstatus text, title text, start date, end date, intensity enum('High', 'Medium', 'Low'), description text, funding text, status text, link text, synopsis text, methodology text)
+CREATE PROCEDURE insertion(lastName TEXT, firstName TEXT, email TEXT, city TEXT, state TEXT, country TEXT, graduation DATE, major TEXT,
+                           projectstatus TEXT, title TEXT, start DATE, end DATE, intensity ENUM('High', 'Medium', 'Low'), description TEXT, funding TEXT, status TEXT, link TEXT, synopsis TEXT, methodology TEXT)
+
 proc_label: BEGIN
-
-#Before inserting, we need to check whether the student's that is doing this project name is already in the table studentWorkers
-#If it is already in, we should not add anything to the studentWorkers table, otherwise we do need to create a new record
-#Also, it shouldn't matter if the student's name is capitalized or not, it still need to figure out if the student is already in studentWorkers
-#Thus, if student's name is already in studentWorkers, data needs to be inserted only in Projects and studentsprojects.
-
-#If student name is not in it, this students needs to get a new unique studentID
-#Also, every new projects needs to get a new unique projectID
+DECLARE x INT DEFAULT 0;(SELECT MAX(projectId) FROM Roch.Projects);
+DECLARE y INT DEFAULT 0;
+SET y = (SELECT MAX(studentID) FROM Roch.studentWorkers);
+SET x = (SELECT MAX(projectID) FROM Roch.Projects);
+SET x = x + 1;
 
 IF NOT EXISTS(SELECT * FROM Roch.Projects WHERE `Project Title` LIKE title) THEN
-INSERT INTO Projects VALUES((select max(projectID) from Roch.Projects) + 1, projectstatus, title, start, end, intensity, description, funding, status, link, synopsis, methodology);
+INSERT INTO Projects VALUES(x, projectstatus, title, start, end, intensity, description, funding, status, link, synopsis, methodology);
 ELSE
-  LEAVE proc_label;
+    SELECT "title already exists" as `ERROR`;
+    LEAVE proc_label;
 END IF;
+
+CREATE TABLE TEMP IF NOT EXISTS (lastName TEXT, firstName TEXT, email TEXT, city TEXT, state TEXT, country TEXT, graduation DATE, major TEXT,
+                                 projectstatus TEXT, title TEXT, start DATE, end DATE, intensity ENUM('High', 'Medium', 'Low'), description TEXT, funding TEXT, status TEXT, link TEXT, synopsis TEXT, methodology TEXT);
+
+TRUNCATE TEMP;
+
+INSERT INTO TEMP VALUES(lastName TEXT, firstName TEXT, email TEXT, city TEXT, state TEXT, country TEXT, graduation DATE, major TEXT,
+                        projectstatus TEXT, title TEXT, start DATE, end DATE, intensity ENUM('High', 'Medium', 'Low'), description TEXT, funding TEXT, status TEXT, link TEXT, synopsis TEXT, methodology TEXT);
+
+
+IF EXISTS(SELECT * FROM studentWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT(firstName, " ", lastName)) THEN
+  #do a while loop like the previous procedure, and add if something exists
+  
+
+SELECT * FROM studentWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT(firstName, " ", lastName)
+
+END WHILE while_loop1;
+
+
+
+
+
+
+
+
 
 IF NOT EXISTS(SELECT * FROM Roch.studentWorkers WHERE CONCAT(firstName, " ", lastName) LIKE CONCAT(studentWorkers.`First Name`, " ", studentWorkers.`Last Name`)) THEN
 INSERT INTO studentWorkers VALUES((select max(studentID) from Roch.studentWorkers) + 1, lastName, firstName, email, city, state, country, graduation, major);
 END IF;
 
-#We should return a note that says there is already a project with the same name
-
-INSERT INTO studentsprojects((SELECT * FROM studentWorkers where CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT(firstName, " ", lastName)),
-                             (SELECT * FROM Projects where `Project Title` LIKE title));
+INSERT INTO studentsprojects VALUES((SELECT studentID FROM studentWorkers WHERE CONCAT(`First Name`, " ", `Last Name`) LIKE CONCAT(firstName, " ", lastName)),
+(SELECT projectID FROM Projects where `Project Title` LIKE title));
 
 END;
 //
