@@ -9,7 +9,7 @@
       $scope.individualStudentInfo=[];
       $scope.searchTerms=[{term: "studentID"},{term: "Last Name"},{term: "First Name"},{term: "Email Address"},{term: "City"},{term: "State"},{term: "Country"},{term: "Graduation Year"},{term: "Major"}]
       $scope.searchTerm="";
-      $scope.studentID = 3;
+      $scope.studentID="";
       $scope.studentLastName="";
       $scope.studentFirstName="";
       $scope.studentEmailAddress="";
@@ -90,10 +90,10 @@
         $scope.studentCountry = country;
         $scope.studentGraduationYear = graduation_year;
         $scope.studentMajor = major;
-
         $scope.bool=false;
         buttonApi.selectStudentWorkersProject(event.target.id)
-        .success(function(){
+        .success(function(data){
+          $scope.individualStudentInfo=data;
           loading=false;
         })
         .error(function () {

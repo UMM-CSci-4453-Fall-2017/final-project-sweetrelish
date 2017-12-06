@@ -266,4 +266,33 @@ app.get("/updateStudentWorkers",
       })
 });
 
+app.get("/getProjects",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
+      " FROM Roch.Projects LIMIT 10;";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/getSpecificProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var projectID = req.param("projectID");
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
+      "FROM Roch.Projects WHERE projectID = " + projectID + ";";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
 app.listen(port);
