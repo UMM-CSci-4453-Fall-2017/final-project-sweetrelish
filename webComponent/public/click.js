@@ -57,6 +57,8 @@
       console.log("Hello");
       buttonApi.deleteStudentWorker($scope.studentID)
         .success(function(){
+          updateStudentWorkers();
+          $scope.bool=true;
           loading=false;
       })
       .error(function () {
