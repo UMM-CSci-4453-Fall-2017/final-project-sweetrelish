@@ -19,9 +19,99 @@ angular.module('projects',[])
     $scope.projectLinktoProject="";
     $scope.projectSynopsisLink="";
     $scope.projectMethodology="";
+    $scope.tempProjectProjectStatus="";
+    $scope.tempProjectTitle="";
+    $scope.tempProjectStartDate="";
+    $scope.tempProjectEndDate="";
+    $scope.tempProjectIntensity="";
+    $scope.tempProjectDescription="";
+    $scope.tempProjectFundingType="";
+    $scope.tempProjectStatus="";
+    $scope.tempProjectLinkedtoProject="";
+    $scope.tempProjectSynopsisLink="";
+    $scope.tempProjectMethodology="";
     $scope.bool = true;
     $scope.getProjects=getProjects;
     $scope.openQuery=openQuery;
+    $scope.warning_box=warning_box;
+    $scope.deleteProject=deleteProject;
+    $scope.saveChangestoProjects=saveChangestoProjects;
+    $scope.queryProject=queryProject;
+    $scope.scrollUpProject=scrollUpProject;
+    $scope.scrollDownProject=scrollDownProject;
+    var loading = false;
+    var begin = 0;
+
+  function warning_box($event){
+      if (confirm("Are you sure you want to delete this project record from database?") == true) {
+        deleteProject($event);
+      } else {
+        return;
+      }
+  }
+
+  function saveChangestoProjects($event){
+    console.log("Hello");
+    projectApi.saveChangestoProjects($scope.projectID, $scope.tempProjectProjectStatus, $scope.tempProjectTitle, $scope.tempProjectStartDate, $scope.tempProjectEndDate,
+    $scope.tempProjectIntensity, $scope.tempProjectDescription, $scope.tempProjectFundingType, $scope.tempProjectStatus,
+    $scope.tempProjectLinkedtoProject, $scope.tempProjectSynopsisLink, $scope.tempProjectMethodology)
+      .success(function(){
+        $scope.bool=true;
+        loading=false;
+      })
+        .error(function () {
+          $scope.errorMessage="Unable click";
+          loading=false;
+        });
+        $scope.bool=true;
+  }
+
+  function scrollDownProject($event){
+    console.log($scope.currentProjects[0].projectID);
+    loading=true;
+    begin = $scope.currentProjects[0].projectID;
+    begin = begin + 9;
+    projectApi.scrollDownProject(begin)
+      .success(function(data){
+        $scope.currentProjects=data;
+        loading=false;
+      })
+      .error(function () {
+        $scope.errorMessage="Unable click";
+        loading=false;
+      });
+  }
+
+  function scrollUpProject($event){
+    loading=true;
+    begin = $scope.currentProjects[0].projectID;
+    if (begin <= 10){
+      return;
+    } else {
+      begin = begin - 11;
+      projectApi.scrollDownProject(begin)
+        .success(function(data){
+          $scope.currentProjects=data;
+          loading=false;
+        })
+        .error(function () {
+          $scope.errorMessage="Unable click";
+          loading=false;
+        });
+    }
+  }
+
+  function deleteProject($event){
+    projectApi.deleteProject($scope.projectID)
+      .success(function(){
+        $scope.bool=true;
+        loading=false;
+    })
+    .error(function () {
+      $scope.errorMessage="Unable click";
+      loading=false;
+    });
+  }
 
   function getProjects(){
     loading=true;
@@ -34,6 +124,19 @@ angular.module('projects',[])
           $scope.errorMessage="Unable click";
           loading=false;
         });
+  }
+
+  function queryProject($event){
+    loading=true;
+    projectApi.queryProject($scope.selectedSearchTerm, $scope.searchTerm)
+      .success(function(data){
+         $scope.currentProjects=data;
+         loading=false;
+      })
+      .error(function () {
+        $scope.errorMessage="Unable click";
+        loading=false;
+      });
   }
 
   function openQuery($event, id, project_status, project_title, project_start_date, project_end_date,
@@ -77,171 +180,23 @@ angular.module('projects',[])
         var url = apiUrl + '/getSpecificProject?projectID=' + projectID;
         return $http.get(url);
       },
-      // queryStudentWorkers: function(selectedSearchTerm, searchTerm){
-      //   var url = apiUrl + '/query?selectedSearchTerm=' +selectedSearchTerm + '&searchTerm=' + searchTerm;
-      //   return $http.get(url);
-      // },
-      // scrollDownStudentWorkers: function(skipTerm){
-      //   var url = apiUrl + '/scrollDownStudentWorkers?skipTerm=' + skipTerm;
-      //   return $http.get(url);
-      // },
-      // selectStudentWorkersProject: function(studentID){
-      //   var url = apiUrl + '/selectStudentWorkersProject?studentID=' + studentID;
-      //   return $http.get(url);
-      // },
-      // updateStudentWorkers: function(id, last_name, first_name, email_address, city, state, country, graduation_year, major){
-      //   var url = apiUrl + '/updateStudentWorkers?studentID=' + id + '&last_name=' + last_name + '&first_name=' + first_name + '&email_address=' + email_address +
-      //   '&city=' + city + '&state=' + state + '&country=' + country + '&graduation_year=' + graduation_year + '&major=' + major;
-      //   return $http.get(url);
-      // },
-      // deleteStudentWorker: function(id){
-      //   console.log("Hello2");
-      //   var url = apiUrl + '/deleteStudentWorker?studentID=' + id;
-      //   return $http.get(url);
-      // },
+      deleteProject: function(projectID){
+        var url = apiUrl + '/deleteProject?projectID=' + projectID;
+        return $http.get(url);
+      },
+      saveChangestoProjects: function(id, status, title, start_date, end_date, intensity, description, funding_type, project_status, linktoproject, synopsisLink, methodology){
+        var url = apiUrl + '/saveChangestoProjects?projectID=' + id + '&status=' + status + '&title=' + title + '&start_date=' + start_date + '&end_date=' + end_date
+        + '&intensity=' + intensity + '&description=' + description + '&funding_type=' + funding_type + '&project_status=' + project_status + + '&linktoproject=' + linktoproject +
+        + '&synopsisLink=' + synopsisLink + + '&methodology=' + methodology;
+        return $http.get(url);
+      },
+      queryProject: function(selectedSearchTerm, searchTerm){
+        var url = apiUrl + '/queryProject?selectedSearchTerm=' +selectedSearchTerm + '&searchTerm=' + searchTerm;
+        return $http.get(url);
+      },
+      scrollDownProject: function(skipTerm){
+        var url = apiUrl + '/scrollDownProject?skipTerm=' + skipTerm;
+        return $http.get(url);
+      },
     };
   }
-
-  // $scope.individualStudentInfo=[];
-  // $scope.searchTerms=[{term: "studentID"},{term: "Last Name"},{term: "First Name"},{term: "Email Address"},{term: "City"},{term: "State"},{term: "Country"},{term: "Graduation Year"},{term: "Major"}]
-  // $scope.searchTerm="";
-  // $scope.studentID = 3;
-  // $scope.studentLastName="";
-  // $scope.studentFirstName="";
-  // $scope.studentEmailAddress="";
-  // $scope.studentCity="";
-  // $scope.studentState="";
-  // $scope.studentCountry="";
-  // $scope.studentGraduationYear="";
-  // $scope.studentMajor="";
-  // $scope.tempstudentLast_Name="";
-  // $scope.tempstudentFirst_Name="";
-  // $scope.tempstudentEmailAddress="";
-  // $scope.tempstudentCity="";
-  // $scope.tempstudentState="";
-  // $scope.tempstudentCountry="";
-  // $scope.tempstudentGraduationYear="";
-  // $scope.tempstudentMajor="";
-  // $scope.selectedSearchTerm="";
-  // $scope.searchTermsforUpdate=[];
-  // $scope.updateStudentWorkers=updateStudentWorkers;
-  // $scope.queryStudentWorkers=queryStudentWorkers;
-  // $scope.scrollDownStudentWorkers=scrollDownStudentWorkers;
-  // $scope.scrollUpStudentWorkers=scrollUpStudentWorkers;
-  // $scope.openQuery=openQuery;
-  // $scope.saveChangestoStudentWorkers=saveChangestoStudentWorkers;
-  // $scope.deleteStudentWorker=deleteStudentWorker;
-  // $scope.warning_box=warning_box;
-
-  var loading = false;
-//   var begin = 0;
-//   //var studentID = 0;
-//
-// function isLoading(){
-//     return loading;
-// }
-//
-// function warning_box($event){
-//   if (confirm("Are you sure you want to delete this person record from database?") == true) {
-//     deleteStudentWorker($event);
-//   } else {
-//     return;
-//   }
-// }
-//
-// function deleteStudentWorker($event){
-//   console.log("Hello");
-//   projectApi.deleteStudentWorker($scope.studentID)
-//     .success(function(){
-//       loading=false;
-//   })
-//   .error(function () {
-//     $scope.errorMessage="Unable click";
-//     loading=false;
-//   });
-// }
-//
-// function saveChangestoStudentWorkers($event){
-//     projectApi.updateStudentWorkers($scope.studentID, $scope.tempstudentLast_Name, $scope.tempstudentFirst_Name, $scope.tempstudentEmailAddress, $scope.tempstudentCity,
-//     $scope.tempstudentState, $scope.tempstudentCountry, $scope.tempstudentGraduationYear, $scope.tempstudentMajor)
-//       .success(function(data){
-//       $scope.individualStudentInfo=data;
-//       updateStudentWorkers();
-//       loading=false;
-//     })
-//     .error(function () {
-//       $scope.errorMessage="Unable click";
-//       loading=false;
-//     });
-//     $scope.bool=true;
-//   }
-//
-// function openQuery($event, id, last_name, first_name, email_address, city, state, country, graduation_year, major){
-//     $scope.studentID = id;
-//     $scope.studentLastName = last_name;
-//     $scope.studentFirstName = first_name;
-//     $scope.studentEmailAddress = email_address;
-//     $scope.studentCity = city;
-//     $scope.studentState = state;
-//     $scope.studentCountry = country;
-//     $scope.studentGraduationYear = graduation_year;
-//     $scope.studentMajor = major;
-//     $scope.bool=false;
-//     projectApi.selectStudentWorkersProject(event.target.id)
-//     .success(function(data){
-//       $scope.individualStudentInfo=data;
-//       loading=false;
-//     })
-//     .error(function () {
-//       $scope.errorMessage="Unable click";
-//       loading=false;
-//     });
-//   }
-//
-// function scrollDownStudentWorkers($event){
-//   loading=true;
-//   begin = $scope.studentWorkers[0].studentID;
-//   begin = begin + 17;
-//   projectApi.scrollDownStudentWorkers(begin)
-//     .success(function(data){
-//       $scope.studentWorkers=data;
-//       loading=false;
-//     })
-//     .error(function () {
-//       $scope.errorMessage="Unable click";
-//       loading=false;
-//     });
-// }
-//
-// function scrollUpStudentWorkers($event){
-//   loading=true;
-//   begin = $scope.studentWorkers[0].studentID;
-//   if (begin <= 18){
-//     return;
-//   } else {
-//     begin = begin - 19;
-//     projectApi.scrollDownStudentWorkers(begin)
-//       .success(function(data){
-//         $scope.studentWorkers=data;
-//         loading=false;
-//       })
-//       .error(function () {
-//         $scope.errorMessage="Unable click";
-//         loading=false;
-//       });
-//   }
-// }
-//
-// function queryStudentWorkers($event){
-//   loading=true;
-//   projectApi.queryStudentWorkers($scope.selectedSearchTerm, $scope.searchTerm)
-//     .success(function(data){
-//        $scope.studentWorkers=data;
-//        loading=false;
-//     })
-//     .error(function () {
-//       $scope.errorMessage="Unable click";
-//       loading=false;
-//     });
-// }
-//

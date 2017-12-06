@@ -105,10 +105,10 @@ app.get("/organization",
       res.render('organization');
 });
 
-app.get("/archive",
+app.get("/addRecord",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
-      res.render('archive');
+      res.render('addRecord');
 });
 
 app.get("/queryresult",
@@ -287,6 +287,131 @@ app.get("/getSpecificProject",
       var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
       "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
       "FROM Roch.Projects WHERE projectID = " + projectID + ";";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/deleteProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+        var projectID = req.param('projectID');
+        var sql = "DELETE FROM Roch.Projects WHERE projectID = " + projectID + ";"
+        console.log(sql);
+        var query = queryDatabase(dbf, sql)
+          .then(function (){
+            return res.send();
+        })
+});
+
+app.get("/saveChangestoProjects",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var map = new Array();
+      var sqlInsert = "";
+      var projectID = req.param('projectID');
+      if (req.param('status') != "") {
+        map.push("`Project Status`");
+        map.push(req.param('status'));
+      }
+      if (req.param('title') != "") {
+        map.push("`Project Title`");
+        map.push(req.param('title'));
+      }
+      if (req.param('start_date') != "") {
+        map.push("`Start Date`");
+        map.push(req.param('start_date'));
+      }
+      if (req.param('end_date') != "") {
+        map.push("`End Date`");
+        map.push(req.param('end_date'));
+      }
+      if (req.param('intensity') != "") {
+        map.push("`Project Intensity`");
+        map.push(req.param('intensity'));
+      }
+      if (req.param('description') != "") {
+        map.push("`Description`");
+        map.push(req.param('description'));
+      }
+      if (req.param('funding_type') != "") {
+        map.push("`Funding Type`");
+        map.push(req.param('funding_type'));
+      }
+      if (req.param('project_status') != "") {
+        map.push("`Status`");
+        map.push(req.param('project_status'));
+      }
+      if (req.param('linktoproject') != "") {
+        map.push("`Link to Project`");
+        map.push(req.param('linktoproject'));
+      }
+      if (req.param('synopsisLink') != "") {
+        map.push("`Project Synopsis Link`");
+        map.push(req.param('synopsisLink'));
+      }
+      if (req.param('methodology') != "") {
+        map.push("`Methodology`");
+        map.push(req.param('methodology'));
+      }
+      if (map.length == 2){
+        sqlInsert = sqlInsert + map[0] + '="' + map[1] + '"';
+      } else {
+        for(var i = 0; i < map.length; (i+=2)){
+          sqlInsert = sqlInsert + map[i] + ' = "'+ map[i+1] + '", ';
+        }
+        sqlInsert = sqlInsert.substring(0, sqlInsert.length - 2);
+      }
+      if (map.length == 0){
+        res.send();
+      }
+      var sql = "UPDATE Roch.Projects SET " + sqlInsert + " WHERE projectID = " + projectID + ";"
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(function (){
+          return res.send();
+      })
+});
+
+app.get("/queryProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var selectedSearchTerm = req.param('selectedSearchTerm');
+      var searchTerm = req.param('searchTerm');
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
+      " FROM Roch.Projects WHERE " + "`" + selectedSearchTerm + "`" + " Like " + "'%" + searchTerm + "%'" + " LIMIT 8;";
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/scrollDownProject",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var skipTerm = req.param('skipTerm');
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
+      " FROM Roch.Projects LIMIT " + skipTerm + ", 10;" ;
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/storeToDatabase",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
+      " FROM Roch.Projects LIMIT " + skipTerm + ", 10;" ;
       console.log(sql);
       var query = queryDatabase(dbf, sql)
         .then(fillInArray(array))

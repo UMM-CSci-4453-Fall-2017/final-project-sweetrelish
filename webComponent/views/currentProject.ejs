@@ -20,7 +20,7 @@
     <li><a href="/studentWorkers">Student Workers</a></li>
     <li><a class="active" href="/currentProject">Current Projects</a></li>
     <li><a href="/organization">Organization</a></li>
-    <li><a href="/archive">Archive</a></li>
+    <li><a href="/addRecord">Add Record</a></li>
     <li><a href="/logout">Log-Out</a></li>
   </ul>
   <br>
@@ -29,7 +29,7 @@
         <option ng-repeat="term in searchTerms" value="{{term.term}}">{{term.term}}</option>
     </select>
     <input type="text" placeholder="Search Term" ng-model="searchTerm">
-    <button ng-click="queryStudentWorkers($event, selectedSearchTerm, searchTerm);">
+    <button ng-click="queryProject($event, selectedSearchTerm, searchTerm);">
       Search
     </button>
     <table style="align:center;margin-left:20px;height:450px;margin-top:10px">
@@ -57,41 +57,41 @@
           </td>
       </tr>
     </table>
-    <!-- <br>
-    <button type="button" class="btn btn-default btn-sm" style="margin-left:20px" ng-click="scrollUpStudentWorkers($event)">
+    <br>
+    <button type="button" class="btn btn-default btn-sm" style="margin-left:20px" ng-click="scrollUpProject($event)">
         <span class="glyphicon glyphicon-upload"></span> Scroll-up
     </button>
-    <button type="button" class="btn btn-default btn-sm"  ng-click="scrollDownStudentWorkers($event)">
+    <button type="button" class="btn btn-default btn-sm"  ng-click="scrollDownProject($event)">
         <span class="glyphicon glyphicon-download"></span> Scroll-down
-    </button> -->
+    </button>
   </div>
   <div ng-hide="bool" style="margin-left:30px" ng-repeat="info in individualProject">
     <br>
-    Project Status: <input ng-model="tempProject_Status" placeholder={{projectProjectStatus}}></input><br>
+    Project Status: <input ng-model="tempProjectProjectStatus" placeholder={{projectProjectStatus}}></input><br>
     <br>
-    Project Title: <input ng-model="tempProject_Title" placeholder={{projectTitle}}></input><br>
+    Project Title: <input ng-model="tempProjectTitle" placeholder={{projectTitle}}></input><br>
     <br>
-    Project Start Date: <input ng-model="tempProject_StartDate" placeholder={{projectStartDate}}></input><br>
+    Project Start Date: <input ng-model="tempProjectStartDate" placeholder={{projectStartDate}}></input><br>
     <br>
-    Project End Date: <input ng-model="tempProject_EndDate" placeholder={{projectEndDate}}></input><br>
+    Project End Date: <input ng-model="tempProjectEndDate" placeholder={{projectEndDate}}></input><br>
     <br>
-    Project Intensity: <input ng-model="tempProject_Intensity" placeholder={{projectIntensity}}></input><br>
+    Project Intensity: <input ng-model="tempProjectIntensity" placeholder={{projectIntensity}}></input><br>
     <br>
-    Project Funding Type: <input ng-model="tempProject_FundingType" placeholder={{projectFundingType}}></input><br>
+    Project Funding Type: <input ng-model="tempProjectFundingType" placeholder={{projectFundingType}}></input><br>
     <br>
     Project Status: <input ng-model="tempProjectStatus" placeholder={{projectStatus}}></input><br>
     <br>
-    Project Link to Project: <input ng-model="tempProject_LinkToProject" placeholder={{projectLinktoProject}}></input><br>
+    Project Link to Project: <input ng-model="tempProjectLinkedtoProject" placeholder={{projectLinktoProject}}></input><br>
     <br>
-    Synopsis Link: <input ng-model="tempProject_LinkToProject" placeholder={{projectSynopsisLink}}></input><br>
+    Synopsis Link: <input ng-model="tempProjectSynopsisLink" placeholder={{projectSynopsisLink}}></input><br>
     <br>
-    Project Methodology: <input ng-model="tempProject_LinkToProject" placeholder={{projectMethodology}}></input><br>
+    Project Methodology: <input ng-model="tempProjectMethodology" placeholder={{projectMethodology}}></input><br>
     <br>
     Project Description:
     <br>
     <textarea ng-repeat="info in individualProject" ng-model=projectDescription rows="4" cols="50"></textarea><br>
     <br>
-    <button style="width:100px;height:28px" class="btn btn-success" ng-click="saveChangestoStudentWorkers($event);">
+    <button style="width:100px;height:28px" class="btn btn-success" ng-click="saveChangestoProjects($event);">
         Save
     </button>
     <button style="width:100px;height:28px" class="btn btn-danger" ng-click="warning_box($event);">
