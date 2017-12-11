@@ -1,0 +1,33 @@
+DELIMITER //
+
+CREATE PROCEDURE counties_procedure()
+BEGIN
+DECLARE x INT DEFAULT 0;
+DECLARE x_2 INT DEFAULT 0;
+DECLARE y INT DEFAULT 0;
+DECLARE y_2 INT DEFAULT 0;
+
+SET x_2 = (SELECT MAX(countyID) FROM  counties);
+SET y_2 = (SELECT MAX(organizationID) FROM bigTableOrganizations);
+
+while_loop1: WHILE x <= x_2 DO
+
+    while_loop2: WHILE y <= y_2 DO
+
+    IF EXISTS (SELECT `county` FROM (SELECT * FROM Roch.bigTableOrganizations LIMIT 1 OFFSET y) t1 WHERE
+      `county` LIKE CONCAT('%', (SELECT county FROM Roch.counties LIMIT 1 OFFSET x), '%')) THEN
+
+    INSERT INTO Roch.countiesorgs VALUES((SELECT countyID FROM counties LIMIT 1 OFFSET x), (SELECT organizationID FROM organizations LIMIT 1 OFFSET y));
+    END IF;
+    SET y = y  + 1;
+    END WHILE while_loop2;
+
+  SET y = 0;
+  SET x = x + 1;
+
+END WHILE while_loop1;
+
+END;
+//
+
+DELIMITER ;

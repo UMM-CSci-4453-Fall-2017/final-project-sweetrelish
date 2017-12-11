@@ -15,3 +15,15 @@ create table studentsprojects(studentID int not null, projectID int not null,
       constraint `fk_studentsprojects_studentID` foreign key(studentID) references studentWorkers (studentID) on delete cascade on update restrict,
       constraint `fk_studentsprojects_projectID` foreign key(projectID) references Projects (projectID) on delete cascade on update restrict
       );
+
+
+load data local infile "/home/dejon076/csci4453/final-project-sweetrelish/SQL components/counties.csv" into table counties columns terminated by ',' optionally enclosed by '"' escaped by '"' lines terminated by '\n';
+
+load data local infile "/home/dejon076/csci4453/final-project-sweetrelish/SQL components/bigtableorgs.csv" into table organizations columns terminated by ',' optionally enclosed by '"' escaped by '"' lines terminated by '\n' ignore 1 lines;
+
+load data local infile "/home/dejon076/csci4453/final-project-sweetrelish/SQL components/organizations.csv" into table organizations columns terminated by ',' optionally enclosed by '"' escaped by '"' lines terminated by '\n' ignore 1 lines;
+
+create table countiesorgs(countyID int not null, organizationID int not null,
+      constraint `fk_counties_countiesID` foreign key(countyID) references counties (countyID) on delete cascade on update restrict,
+      constraint `fk_organizations_organizationID` foreign key(organizationID) references organizations (organizationID) on delete cascade on update restrict
+      );
