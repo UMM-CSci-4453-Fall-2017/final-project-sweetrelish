@@ -46,7 +46,7 @@
           <td> {{organization["city"]}} </td>
           <td class ="buttonToMakeChanges">
             <button style="width:100px;height:28px" class="btn btn-success" id="{{organization.organizationID}}" ng-click="openQuery($event, organization.organizationID, organization['organization'], organization['type']
-              , organization['city'];">
+              , organization['city']);">
                 View
             </button>
           </td>
@@ -60,7 +60,8 @@
       <span class="glyphicon glyphicon-download"></span> Scroll-down
   </button>
 </div>
-<div ng-hide="bool" style="margin-left:30px" ng-repeat="info in individualOrganization">
+<div ng-hide="bool" style="margin-left:30px">
+  organizationID: <input ng-repeat="organization in individualOrganization" ng-model="organizationID" placeholder={{OrganizationID}}></input><br>
   <br>
   Organization: <input ng-model="temporganizationOrganization" placeholder={{organizationOrganization}}></input><br>
   <br>
@@ -68,9 +69,9 @@
   <br>
   Organization City: <input ng-model="temporganizationCity" placeholder={{organizationCity}}></input><br>
   <br>
-  Organization:
+  Projects:
   <br>
-  <textarea ng-repeat="info in individualOrganization" ng-model="organization['organization']" rows="4" cols="50"></textarea><br>
+  <textarea ng-repeat="organization in individualOrganization" ng-model="organization['Project Title']" rows="4" cols="50"></textarea><br>
   <br>
   <button style="width:100px;height:28px" class="btn btn-success" ng-click="saveChangesToOrganizations($event);">
       Save

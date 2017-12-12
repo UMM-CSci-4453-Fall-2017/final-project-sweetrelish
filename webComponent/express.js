@@ -197,6 +197,20 @@ app.get("/selectStudentWorkersProject",
       })
 });
 
+app.get("/getSpecificOrganization",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var organizationID = req.param("organizationID");
+      var sql = "SELECT organizationID, organization, type, city, (SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.organizationsprojects where organizationID = " + organizationID + ")) AS " +
+      "`Project Title` FROM Roch.organizations WHERE organizationID = " + organizationID + ";"
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
 app.get("/deleteStudentWorker",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
@@ -307,6 +321,18 @@ app.get("/deleteProject",
         })
 });
 
+app.get("/deleteOrganization",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+        var organizationID = req.param('organizationID');
+        var sql = "DELETE FROM Roch.organizations WHERE organizationID = " + organizationID + ";"
+        console.log(sql);
+        var query = queryDatabase(dbf, sql)
+          .then(function (){
+            return res.send();
+        })
+});
+
 app.get("/saveChangestoProjects",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
@@ -384,6 +410,19 @@ app.get("/queryProject",
       var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
       "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
       " FROM Roch.Projects WHERE " + "`" + selectedSearchTerm + "`" + " Like " + "'%" + searchTerm + "%'" + " LIMIT 8;";
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/queryOrganization",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var selectedSearchTerm = req.param('selectedSearchTerm');
+      var searchTerm = req.param('searchTerm');
+      var sql = "SELECT organizationID, organization, type, city FROM Roch.organizations WHERE " + "`" + selectedSearchTerm + "`" + " Like " + "'%" + searchTerm + "%'" + " LIMIT 8;";
       var query = queryDatabase(dbf, sql)
         .then(fillInArray(array))
         .then(function (array){

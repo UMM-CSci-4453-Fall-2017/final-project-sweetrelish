@@ -32,3 +32,13 @@ create table organizationsprojects(organizationID int not null, projectID int no
 constraint `fk_organizations_organizationID1` foreign key(organizationID) references organizations (organizationID) on delete cascade on update restrict,
 constraint `fk_studentsprojects_projectID1` foreign key(projectID) references Projects (projectID) on delete cascade on update restrict
 );
+
+
+
+SELECT organizationID, organization, type, city, (SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.organizationsprojects where studentID = 1)) AS `Project Title` FROM Roch.studentWorkers WHERE studentID = 1;
+
+"SELECT organizationID, organization, type, city, (SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.organizationsprojects where organizationID = " + organizationID + ")) AS " +
+      "`Project Title` FROM Roch.organizations WHERE organizationID = " + organizationID + ";"
+
+
+"SELECT organizationID, organization, type, city FROM Roch.organizations WHERE " + "`" + selectedSearchTerm + "`" + " Like " + "'%" + searchTerm + "%'" + " LIMIT 8;";
