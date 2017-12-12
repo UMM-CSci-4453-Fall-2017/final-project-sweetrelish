@@ -1,111 +1,65 @@
 angular.module('projects',[])
-    .controller('projectCtrl',projectCtrl)
-    .factory('projectApi',projectApi)
-    .constant('apiUrl','http://localhost:1337'); // CHANGED for the lab 2017!
+.controller('projectCtrl',projectCtrl)
+.factory('projectApi',projectApi)
+.constant('apiUrl','http://localhost:1337'); // CHANGED for the lab 2017!
 
-  function projectCtrl($scope,projectApi){
-    $scope.currentProjects=[];
-    $scope.individualProject=[];
-    $scope.searchTerms=[{term: "Project Status"},{term: "Project Title"},{term: "Project Intensity"},{term: "Description"}]
-    $scope.projectID="";
-    $scope.projectProjectStatus="";
-    $scope.projectTitle="";
-    $scope.projectStartDate="";
-    $scope.projectEndDate="";
-    $scope.projectIntensity="";
-    $scope.projectDescription="";
-    $scope.projectFundingType="";
-    $scope.projectStatus="";
-    $scope.projectLinktoProject="";
-    $scope.projectSynopsisLink="";
-    $scope.projectMethodology="";
-    $scope.tempProjectProjectStatus="";
-    $scope.tempProjectTitle="";
-    $scope.tempProjectStartDate="";
-    $scope.tempProjectEndDate="";
-    $scope.tempProjectIntensity="";
-    $scope.tempProjectDescription="";
-    $scope.tempProjectFundingType="";
-    $scope.tempProjectStatus="";
-    $scope.tempProjectLinkedtoProject="";
-    $scope.tempProjectSynopsisLink="";
-    $scope.tempProjectMethodology="";
-    $scope.bool = true;
-    $scope.getProjects=getProjects;
-    $scope.openQuery=openQuery;
-    $scope.warning_box=warning_box;
-    $scope.deleteProject=deleteProject;
-    $scope.saveChangestoProjects=saveChangestoProjects;
-    $scope.queryProject=queryProject;
-    $scope.scrollUpProject=scrollUpProject;
-    $scope.scrollDownProject=scrollDownProject;
-    var loading = false;
-    var begin = 0;
+function projectCtrl($scope,projectApi){
+  $scope.currentProjects=[];
+  $scope.individualProject=[];
+  $scope.searchTerms=[{term: "Project Status"},{term: "Project Title"},{term: "Project Intensity"},{term: "Description"}]
+  $scope.projectID="";
+  $scope.projectProjectStatus="";
+  $scope.projectTitle="";
+  $scope.projectStartDate="";
+  $scope.projectEndDate="";
+  $scope.projectIntensity="";
+  $scope.projectDescription="";
+  $scope.projectFundingType="";
+  $scope.projectStatus="";
+  $scope.projectLinktoProject="";
+  $scope.projectSynopsisLink="";
+  $scope.projectMethodology="";
+  $scope.tempProjectProjectStatus="";
+  $scope.tempProjectTitle="";
+  $scope.tempProjectStartDate="";
+  $scope.tempProjectEndDate="";
+  $scope.tempProjectIntensity="";
+  $scope.tempProjectDescription="";
+  $scope.tempProjectFundingType="";
+  $scope.tempProjectStatus="";
+  $scope.tempProjectLinkedtoProject="";
+  $scope.tempProjectSynopsisLink="";
+  $scope.tempProjectMethodology="";
+  $scope.bool = true;
+  $scope.updateProjects=updateProjects;
+  $scope.openQuery=openQuery;
+  $scope.warning_box=warning_box;
+  $scope.deleteProject=deleteProject;
+  $scope.saveChangestoProjects=saveChangestoProjects;
+  $scope.queryProject=queryProject;
+  $scope.scrollUpProject=scrollUpProject;
+  $scope.scrollDownProject=scrollDownProject;
 
+  var loading = false;
+  var begin = 0;
+
+  function isLoading(){
+    return loading;
+  }
   function warning_box($event){
-      if (confirm("Are you sure you want to delete this project record from database?") == true) {
-        deleteProject($event);
-      } else {
-        return;
-      }
-  }
-
-  function saveChangestoProjects($event){
-    console.log("Hello");
-    projectApi.saveChangestoProjects($scope.projectID, $scope.tempProjectProjectStatus, $scope.tempProjectTitle, $scope.tempProjectStartDate, $scope.tempProjectEndDate,
-    $scope.tempProjectIntensity, $scope.tempProjectDescription, $scope.tempProjectFundingType, $scope.tempProjectStatus,
-    $scope.tempProjectLinkedtoProject, $scope.tempProjectSynopsisLink, $scope.tempProjectMethodology)
-      .success(function(){
-        $scope.bool=true;
-        loading=false;
-      })
-        .error(function () {
-          $scope.errorMessage="Unable click";
-          loading=false;
-        });
-        $scope.bool=true;
-  }
-
-  function scrollDownProject($event){
-    console.log($scope.currentProjects[0].projectID);
-    loading=true;
-    begin = $scope.currentProjects[0].projectID;
-    begin = begin + 9;
-    projectApi.scrollDownProject(begin)
-      .success(function(data){
-        $scope.currentProjects=data;
-        loading=false;
-      })
-      .error(function () {
-        $scope.errorMessage="Unable click";
-        loading=false;
-      });
-  }
-
-  function scrollUpProject($event){
-    loading=true;
-    begin = $scope.currentProjects[0].projectID;
-    if (begin <= 10){
-      return;
+    if (confirm("Are you sure you want to delete this project record from database?") == true) {
+      deleteProject($event);
     } else {
-      begin = begin - 11;
-      projectApi.scrollDownProject(begin)
-        .success(function(data){
-          $scope.currentProjects=data;
-          loading=false;
-        })
-        .error(function () {
-          $scope.errorMessage="Unable click";
-          loading=false;
-        });
+      return;
     }
   }
 
   function deleteProject($event){
     projectApi.deleteProject($scope.projectID)
-      .success(function(){
-        $scope.bool=true;
-        loading=false;
+    .success(function(){
+      updateProjects();
+      $scope.bool=true;
+      loading=false;
     })
     .error(function () {
       $scope.errorMessage="Unable click";
@@ -113,34 +67,24 @@ angular.module('projects',[])
     });
   }
 
-  function getProjects(){
-    loading=true;
-    projectApi.getProjects()
-        .success(function(data){
-            $scope.currentProjects=data;
-            loading = false;
-        })
-        .error(function () {
-          $scope.errorMessage="Unable click";
-          loading=false;
-        });
-  }
-
-  function queryProject($event){
-    loading=true;
-    projectApi.queryProject($scope.selectedSearchTerm, $scope.searchTerm)
+  function saveChangestoProjects($event){
+    projectApi.updateProjects($scope.projectID, $scope.tempProjectProjectStatus, $scope.tempProjectTitle, $scope.tempProjectStartDate, $scope.tempProjectEndDate,
+      $scope.tempProjectIntensity, $scope.tempProjectDescription, $scope.tempProjectFundingType, $scope.tempProjectStatus,
+      $scope.tempProjectLinkedtoProject, $scope.tempProjectSynopsisLink, $scope.tempProjectMethodology)
       .success(function(data){
-         $scope.currentProjects=data;
-         loading=false;
+        $scope.individualProject=data;
+        updateProjects();
+        loading=false;
       })
       .error(function () {
         $scope.errorMessage="Unable click";
         loading=false;
       });
-  }
+      $scope.bool=true;
+    }
 
-  function openQuery($event, id, project_status, project_title, project_start_date, project_end_date,
-    project_intensity, project_description, project_funding_type, project_status, project_link, project_synpsis_link, project_methodology){
+    function openQuery($event, id, project_status, project_title, project_start_date, project_end_date,
+      project_intensity, project_description, project_funding_type, project_status, project_link, project_synpsis_link, project_methodology){
         $scope.projectID=id;
         $scope.projectProjectStatus=project_status;
         $scope.projectTitle=project_title;
@@ -164,39 +108,99 @@ angular.module('projects',[])
           $scope.errorMessage="Unable click";
           loading=false;
         });
-  }
+      }
 
-  getProjects();
-  }
+      function scrollDownProject($event){
+        console.log($scope.currentProjects[0].projectID);
+        loading=true;
+        begin = $scope.currentProjects[0].projectID;
+        begin = begin + 9;
+        projectApi.scrollDownProject(begin)
+        .success(function(data){
+          $scope.currentProjects=data;
+          loading=false;
+        })
+        .error(function () {
+          $scope.errorMessage="Unable click";
+          loading=false;
+        });
+      }
 
-  function projectApi($http,apiUrl){
-    return{
-      getProjects: function(){
+      function scrollUpProject($event){
+        loading=true;
+        begin = $scope.currentProjects[0].projectID;
+        if (begin <= 10){
+          return;
+        } else {
+          begin = begin - 11;
+          projectApi.scrollDownProject(begin)
+          .success(function(data){
+            $scope.currentProjects=data;
+            loading=false;
+          })
+          .error(function () {
+            $scope.errorMessage="Unable click";
+            loading=false;
+          });
+        }
+      }
+
+      function queryProject($event){
+        loading=true;
+        projectApi.queryProject($scope.selectedSearchTerm, $scope.searchTerm)
+        .success(function(data){
+          $scope.currentProjects=data;
+          loading=false;
+        })
+        .error(function () {
+          $scope.errorMessage="Unable click";
+          loading=false;
+        });
+      }
+
+      function updateProjects(){
+        loading=true;
+        projectApi.getProjects()
+        .success(function(data){
+          $scope.currentProjects=data;
+          loading = false;
+        })
+        .error(function () {
+          $scope.errorMessage="Unable click";
+          loading=false;
+        });
+      }
+
+      updateProjects();
+    }
+
+    function projectApi($http,apiUrl){
+      return{
+        getProjects: function(){
           var url = apiUrl + '/getProjects';
-          // console.log("Attempting with " + url);
           return $http.get(url);
-      },
-      getSpecificProject: function(projectID){
-        var url = apiUrl + '/getSpecificProject?projectID=' + projectID;
-        return $http.get(url);
-      },
-      deleteProject: function(projectID){
-        var url = apiUrl + '/deleteProject?projectID=' + projectID;
-        return $http.get(url);
-      },
-      saveChangestoProjects: function(id, status, title, start_date, end_date, intensity, description, funding_type, project_status, linktoproject, synopsisLink, methodology){
-        var url = apiUrl + '/saveChangestoProjects?projectID=' + id + '&status=' + status + '&title=' + title + '&start_date=' + start_date + '&end_date=' + end_date
-        + '&intensity=' + intensity + '&description=' + description + '&funding_type=' + funding_type + '&project_status=' + project_status + + '&linktoproject=' + linktoproject +
-        + '&synopsisLink=' + synopsisLink + + '&methodology=' + methodology;
-        return $http.get(url);
-      },
-      queryProject: function(selectedSearchTerm, searchTerm){
-        var url = apiUrl + '/queryProject?selectedSearchTerm=' +selectedSearchTerm + '&searchTerm=' + searchTerm;
-        return $http.get(url);
-      },
-      scrollDownProject: function(skipTerm){
-        var url = apiUrl + '/scrollDownProject?skipTerm=' + skipTerm;
-        return $http.get(url);
-      },
-    };
-  }
+        },
+        getSpecificProject: function(projectID){
+          var url = apiUrl + '/getSpecificProject?projectID=' + projectID;
+          return $http.get(url);
+        },
+        deleteProject: function(projectID){
+          var url = apiUrl + '/deleteProject?projectID=' + projectID;
+          return $http.get(url);
+        },
+        updateProjects: function(id, status, title, start_date, end_date, intensity, description, funding_type, project_status, linktoproject, synopsisLink, methodology){
+          var url = apiUrl + '/updateProjects?projectID=' + id + '&status=' + status + '&title=' + title + '&start_date=' + start_date + '&end_date=' + end_date
+          + '&intensity=' + intensity + '&description=' + description + '&funding_type=' + funding_type + '&project_status=' + project_status + + '&linktoproject=' + linktoproject +
+          + '&synopsisLink=' + synopsisLink + + '&methodology=' + methodology;
+          return $http.get(url);
+        },
+        queryProject: function(selectedSearchTerm, searchTerm){
+          var url = apiUrl + '/queryProject?selectedSearchTerm=' +selectedSearchTerm + '&searchTerm=' + searchTerm;
+          return $http.get(url);
+        },
+        scrollDownProject: function(skipTerm){
+          var url = apiUrl + '/scrollDownProject?skipTerm=' + skipTerm;
+          return $http.get(url);
+        },
+      };
+    }

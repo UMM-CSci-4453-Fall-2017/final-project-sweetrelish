@@ -283,7 +283,7 @@ app.get("/updateStudentWorkers",
 app.get("/getProjects",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
-      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
       "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
       " FROM Roch.Projects LIMIT 10;";
       console.log(sql);
@@ -298,7 +298,7 @@ app.get("/getSpecificProject",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
       var projectID = req.param("projectID");
-      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
       "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
       "FROM Roch.Projects WHERE projectID = " + projectID + ";";
       console.log(sql);
@@ -333,7 +333,44 @@ app.get("/deleteOrganization",
         })
 });
 
-app.get("/saveChangestoProjects",
+app.get("/updateOrganizations",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var map = new Array();
+      var sqlInsert = "";
+      var organizationID = req.param('organizationID');
+      if (req.param('organization') != "") {
+        map.push("organization");
+        map.push(req.param('organization'));
+      }
+      if (req.param('type') != "") {
+        map.push("type");
+        map.push(req.param('type'));
+      }
+      if (req.param('city') != "") {
+        map.push("city");
+        map.push(req.param('city'));
+      }
+      if (map.length == 2){
+        sqlInsert = sqlInsert + map[0] + '="' + map[1] + '"';
+      } else {
+        for(var i = 0; i < map.length; (i+=2)){
+          sqlInsert = sqlInsert + map[i] + ' = "'+ map[i+1] + '", ';
+        }
+        sqlInsert = sqlInsert.substring(0, sqlInsert.length - 2);
+      }
+      if (map.length == 0){
+        res.send();
+      }
+      var sql = "UPDATE Roch.organizations SET " + sqlInsert + " WHERE organizationID = " + organizationID + ";"
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(function (){
+          return res.send();
+      })
+});
+
+app.get("/updateProjects",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
       var map = new Array();
@@ -384,6 +421,7 @@ app.get("/saveChangestoProjects",
         map.push(req.param('methodology'));
       }
       if (map.length == 2){
+        console.log("Shouldn't be here")
         sqlInsert = sqlInsert + map[0] + '="' + map[1] + '"';
       } else {
         for(var i = 0; i < map.length; (i+=2)){
