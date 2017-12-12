@@ -391,6 +391,32 @@ app.get("/queryProject",
         })
 });
 
+
+app.get("/getOrganizations",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var sql = "SELECT * FROM Roch.organizations LIMIT 10";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
+app.get("/scrollDownOrganization",
+    require('connect-ensure-login').ensureLoggedIn(),
+    function(req, res){
+      var skipTerm = req.param('skipTerm');
+      var sql = "SELECT *  FROM Roch.organizations LIMIT " + skipTerm + ", 10";
+      console.log(sql);
+      var query = queryDatabase(dbf, sql)
+        .then(fillInArray(array))
+        .then(function (array){
+          return res.send(array);
+        })
+});
+
 app.get("/scrollDownProject",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){

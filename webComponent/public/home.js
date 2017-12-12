@@ -6,8 +6,10 @@ angular.module('home',[])
   function homeCtrl($scope,homeApi){
     $scope.projectInfo=[];
     $scope.studentInfo=[];
+    $scope.organizationInfo=[];
     $scope.retrieveProjectInfo=retrieveProjectInfo;
     $scope.retrieveStudentInfo=retrieveStudentInfo;
+    $scope.retrieveOrganizationInfo=retrieveOrganizationInfo;
     $scope.errorMessage="";
 
   function retrieveProjectInfo(){
@@ -35,8 +37,24 @@ angular.module('home',[])
         loading=false;
       })
   }
+
+  function retrieveOrganizationInfo(){
+    loading=true;
+    homeApi.getOrganizationInfo()
+      .success(function(data){
+        $scope.studentInfo=data;
+        loading=false;
+      })
+      .error(function () {
+        $scope.errorMessage="Unable to retrieve information";
+        loading=false;
+      })
+  }
+
   retrieveProjectInfo();
   retrieveStudentInfo();
+  retrieveOrganizationInfo();
+
   }
 
   function homeApi($http,apiUrl){
@@ -51,5 +69,11 @@ angular.module('home',[])
           // console.log("Attempting with " + url);
           return $http.get(url);
       },
+
+      getOrganizationInfo: function(){
+        var url = apiUrl + '/getOrganizationInfo';
+        // console.log("Attempting with " + url);
+        return $http.get(url);
+      }
     };
   }
