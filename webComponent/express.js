@@ -202,7 +202,7 @@ app.get("/getSpecificOrganization",
     function(req, res){
       var organizationID = req.param("organizationID");
       var sql = "SELECT organizationID, organization, type, city, (SELECT GROUP_CONCAT(`Project Title` SEPARATOR ', ') FROM Roch.Projects where projectID in (SELECT projectID from Roch.organizationsprojects where organizationID = " + organizationID + ")) AS " +
-      "`Project Title` FROM Roch.organizations WHERE organizationID = " + organizationID + ";"
+      "`Project Title`, (SELECT GROUP_CONCAT(`county` SEPARATOR ', ') FROM Roch.counties where countyID in (SELECT countyID from Roch.countiesorgs where organizationID = " + organizationID + ")) AS `County`  FROM Roch.organizations WHERE organizationID = " + organizationID + ";"
       console.log(sql);
       var query = queryDatabase(dbf, sql)
         .then(fillInArray(array))

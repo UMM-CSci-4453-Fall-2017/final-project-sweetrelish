@@ -73,6 +73,10 @@
   <br>
   <textarea ng-repeat="organization in individualOrganization" ng-model="organization['Project Title']" rows="4" cols="50"></textarea><br>
   <br>
+  Counties Served:
+  <br>
+  <textarea ng-repeat="organization in individualOrganization" ng-model="organization['County']" rows="4" cols="50"></textarea><br>
+  <br>
   <button style="width:100px;height:28px" class="btn btn-success" ng-click="saveChangesToOrganizations($event);">
       Save
   </button>
