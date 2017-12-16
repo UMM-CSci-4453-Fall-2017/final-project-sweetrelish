@@ -298,9 +298,11 @@ app.get("/getSpecificProject",
     require('connect-ensure-login').ensureLoggedIn(),
     function(req, res){
       var projectID = req.param("projectID");
-      var sql = "SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
+      var sql ="SELECT `projectID`, `Project Status`, `Project Title`, date_format(`Start Date`, '%Y-%M') AS `Start Date`, " +
       "date_format(`End Date`, '%Y-%M') AS `End Date`, `Project Intensity`, `Description` , `Funding Type`, `Status`, `Link to Project`, `Project Synopsis Link`, `Methodology` " +
-      "FROM Roch.Projects WHERE projectID = " + projectID + ";";
+      ", (SELECT GROUP_CONCAT(CONCAT(`First Name`, ' ', `Last Name`) SEPARATOR ', ') FROM Roch.studentWorkers where studentID in (SELECT studentID from Roch.studentsprojects where projectID = " + projectID + ")) AS " +
+      "`Students` FROM Roch.Projects WHERE projectID = " + projectID + ";"
+
       console.log(sql);
       var query = queryDatabase(dbf, sql)
         .then(fillInArray(array))
